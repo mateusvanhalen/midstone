@@ -10,7 +10,7 @@ class NavBar extends Component {
         return (
             <nav className="navbar navbar-light fixed-top light-blue flex-md-nowrap p-0 shadow">
             <li className="nav-item">
-                        <Link className="nav-link" to="/journal">journal</Link>
+                        <Link className="nav-link" to="/journals">journal</Link>
                     </li>
                     <li className="nav-item">
                         <Link className="nav-link"

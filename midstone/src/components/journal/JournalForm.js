@@ -1,11 +1,7 @@
 import React, { Component } from "react"
-import "../login/Login.css"
+// import "../login/Login.css"
 
 export default class JournalForm extends Component {
-// trying to find a way to use this in the alerts for invalid fields.  See Message List
-    findUserName = messages => {
-        return this.props.users.find(user => user.id === messages.userId).username
-    }
 
     // Set initial state
     state = {
@@ -62,37 +58,36 @@ handleButtonClick = () => {
                         <input type="text" required="true"
                             onChange={this.handleFieldChange}
                             id="journalName"
-                            placeholder="journal" />
+                            placeholder="journal"/>
                     </div>
                     <div className="form-group">
                         <label htmlFor="url">Dates </label>
                         <input type="text" required="true"
                             onChange={this.handleFieldChange}
                             id="dates"
-                            placeholder="Type dates" />
+                            placeholder="Type dates"/>
                     </div>
                     <div className="form-group">
                         <label htmlFor="details">Location</label>
                         <input type="text" required="true"
                             onChange={this.handleFieldChange}
                             id="location"
-                            placeholder="Add location" />
+                            placeholder="Add location"/>
                     </div>
                     <div className="form-group">
                         <label htmlFor="rating">Rating </label>
                         <input type="rating" required="true"
                              onChange={this.handleFieldChange}
                              id="rating"/>
+                    </div>
                     <div className="form-group">
                         <label htmlFor="rating">Description </label>
                         <input type="description" required="true"
                             onChange={this.handleFieldChange}
                             id="description"/>
-
                     </div>
-                    <button type="submit" onClick={this.constructNewJournal}
-                    className="btn btn-primary">Submit</button>
-
+                        <button type="submit" onClick={this.constructNewJournal}
+                        className="btn btn-primary">Submit</button>
 
                 </form>
             </React.Fragment>
