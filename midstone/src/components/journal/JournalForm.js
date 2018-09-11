@@ -29,7 +29,7 @@ export default class JournalForm extends Component {
      //setting default input conditions - throwing alert.   MIND THE BANG!
     constructNewJournal = evt => {
         evt.preventDefault()
-        if (this.state.dates === "" ||this.state.location === "" || this.state.rating === "" || this.state.description === "" ) {
+        if (this.state.dates === "" ||this.state.location === "" || this.state.description === "" ) {
             window.alert("Please input all fields" )
         }
 
@@ -56,18 +56,25 @@ handleButtonClick = () => {
             <React.Fragment>
                 <form className="journalForm">
                     <div className="form-group">
-                        <label htmlFor="journalName">journal name</label>
+                        <label htmlFor="journalName">Trip Type</label>
                         <input type="text" required="true"
                             onChange={this.handleFieldChange}
                             id="journalName"
                             placeholder="journal"/>
                     </div>
                     <div className="form-group">
-                        <label htmlFor="dates">Dates </label>
-                        <input type="text" required="true"
+                        <label htmlFor="dates">Departure </label>
+                        <input type="date" required="true"
                             onChange={this.handleFieldChange}
                             id="dates"
-                            placeholder="Type dates"/>
+                            placeholder="Select departure date"/>
+                    </div>
+                    <div className="form-group">
+                        <label htmlFor="dates">Return </label>
+                        <input type="date" required="true"
+                            onChange={this.handleFieldChange}
+                            id="dates"
+                            placeholder="Select return date"/>
                     </div>
                     <div className="form-group">
                         <label htmlFor="location">Location</label>
@@ -78,9 +85,41 @@ handleButtonClick = () => {
                     </div>
                     <div className="form-group">
                         <label htmlFor="rating">Rating </label>
-                        <input type="text" required="true"
-                             onChange={this.handleFieldChange}
-                             id="rating"/>
+                                <form>
+                                    <label>
+                                        <input type="radio" name="stars" value="1" />
+                                        <span className="icon">★</span>
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="stars" value="2" />
+                                        <span className="icon">★</span>
+                                        <span className="icon">★</span>
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="stars" value="3" />
+                                        <span className="icon">★</span>
+                                        <span className="icon">★</span>
+                                        <span className="icon">★</span>
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="stars" value="4" />
+                                        <span className="icon">★</span>
+                                        <span className="icon">★</span>
+                                        <span className="icon">★</span>
+                                        <span className="icon">★</span>
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="stars" value="5" />
+                                        <span className="icon">★</span>
+                                        <span className="icon">★</span>
+                                        <span className="icon">★</span>
+                                        <span className="icon">★</span>
+                                        <span className="icon">★</span>
+                                    </label>
+                                </form>
+
+                            onChange={this.handleFieldChange}
+                            id="rating"/>
                     </div>
                     <div className="form-group">
                         <label htmlFor="description">Description </label>

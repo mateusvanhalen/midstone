@@ -8,7 +8,7 @@ import JournalList from './components/journal/JournalList'
 // import JournalEditForm from './components/journal/JournalEditForm'
 import DataManager from './modules/DataManager'
 import HomePage from './components/homepage/HomePage'
-// import JournalDetail from './components/journal/JournalDetail'
+import JournalDetail from './components/journal/JournalDetails'
 
 
 export default class ApplicationViews extends Component {
@@ -106,14 +106,14 @@ export default class ApplicationViews extends Component {
             return <Redirect to="/" />
           }
         }} />
-        {/* < Route exact path="/journals/:journalId(\d+)" render={(props) => {
+        < Route exact path="/journals/:journalId(\d+)" render={(props) => {
           if (this.isAuthenticated()) {
             return <JournalDetail {...props} deleteJournal={this.deleteJournal} journals={this.state.journals} />
           } else {
             return <Redirect to="/" />
           }
         }} />
-        < Route exact path="/journals/edit/:journalId(\d+)" render={(props) => {
+        {/*< Route exact path="/journals/edit/:journalId(\d+)" render={(props) => {
           if (this.isAuthenticated()) {
             return <JournalEditForm  {...props} editJournal={this.editJournal} journals={this.state.journals} />
           } else {

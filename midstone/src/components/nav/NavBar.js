@@ -8,7 +8,15 @@ class NavBar extends Component {
 
     render() {
         return (
-            <nav className="navbar navbar-light fixed-top light-blue flex-md-nowrap p-0 shadow">
+
+
+
+
+
+            <div className="wrapper">
+
+            <nav className="sidebar">
+
             <li className="nav-item">
                         <Link className="nav-link"
                         to="/journals">journal</Link>
@@ -32,6 +40,7 @@ class NavBar extends Component {
                     className="logoutButton">Logout</button>
 
             </nav>
+            </div>
                 )
                 }
     }

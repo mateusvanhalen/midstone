@@ -38,19 +38,19 @@ class JournalList extends Component{
                 //sort by date?
                 // it is easier to sort by server call
 
-                this.props.journals.map(journal =>
-                    <div key={journal.id} className="card">
+                this.props.journals.map(journals =>
+                    <div key={journals.id} className="card">
                         <div className="card-body">
                             <h5 className="card-title">
-                                {this.formatDate(journal.date)}
+                                {/* {this.formatDate(journals.date)} */}
                                 {/* {journal.date} */}
 
-                                    <Link className="nav-link" to={`/journals/${journal.id}`}>Details</Link>
+                                    <Link className="nav-link" to={`/journals/${journals.id}`}>Details</Link>
                                     </h5>
                                 <button
-                                    onClick={() => this.props.deletejournal(journal.id)}
-                                    className="nav-link-quit">Quit journal</button>
-                            <h4 className="card-tile">{journal.journalName}
+                                    onClick={() => this.props.deletejournal(journals.id)}
+                                    className="nav-link-quit">Delete journal entry</button>
+                            <h4 className="card-tile">{journals.journalName}
                                 </h4>
                         </div>
                     </div>

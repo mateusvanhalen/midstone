@@ -23,6 +23,14 @@
       "rating": "meh",
       "description": "fun fun fun",
       "id": 2
+    },
+    {
+      "journalName": "beach",
+      "dates": "1985-09-25",
+      "location": "florida",
+      "rating": "",
+      "description": "fun fun fun",
+      "id": 3
     }
   ],
   "wishlists": [],
