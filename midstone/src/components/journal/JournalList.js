@@ -25,33 +25,33 @@ class JournalList extends Component{
 
     render() {
         return (<React.Fragment>
-            <div className="eventButton">
+            <div className="journalButton">
                 <button type="button"
                         className="btn btn-success"
                         onClick={() => {
                             this.props.history.push("/journal/new")}
                         }>
-                    Click to add your event
+                    Click to add your trip
                 </button>
             </div>
-            <section className="events">
+            <section className="journals">
             {
                 //sort by date?
                 // it is easier to sort by server call
 
-                this.props.events.map(event =>
-                    <div key={event.id} className="card">
+                this.props.journals.map(journal =>
+                    <div key={journal.id} className="card">
                         <div className="card-body">
                             <h5 className="card-title">
-                                {this.formatDate(event.date)}
-                                {/* {event.date} */}
+                                {this.formatDate(journal.date)}
+                                {/* {journal.date} */}
 
-                                    <Link className="nav-link" to={`/events/${event.id}`}>Details</Link>
+                                    <Link className="nav-link" to={`/journals/${journal.id}`}>Details</Link>
                                     </h5>
                                 <button
-                                    onClick={() => this.props.deleteEvent(event.id)}
-                                    className="nav-link-quit">Quit Event</button>
-                            <h4 className="card-tile">{event.eventName}
+                                    onClick={() => this.props.deletejournal(journal.id)}
+                                    className="nav-link-quit">Quit journal</button>
+                            <h4 className="card-tile">{journal.journalName}
                                 </h4>
                         </div>
                     </div>

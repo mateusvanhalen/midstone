@@ -1,7 +1,7 @@
 import React, { Component } from "react"
 import { Link } from "react-router-dom"
 import "./NavBar.css"
-// import "bootstrap/dist/css/bootstrap.min.css"
+import "bootstrap/dist/css/bootstrap.min.css"
 
 
 class NavBar extends Component {
@@ -22,6 +22,11 @@ class NavBar extends Component {
                     <li className="nav-item">
                         <Link className="nav-link" to="/cookieJar">fill the cookie jar</Link>
                     </li>
+                    <button onClick={() => {
+                    localStorage.clear("credentials")
+                    document.location.href='http://localhost:3000'
+                }}
+                    className="logoutButton">Logout</button>
 
             </nav>
                 )

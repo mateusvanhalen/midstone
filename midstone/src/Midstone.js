@@ -1,8 +1,8 @@
 import React, { Component } from "react"
 import ApplicationViews from "./ApplicationViews"
-import NavBar from "./components/NavBar/NavBar"
+import NavBar from "./components/nav/NavBar"
 
-// import "bootstrap/dist/css/bootstrap.min.css"
+import "bootstrap/dist/css/bootstrap.min.css"
 
 
 
@@ -11,8 +11,8 @@ class Midstone extends Component {
         return (
             <React.Fragment>
              <NavBar />
-                {/* <Header />  */}
-                <ApplicationViews />
+                {/* <Header /> */}
+                {/* <ApplicationViews /> */}
             </React.Fragment>
         )
     }
