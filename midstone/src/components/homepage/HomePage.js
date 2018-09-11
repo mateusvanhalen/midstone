@@ -1,12 +1,12 @@
 import React, { Component } from 'react'
 import './HomePage.css'
-// import utripn from './nav/utripn'
+// import utripn from './nav/utripn.png'
 
 export default class HomePage extends Component {
 
     render() {
         let styles = {
-            // backgroundImage: <img src={utripn} className="utripn"/>,"no-repeat center center fixed",
+            // backgroundImage: <img src={utripn}className="utripn"/> ,
             WebkitBackgroundSize: "cover",
             MozBackgroundSize: "cover",
             OBackgroundSize: "cover",
