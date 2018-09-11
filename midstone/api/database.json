@@ -1,14 +1,14 @@
 {
-    "users": [
-
-    ],
-    "journals": [
-
-    ],
-    "wishlists": [
-
-    ],
-    "checklists": [
-
-    ]
+  "users": [
+    {
+      "username": "mateus",
+      "email": "mateusvanhalen@gmail.com",
+      "password": "hi",
+      "id": 1
+    }
+  ],
+  "journals": [],
+  "wishlists": [],
+  "maybeOneDay": [],
+  "cookieJar": []
 }

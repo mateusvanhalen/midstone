@@ -11,7 +11,7 @@ class Midstone extends Component {
         return (
             <React.Fragment>
              <NavBar />
-                {/* <ApplicationViews /> */}
+                <ApplicationViews />
             </React.Fragment>
         )
     }

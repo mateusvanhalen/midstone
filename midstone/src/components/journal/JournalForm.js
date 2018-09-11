@@ -1,5 +1,5 @@
 import React, { Component } from "react"
-// import "../login/Login.css"
+import "../login/Login.css"
 
 export default class JournalForm extends Component {
 
