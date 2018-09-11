@@ -7,7 +7,24 @@
       "id": 1
     }
   ],
-  "journals": [],
+  "journals": [
+    {
+      "journalName": "",
+      "dates": "asdfa",
+      "location": "bahama",
+      "rating": "5 stars",
+      "description": "super fun",
+      "id": 1
+    },
+    {
+      "journalName": "",
+      "dates": "october",
+      "location": "tennessee",
+      "rating": "meh",
+      "description": "fun fun fun",
+      "id": 2
+    }
+  ],
   "wishlists": [],
   "maybeOneDay": [],
   "cookieJar": []

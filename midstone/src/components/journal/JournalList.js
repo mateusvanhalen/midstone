@@ -1,13 +1,12 @@
 import React, { Component } from 'react'
-//import events_pic from "events_pic.jpg"
 import { Link } from "react-router-dom"
 import './Journal.css'
 
 class JournalList extends Component{
 //see here to format dates to something that doesnt look like cat poop
 
-    formatDate = eventDate => {
-        let date = new Date (eventDate)
+    formatDate = journalDate => {
+        let date = new Date (journalDate)
         var monthNames = [
           "January", "February", "March",
           "April", "May", "June", "July",
@@ -29,7 +28,7 @@ class JournalList extends Component{
                 <button type="button"
                         className="btn btn-success"
                         onClick={() => {
-                            this.props.history.push("/journal/new")}
+                            this.props.history.push("/journals/new")}
                         }>
                     Click to add your trip
                 </button>

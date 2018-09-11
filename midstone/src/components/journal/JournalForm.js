@@ -2,7 +2,9 @@ import React, { Component } from "react"
 import "../login/Login.css"
 
 export default class JournalForm extends Component {
-
+    findUserName = messages => {
+        return this.props.users.find(user => user.id === messages.userId).username
+    }
     // Set initial state
     state = {
         journalName: "",
@@ -27,7 +29,7 @@ export default class JournalForm extends Component {
      //setting default input conditions - throwing alert.   MIND THE BANG!
     constructNewJournal = evt => {
         evt.preventDefault()
-        if (this.state.journalName === "" ||this.state.dates === "" || this.state.location === "" || this.state.rating === "" ) {
+        if (this.state.dates === "" ||this.state.location === "" || this.state.rating === "" || this.state.description === "" ) {
             window.alert("Please input all fields" )
         }
 
@@ -61,14 +63,14 @@ handleButtonClick = () => {
                             placeholder="journal"/>
                     </div>
                     <div className="form-group">
-                        <label htmlFor="url">Dates </label>
+                        <label htmlFor="dates">Dates </label>
                         <input type="text" required="true"
                             onChange={this.handleFieldChange}
                             id="dates"
                             placeholder="Type dates"/>
                     </div>
                     <div className="form-group">
-                        <label htmlFor="details">Location</label>
+                        <label htmlFor="location">Location</label>
                         <input type="text" required="true"
                             onChange={this.handleFieldChange}
                             id="location"
@@ -76,13 +78,13 @@ handleButtonClick = () => {
                     </div>
                     <div className="form-group">
                         <label htmlFor="rating">Rating </label>
-                        <input type="rating" required="true"
+                        <input type="text" required="true"
                              onChange={this.handleFieldChange}
                              id="rating"/>
                     </div>
                     <div className="form-group">
-                        <label htmlFor="rating">Description </label>
-                        <input type="description" required="true"
+                        <label htmlFor="description">Description </label>
+                        <input type="text" required="true"
                             onChange={this.handleFieldChange}
                             id="description"/>
                     </div>

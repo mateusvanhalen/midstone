@@ -66,7 +66,7 @@ export default class ApplicationViews extends Component {
     .then(allUsers => {
       newState.users = allUsers
     })
-
+      .then(() => {
         DataManager.getAllAscend("journals")
           .then(allJournals => {
             newState.journals = allJournals
@@ -75,7 +75,8 @@ export default class ApplicationViews extends Component {
             this.setState(newState)
           })
       }
-
+    )
+  }
 
     render() {
       return (
