@@ -56,28 +56,28 @@ handleButtonClick = () => {
             <React.Fragment>
                 <form className="journalForm">
                     <div className="form-group">
-                        <label htmlFor="journalName">Trip Type</label>
+                        <label htmlFor="journalName">trip type</label>
                         <input type="text" required="true"
                             onChange={this.handleFieldChange}
                             id="journalName"
                             placeholder="journal"/>
                     </div>
                     <div className="form-group">
-                        <label htmlFor="dates">Departure </label>
+                        <label htmlFor="dates">departure </label>
                         <input type="date" required="true"
                             onChange={this.handleFieldChange}
                             id="dates"
                             placeholder="Select departure date"/>
                     </div>
                     <div className="form-group">
-                        <label htmlFor="dates">Return </label>
+                        <label htmlFor="dates">return </label>
                         <input type="date" required="true"
                             onChange={this.handleFieldChange}
                             id="dates"
                             placeholder="Select return date"/>
                     </div>
                     <div className="form-group">
-                        <label htmlFor="location">Location</label>
+                        <label htmlFor="location">location</label>
                         <input type="text" required="true"
                             onChange={this.handleFieldChange}
                             id="location"
@@ -122,7 +122,7 @@ handleButtonClick = () => {
                             id="rating"/>
                     </div>
                     <div className="form-group">
-                        <label htmlFor="description">Description </label>
+                        <label htmlFor="description">description </label>
                         <input type="text" required="true"
                             onChange={this.handleFieldChange}
                             id="description"/>

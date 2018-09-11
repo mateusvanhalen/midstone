@@ -49,7 +49,7 @@ export default class Login extends Component {
             <div className="forms">
                 <div className="loginForm">
                     <form onSubmit={this.handleLogin}>
-                        <h1 className="h3 mb-3 font-weight-normal">Please sign in</h1>
+                        <h1 className="h3 mb-3 font-weight-normal">Come sign in</h1>
                         <label htmlFor="inputEmail">
                             Email address
                         </label>

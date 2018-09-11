@@ -37,7 +37,7 @@ class NavBar extends Component {
                     localStorage.clear("credentials")
                     document.location.href='http://localhost:3000'
                 }}
-                    className="logoutButton">Logout</button>
+                    className="logoutButton">sign out</button>
 
             </nav>
             </div>
