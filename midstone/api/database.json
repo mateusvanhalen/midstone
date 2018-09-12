@@ -9,12 +9,13 @@
   ],
   "journals": [
     {
-      "journalName": "beach",
-      "dates": "1985-09-25",
-      "location": "florida",
+      "journalName": "fun",
+      "ddates": "2018-09-20",
+      "rdates": "2018-09-21",
+      "location": "bahama",
       "rating": "",
-      "description": "fun fun fun",
-      "id": 3
+      "description": "party time",
+      "id": 1
     }
   ],
   "wishlists": [],

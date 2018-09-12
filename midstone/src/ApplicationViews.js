@@ -9,6 +9,9 @@ import JournalEditForm from './components/journal/JournalEditForm'
 import DataManager from './modules/DataManager'
 import HomePage from './components/homepage/HomePage'
 import JournalDetail from './components/journal/JournalDetails'
+import MaybeForm from './components/maybe/MaybeForm'
+import MaybeDetail from './components/maybe/MaybeDetail'
+import MaybeEditForm from './components/maybe/MaybeEditForm'
 
 
 export default class ApplicationViews extends Component {
@@ -18,7 +21,7 @@ export default class ApplicationViews extends Component {
   state = {
     users: [],
     journals: [],
-    wishlists: [],
+    maybeOneDay: [],
     checklists: [],
     isLoaded: false
   }
@@ -58,6 +61,24 @@ export default class ApplicationViews extends Component {
       journals: journals
     }))
 
+  addMaybe = maybe => DataManager.add("maybes", maybe)
+    .then(() => DataManager.getAllAscend("maybes"))
+    .then(maybes => this.setState({
+      maybes: maybes
+    }))
+
+  deleteMaybe = id => DataManager.delete("maybes", id)
+    .then(() => DataManager.getAllAscend("maybes"))
+    .then(maybes => this.setState({
+      maybes: maybes
+    }))
+
+  editMaybe = (id, maybes) => DataManager.edit("maybes", id, maybes)
+    .then(() => DataManager.getAllAscend("maybes"))
+    .then(maybes => this.setState({
+      maybes: maybes
+    }))
+
   componentDidMount() {
 
     const newState = {}
@@ -72,9 +93,15 @@ export default class ApplicationViews extends Component {
             newState.journals = allJournals
           })
           .then(() => {
+            DataManager.getAllAscend("maybes")
+              .then(allMaybes => {
+                newState.maybes = allMaybes
+              })
+          .then(() => {
             this.setState(newState)
           })
-      }
+      })
+    }
     )
   }
 
@@ -116,6 +143,38 @@ export default class ApplicationViews extends Component {
         < Route exact path="/journals/edit/:journalId(\d+)" render={(props) => {
           if (this.isAuthenticated()) {
             return <JournalEditForm  {...props} editJournal={this.editJournal} journals={this.state.journals} />
+          } else {
+            return <Redirect to="/" />
+          }
+        }} />
+        < Route exact path="/maybes" render={(props) => {
+          if (this.isAuthenticated()) {
+            return <JournalList {...props}
+              deleteMaybe={this.deleteMaybe}
+              maybes={this.state.maybes} />
+          } else {
+            return <Redirect to="/" />
+          }
+        }
+        } />
+        < Route exact path="/maybes/new" render={(props) => {
+          if (this.isAuthenticated()) {
+            return <MaybeForm {...props}
+              addMaybe={this.addMaybe} />
+          } else {
+            return <Redirect to="/" />
+          }
+        }} />
+        < Route exact path="/maybes/:journalId(\d+)" render={(props) => {
+          if (this.isAuthenticated()) {
+            return <MaybeDetail {...props} deleteMaybe={this.deleteMaybe} maybes={this.state.maybes} />
+          } else {
+            return <Redirect to="/" />
+          }
+        }} />
+        < Route exact path="/maybes/edit/:maybeId(\d+)" render={(props) => {
+          if (this.isAuthenticated()) {
+            return <MaybeEditForm  {...props} editMaybe={this.editMaybe} maybes={this.state.maybes} />
           } else {
             return <Redirect to="/" />
           }

@@ -8,7 +8,8 @@ export default class JournalForm extends Component {
     // Set initial state
     state = {
         journalName: "",
-        dates: "",
+        ddates: "",
+        rdates: "",
         location: "",
         rating: "",
         description: "",
@@ -36,7 +37,8 @@ export default class JournalForm extends Component {
         else {
             const journal = {
                 journalName: this.state.journalName,
-                dates: this.state.dates,
+                ddates: this.state.ddates,
+                rdates:this.state.rdates,
                 location: this.state.location,
                 rating: this.state.rating,
                 description: this.state.description,
@@ -63,17 +65,17 @@ handleButtonClick = () => {
                             placeholder="journal"/>
                     </div>
                     <div className="form-group">
-                        <label htmlFor="dates">departure </label>
+                        <label htmlFor="ddates">departure </label>
                         <input type="date" required="true"
                             onChange={this.handleFieldChange}
-                            id="dates"
+                            id="ddates"
                             placeholder="Select departure date"/>
                     </div>
                     <div className="form-group">
-                        <label htmlFor="dates">return </label>
+                        <label htmlFor="rdates">return </label>
                         <input type="date" required="true"
                             onChange={this.handleFieldChange}
-                            id="dates"
+                            id="rdates"
                             placeholder="Select return date"/>
                     </div>
                     <div className="form-group">

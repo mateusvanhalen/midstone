@@ -42,8 +42,11 @@ class JournalList extends Component{
                     <div key={journals.id} className="card">
                         <div className="card-body">
                             <h5 className="card-title">
-                                {/* {this.formatDate(journals.date)} */}
-                                {/* {journal.date} */}
+                                {/* {this.formatDate(journals.rdate)}
+                                {this.formatDate(journals.ddate)} */}
+                                {journals.ddates}
+                                <br/>
+                                {journals.rdates}
 
                                     <Link className="nav-link" to={`/journals/${journals.id}`}>Details</Link>
                                     </h5>

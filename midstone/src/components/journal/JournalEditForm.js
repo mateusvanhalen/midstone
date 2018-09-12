@@ -27,7 +27,8 @@ constructNewJournal = (evt) => {
     let newJournal = {
         journalName: this.state.journalName,
         journalId: this.props.journals.find(e => e.name === this.state.event).id,
-        dates: this.state.dates,
+        ddates: this.state.ddates,
+        rdates:this.state.rdates,
         id: this.state.id,
         description: this.state.description,
         rating: this.state.rating,
@@ -56,25 +57,26 @@ render() {
                 </div>
                 <div className="form-group">
                     <label htmlFor="url">updated departure </label>
-                    <input type="date" required="true"
+                    <input type="ddate" required="true"
                         onChange={this.handleFieldChange}
-                        id="url"
-                        placeholder={this.state.date} />
+                        id="ddate"
+                        placeholder="select new departure date"/>
                 </div>
                 <div className="form-group">
-                    <label htmlFor="dates">updated return</label>
+                    <label htmlFor="rdates">updated return</label>
                     <input type="date" required="true"
                         onChange={this.handleFieldChange}
-                        id="details"
+                        id="rdate"
                         placeholder="select new return date"/>
                 </div>
                 <div className="form-group">
-                    <label htmlFor="date">updated location </label>
+                    <label htmlFor="location">updated location </label>
                     <input type="text" required="true"
                          onChange={this.handleFieldChange}
-                         id="date"
+                         id="location"
                          placeholder={this.state.location}/>
-                    <div className="form-group">
+                    <div
+                        className="form-group">
                         <label htmlFor="rating">Rating </label>
                                 <form>
                                     <label>
