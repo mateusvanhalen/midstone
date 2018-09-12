@@ -12,6 +12,7 @@ import JournalDetail from './components/journal/JournalDetails'
 import MaybeForm from './components/maybe/MaybeForm'
 import MaybeDetail from './components/maybe/MaybeDetail'
 import MaybeEditForm from './components/maybe/MaybeEditForm'
+import MaybeList from './components/maybe/MaybeList'
 
 
 export default class ApplicationViews extends Component {
@@ -31,7 +32,7 @@ export default class ApplicationViews extends Component {
     .then(users => this.setState({
       users: users
     }))
-    deleteUser = id => DataManager.delete("user", id)
+  deleteUser = id => DataManager.delete("user", id)
     .then(() => DataManager.getAll("user"))
     .then(user => this.setState({
       user: user
@@ -62,19 +63,19 @@ export default class ApplicationViews extends Component {
     }))
 
   addMaybe = maybe => DataManager.add("maybes", maybe)
-    .then(() => DataManager.getAllAscend("maybes"))
+    .then(() => DataManager.getAll("maybes"))
     .then(maybes => this.setState({
       maybes: maybes
     }))
 
   deleteMaybe = id => DataManager.delete("maybes", id)
-    .then(() => DataManager.getAllAscend("maybes"))
+    .then(() => DataManager.getAll("maybes"))
     .then(maybes => this.setState({
       maybes: maybes
     }))
 
   editMaybe = (id, maybes) => DataManager.edit("maybes", id, maybes)
-    .then(() => DataManager.getAllAscend("maybes"))
+    .then(() => DataManager.getAll("maybes"))
     .then(maybes => this.setState({
       maybes: maybes
     }))
@@ -84,38 +85,38 @@ export default class ApplicationViews extends Component {
     const newState = {}
 
     DataManager.getAll("users")
-    .then(allUsers => {
-      newState.users = allUsers
-    })
+      .then(allUsers => {
+        newState.users = allUsers
+      })
       .then(() => {
         DataManager.getAllAscend("journals")
           .then(allJournals => {
             newState.journals = allJournals
           })
           .then(() => {
-            DataManager.getAllAscend("maybes")
+            DataManager.getAll("maybes")
               .then(allMaybes => {
                 newState.maybes = allMaybes
               })
-          .then(() => {
-            this.setState(newState)
+              .then(() => {
+                this.setState(newState)
+              })
           })
-      })
-    }
-    )
+      }
+      )
   }
 
-    render() {
-      return (
-        <React.Fragment>
-          <Route exact path="/" component={HomePage} />
-          <Route exact path="/login" component={Login} />
-          <Route exact path="/register" render={(props) => {
-            return <Register {...props}
-              addUser={this.addUser}
-              users={this.state.users} />
-          }} />
-          < Route exact path="/journals" render={(props) => {
+  render() {
+    return (
+      <React.Fragment>
+        <Route exact path="/" component={HomePage} />
+        <Route exact path="/login" component={Login} />
+        <Route exact path="/register" render={(props) => {
+          return <Register {...props}
+            addUser={this.addUser}
+            users={this.state.users} />
+        }} />
+        < Route exact path="/journals" render={(props) => {
           if (this.isAuthenticated()) {
             return <JournalList {...props}
               deleteJournal={this.deleteJournal}
@@ -147,17 +148,16 @@ export default class ApplicationViews extends Component {
             return <Redirect to="/" />
           }
         }} />
-        < Route exact path="/maybes" render={(props) => {
+        < Route exact path="/maybeOneDay" render={(props) => {
           if (this.isAuthenticated()) {
-            return <JournalList {...props}
+            return <MaybeList {...props}
               deleteMaybe={this.deleteMaybe}
               maybes={this.state.maybes} />
           } else {
             return <Redirect to="/" />
           }
-        }
-        } />
-        < Route exact path="/maybes/new" render={(props) => {
+        }} />
+        < Route exact path="/maybeOneDay/new" render={(props) => {
           if (this.isAuthenticated()) {
             return <MaybeForm {...props}
               addMaybe={this.addMaybe} />
@@ -165,22 +165,22 @@ export default class ApplicationViews extends Component {
             return <Redirect to="/" />
           }
         }} />
-        < Route exact path="/maybes/:journalId(\d+)" render={(props) => {
+        < Route exact path="/maybeOneDay/:journalId(\d+)" render={(props) => {
           if (this.isAuthenticated()) {
             return <MaybeDetail {...props} deleteMaybe={this.deleteMaybe} maybes={this.state.maybes} />
           } else {
             return <Redirect to="/" />
           }
         }} />
-        < Route exact path="/maybes/edit/:maybeId(\d+)" render={(props) => {
+        < Route exact path="/maybeOneDay/edit/:maybeId(\d+)" render={(props) => {
           if (this.isAuthenticated()) {
             return <MaybeEditForm  {...props} editMaybe={this.editMaybe} maybes={this.state.maybes} />
           } else {
             return <Redirect to="/" />
           }
         }} />
-        </React.Fragment>
-        )
+      </React.Fragment>
+    )
 
-      }
-    }
+  }
+}

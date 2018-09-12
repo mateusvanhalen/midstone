@@ -29,8 +29,8 @@ export default class MaybeForm extends Component {
      //setting default input conditions - throwing alert.   MIND THE BANG!
     constructNewMaybe = evt => {
         evt.preventDefault()
-        if (this.state.maybeName === "" ||this.state.location === "" || this.state.dates === "" |this.state.why === "") {
-            window.alert("Please input all fields" )
+        if (this.state.maybeName === "") {
+            window.alert("Dont leave any info out!")
         }
 
         else {
@@ -42,7 +42,7 @@ export default class MaybeForm extends Component {
                 description: this.state.description,
             }
 
-            // Create the animal and redirect user to animal list
+            // Create the maybe event and redirect user
             this.props.addMaybe(maybe).then(() => this.props.history.push("/maybeOneDay"))
         }
     }
@@ -60,34 +60,34 @@ handleButtonClick = () => {
                         <input type="text" required="true"
                             onChange={this.handleFieldChange}
                             id="maybeName"
-                            placeholder="hit me"/>
+                            placeholder="what type of trip?"/>
                     </div>
                     <div className="form-group">
                         <label htmlFor="dates">when to go? </label>
                         <input type="date" required="true"
                             onChange={this.handleFieldChange}
                             id="dates"
-                            placeholder="when to getaway"/>
+                            placeholder="when to getaway?"/>
                     </div>
                     <div className="form-group">
                         <label htmlFor="location">location</label>
                         <input type="text" required="true"
                             onChange={this.handleFieldChange}
                             id="location"
-                            placeholder="Where o where?"/>
+                            placeholder="Where o where to?"/>
                     </div>
                     <div className="form-group">
                         <label htmlFor="why">why</label>
                         <input type="text" required="true"
                             onChange={this.handleFieldChange}
                             id="why"
-                            placeholder="Where o where?"/>
+                            placeholder="whats your why?"/>
                     </div>
                     <div className="form-group">
                         <label htmlFor="description">description </label>
                         <input type="text" required="true"
                             onChange={this.handleFieldChange}
-                            id="description"/>
+                            id="to do what?"/>
                     </div>
                         <button type="submit" onClick={this.constructNewMaybe}
                         className="btn btn-primary">Submit</button>
