@@ -28,7 +28,7 @@ export default class JournalDetail extends Component {
                         </h6>
                         <h5>
                             <a
-                                onClick={() => this.props.deletejournal(journals.id)
+                                onClick={() => this.props.deleteJournal(journals.id)
                                     .then(() => this.props.history.push("/journals"))}
                                 className="btn btn-success">Delete</a>
 

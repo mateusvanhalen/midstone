@@ -48,7 +48,7 @@ class JournalList extends Component{
                                     <Link className="nav-link" to={`/journals/${journals.id}`}>Details</Link>
                                     </h5>
                                 <button
-                                    onClick={() => this.props.deletejournal(journals.id)}
+                                    onClick={() => this.props.deleteJournal(journals.id)}
                                     className="nav-link-quit">Delete journal entry</button>
                             <h4 className="card-tile">{journals.journalName}
                                 </h4>

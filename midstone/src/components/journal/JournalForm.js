@@ -118,8 +118,8 @@ handleButtonClick = () => {
                                     </label>
                                 </form>
 
-                            onChange={this.handleFieldChange}
-                            id="rating"/>
+                           {this.handleFieldChange}
+
                     </div>
                     <div className="form-group">
                         <label htmlFor="description">description </label>
