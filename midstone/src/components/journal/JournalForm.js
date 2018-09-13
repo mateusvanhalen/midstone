@@ -2,17 +2,17 @@ import React, { Component } from "react"
 import "../login/Login.css"
 
 export default class JournalForm extends Component {
-    findUserName = messages => {
-        return this.props.users.find(user => user.id === messages.userId).username
-    }
+
     // Set initial state
     state = {
+        pic: "",
         journalName: "",
         ddates: "",
         rdates: "",
         location: "",
         rating: "",
         description: "",
+        userId: "",
     }
 
     // Update state whenever an input field is edited
@@ -36,19 +36,21 @@ export default class JournalForm extends Component {
 
         else {
             const journal = {
+                pic:this.state.pic,
                 journalName: this.state.journalName,
                 ddates: this.state.ddates,
                 rdates:this.state.rdates,
                 location: this.state.location,
                 rating: this.state.rating,
                 description: this.state.description,
+                userId: JSON.parse(localStorage.getItem("credentials")).id,
             }
 
-            // Create the animal and redirect user to animal list
+            // Create the journal entry and redirect user to journal list
             this.props.addJournal(journal).then(() => this.props.history.push("/journals"))
         }
     }
-//this takes you back after you click to journalS PAGE
+//this takes you back after you click to journalSubmit
 handleButtonClick = () => {
     document.location.href = 'http://localhost:3000/journals'
 }
@@ -57,6 +59,12 @@ handleButtonClick = () => {
         return (
             <React.Fragment>
                 <form className="journalForm">
+                <div className="form-group">
+                        <label htmlFor="pic">add a pic url</label>
+                        <input type="url" required="true"
+                            onChange={this.handleFieldChange}
+                            id="pic"/>
+                    </div>
                     <div className="form-group">
                         <label htmlFor="journalName">trip type</label>
                         <input type="text" required="true"
@@ -85,33 +93,39 @@ handleButtonClick = () => {
                             id="location"
                             placeholder="Add location"/>
                     </div>
+
                     <div className="form-group">
                         <label htmlFor="rating">Rating </label>
                                 <form>
                                     <label>
-                                        <input type="radio" name="stars" value="1" />
+                                        <input type="radio" name="stars" value="1"
+                                        onChange={this.handleFieldChange}/>
                                         <span className="icon">★</span>
                                     </label>
                                     <label>
-                                        <input type="radio" name="stars" value="2" />
-                                        <span className="icon">★</span>
-                                        <span className="icon">★</span>
-                                    </label>
-                                    <label>
-                                        <input type="radio" name="stars" value="3" />
-                                        <span className="icon">★</span>
+                                        <input type="radio" name="stars" value="2"
+                                        onChange={this.handleFieldChange}/>
                                         <span className="icon">★</span>
                                         <span className="icon">★</span>
                                     </label>
                                     <label>
-                                        <input type="radio" name="stars" value="4" />
-                                        <span className="icon">★</span>
+                                        <input type="radio" name="stars" value="3"
+                                        onChange={this.handleFieldChange}/>
                                         <span className="icon">★</span>
                                         <span className="icon">★</span>
                                         <span className="icon">★</span>
                                     </label>
                                     <label>
-                                        <input type="radio" name="stars" value="5" />
+                                        <input type="radio" name="stars" value="4"
+                                        onChange={this.handleFieldChange}/>
+                                        <span className="icon">★</span>
+                                        <span className="icon">★</span>
+                                        <span className="icon">★</span>
+                                        <span className="icon">★</span>
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="stars" value="5"
+                                        onChange={this.handleFieldChange}/>
                                         <span className="icon">★</span>
                                         <span className="icon">★</span>
                                         <span className="icon">★</span>
@@ -120,7 +134,7 @@ handleButtonClick = () => {
                                     </label>
                                 </form>
 
-                           {this.handleFieldChange}
+
 
                     </div>
                     <div className="form-group">
@@ -131,7 +145,6 @@ handleButtonClick = () => {
                     </div>
                         <button type="submit" onClick={this.constructNewJournal}
                         className="btn btn-primary">Submit</button>
-
                 </form>
             </React.Fragment>
         )

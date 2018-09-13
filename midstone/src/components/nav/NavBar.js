@@ -19,7 +19,7 @@ class NavBar extends Component {
                     <div className="sidebar-header">
                         <h3> Utripn</h3>
                     </div>
-                    <ul classsName="list-unstyled components">
+                    <ul className="list-unstyled components">
                         <p>Here are your bags</p>
                         <li className="active">
                         <Link className="nav-link"
@@ -27,11 +27,11 @@ class NavBar extends Component {
                     </li>
                     <li className="nav-item">
                         <Link className="nav-link"
-                            to="/maybeOneDay">maybe one day</Link>
+                            to="/maybes">maybe one day</Link>
                     </li>
                     <li className="nav-item">
                         <Link className="nav-link"
-                            to="/checklist">checklist</Link>
+                            to="/checklists">checklist</Link>
                     </li>
                     <li className="nav-item">
                         <Link className="nav-link"
