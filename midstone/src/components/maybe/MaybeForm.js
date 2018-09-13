@@ -2,9 +2,7 @@ import React, { Component } from "react"
 import "../login/Login.css"
 
 export default class MaybeForm extends Component {
-    findUserName = messages => {
-        return this.props.users.find(user => user.id === messages.userId).username
-    }
+
     // Set initial state
     state = {
         maybeName: "",
@@ -12,6 +10,7 @@ export default class MaybeForm extends Component {
         location: "",
         why: "",
         description: "",
+        userId: "",
     }
 
     // Update state whenever an input field is edited
@@ -40,15 +39,16 @@ export default class MaybeForm extends Component {
                 location:this.state.location,
                 why: this.state.why,
                 description: this.state.description,
+                userId: JSON.parse(localStorage.getItem("credentials")).id,
             }
 
             // Create the maybe event and redirect user
-            this.props.addMaybe(maybe).then(() => this.props.history.push("/maybeOneDay"))
+            this.props.addMaybe(maybe).then(() => this.props.history.push("/maybes"))
         }
     }
 //this takes you back after you click to journalS PAGE
 handleButtonClick = () => {
-    document.location.href = 'http://localhost:3000/maybeOneDay'
+    document.location.href = 'http://localhost:3000/maybes'
 }
 
     render() {

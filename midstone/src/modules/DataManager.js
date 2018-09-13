@@ -4,7 +4,7 @@ export default Object.create(null, {
     get: {
         value: (resource, id) => {
             return fetch(`${remoteURL}/${resource}/${id}`)
-            .then(result => result.json())
+                .then(result => result.json())
         }
     },
 
@@ -13,7 +13,7 @@ export default Object.create(null, {
     getAllAscend: {
         value: (resource) => {
             return fetch(`${remoteURL}/${resource}?_sort=date&_order=asc`)
-            .then(result => result.json())
+                .then(result => result.json())
         }
 
     },
@@ -21,7 +21,7 @@ export default Object.create(null, {
     getUnfinishedTasks: {
         value: (resource) => {
             return fetch(`${remoteURL}/${resource}?isChecked=false&_sort=date&_order=asc`)
-            .then(result => result.json())
+                .then(result => result.json())
         }
 
     },
@@ -29,9 +29,17 @@ export default Object.create(null, {
     getAll: {
         value: (resource) => {
             return fetch(`${remoteURL}/${resource}`)
-            .then(result => result.json())
+                .then(result => result.json())
         }
     },
+
+    getUserData: {
+        value: (resource, userId) => {
+            return fetch(`${remoteURL}/${resource}?userId=${userId}`)
+                .then(result => result.json())
+        }
+    },
+
     delete: {
         value: (resource, id) => {
             return fetch(`${remoteURL}/${resource}/${id}`, {
@@ -48,7 +56,7 @@ export default Object.create(null, {
                 },
                 body: JSON.stringify(item)
             })
-            .then(result => result.json())
+                .then(result => result.json())
         }
     },
     edit: {
@@ -62,7 +70,7 @@ export default Object.create(null, {
                 },
                 body: JSON.stringify(item)
             })
-            .then(result => result.json())
+                .then(result => result.json())
         }
     }
 })

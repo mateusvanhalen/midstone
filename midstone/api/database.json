@@ -5,20 +5,97 @@
       "email": "mateusvanhalen@gmail.com",
       "password": "hi",
       "id": 1
+    },
+    {
+      "username": "dejan",
+      "email": "dejan@me.com",
+      "password": "hi",
+      "id": 2
     }
   ],
   "journals": [
     {
-      "journalName": "fun",
+      "journalName": "matt",
+      "ddates": "2018-09-13",
+      "rdates": "2018-09-21",
+      "location": "asdf",
+      "rating": "",
+      "description": "fff",
+      "userId": 1,
+      "id": 1
+    },
+    {
+      "journalName": "dejan only",
+      "ddates": "",
+      "rdates": "",
+      "location": "away",
+      "rating": "",
+      "description": "bye",
+      "userId": 2,
+      "id": 2
+    },
+    {
+      "journalName": "dejan 2",
+      "ddates": "",
+      "rdates": "0083-08-29",
+      "location": "away",
+      "rating": "",
+      "description": "dejan",
+      "userId": 2,
+      "id": 3
+    },
+    {
+      "journalName": "fefeef",
+      "ddates": "",
+      "rdates": "",
+      "location": "asdf",
+      "rating": "",
+      "description": "dddd",
+      "userId": 2,
+      "id": 4
+    },
+    {
+      "pic": "www.google.com",
+      "journalName": "wave",
+      "ddates": "2018-09-25",
+      "rdates": "2018-09-30",
+      "location": "aruba",
+      "rating": "",
+      "description": "get away",
+      "userId": 1,
+      "id": 5
+    },
+    {
+      "pic": "asdf",
+      "journalName": "asdf",
       "ddates": "2018-09-20",
       "rdates": "2018-09-21",
-      "location": "bahama",
+      "location": "asdf",
       "rating": "",
-      "description": "party time",
+      "description": "asdf",
+      "userId": 1,
+      "id": 6
+    }
+  ],
+  "checklists": [
+    {
+      "type": "",
+      "location": "",
+      "item": "",
+      "why": "asdf",
       "id": 1
     }
   ],
-  "checklists": [],
-  "maybeOneDay": [],
+  "maybes": [
+    {
+      "maybeName": "get away",
+      "dates": "2018-09-09",
+      "location": "aruba",
+      "why": "its getting cold here",
+      "description": "",
+      "userId": 1,
+      "id": 1
+    }
+  ],
   "cookieJar": []
 }
