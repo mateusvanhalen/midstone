@@ -45,31 +45,9 @@ class NavBar extends Component {
 
                             </ul>
 
-                        <li>
-                            <a href="#">About</a>
-                        </li>
-                        <li>
-                            <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" className="dropdown-toggle">Pages</a>
-                            <ul className="collapse list-unstyled" id="pageSubmenu">
-                                <li>
-                                    <a href="#">Page 1</a>
-                                </li>
-                                <li>
-                                    <a href="#">Page 2</a>
-                                </li>
-                                <li>
-                                    <a href="#">Page 3</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#">Portfolio</a>
-                        </li>
-                        <li>
-                            <a href="#">Contact</a>
-                        </li>
+                            {/* <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" className="dropdown-toggle">Pages</a>
+                            <ul className="collapse list-unstyled" id="pageSubmenu"> */}
 
-                </nav>
 
                 <div id="content">
                     <nav className="navbar navbar-expand-lg navbar-light bg-light">
@@ -83,7 +61,9 @@ class NavBar extends Component {
                         </div>
                     </nav>
                 </div>
-            </div>
+            </nav>
+        </div>
+
 
 
         )

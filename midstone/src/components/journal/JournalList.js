@@ -5,8 +5,18 @@ import './Journal.css'
 class JournalList extends Component{
 //see here to format dates to something that doesnt look like cat poop
 
+
+
+// const newDate = new Date("2018-9-30");
+
+// console.log(newDate);
+// console.log(newDate.getFullYear(), newDate.getDate(), newDate.getMonth());
+
+
+
+
     formatDate = journalDate => {
-        let rdates = new Date (journalDate)
+        let rdates = new Date(journalDate)
         var monthNames = [
           "January", "February", "March",
           "April", "May", "June", "July",
@@ -18,12 +28,12 @@ class JournalList extends Component{
         var monthIndex = rdates.getFullMonth();
         var year = rdates.getYear();
 
-        // return day + ' ' + monthNames[monthIndex] + ' ' + year;
-        return monthIndex+- '/' +day+- '/'+year;
+        return day + ' ' + monthNames[monthIndex] + ' ' + year;
+        // return monthIndex+ '/' +day+ '/'+year;
       }
 
       formatDate = journalDate => {
-        let ddates = new Date (journalDate)
+        let ddates = new Date(journalDate)
         var monthNames = [
           "January", "February", "March",
           "April", "May", "June", "July",
@@ -35,9 +45,13 @@ class JournalList extends Component{
         var monthIndex = ddates.getMonth();
         var year = ddates.getFullYear();
 
-        // return day + ' ' + monthNames[monthIndex] + ' ' + year;
-        return monthIndex+ '/' +day+ '/'+year;
+        return monthNames[monthIndex] + day  + ' ' + year;
+        // return monthIndex+ '/' +day+ '/'+year;
       }
+
+    handleButtonClick = () => {
+        document.location.href = 'http://localhost:3000/journals'
+    }
 
 
     render() {
@@ -67,9 +81,6 @@ class JournalList extends Component{
 
                                     <Link className="nav-link" to={`/journals/${journals.id}`}>Details</Link>
                                     </h5>
-                                <button
-                                    onClick={() => this.props.deleteJournal(journals.id)}
-                                    className="nav-link-quit">Delete journal entry</button>
                             <h4 className="card-tile">{journals.journalName}
                                 </h4>
                         </div>

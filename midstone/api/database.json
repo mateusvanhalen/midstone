@@ -15,16 +15,6 @@
   ],
   "journals": [
     {
-      "journalName": "matt",
-      "ddates": "2018-09-13",
-      "rdates": "2018-09-21",
-      "location": "asdf",
-      "rating": "",
-      "description": "fff",
-      "userId": 1,
-      "id": 1
-    },
-    {
       "journalName": "dejan only",
       "ddates": "",
       "rdates": "",
@@ -66,15 +56,26 @@
       "id": 5
     },
     {
-      "pic": "asdf",
-      "journalName": "asdf",
-      "ddates": "2018-09-20",
-      "rdates": "2018-09-21",
-      "location": "asdf",
+      "pic": "n/a",
+      "journalName": "safari",
+      "ddates": "2018-09-30",
+      "rdates": "2018-10-01",
+      "location": "africa",
       "rating": "",
-      "description": "asdf",
+      "description": "brenda",
       "userId": 1,
-      "id": 6
+      "id": 8
+    },
+    {
+      "pic": "matt",
+      "journalName": "matt",
+      "ddates": "2222-01-01",
+      "rdates": "4929-08-08",
+      "location": "africa",
+      "rating": "",
+      "description": "matthew",
+      "userId": 1,
+      "id": 9
     }
   ],
   "checklists": [
@@ -84,6 +85,20 @@
       "item": "",
       "why": "asdf",
       "id": 1
+    },
+    {
+      "type": "asfd",
+      "location": "fda",
+      "item": "asdf",
+      "why": "fda",
+      "id": 2
+    },
+    {
+      "type": "jfjfj",
+      "location": "ieiei",
+      "item": "jejej",
+      "why": "cjcj",
+      "id": 3
     }
   ],
   "maybes": [

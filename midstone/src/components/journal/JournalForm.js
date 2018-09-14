@@ -61,34 +61,34 @@ handleButtonClick = () => {
                 <form className="journalForm">
                 <div className="form-group">
                         <label htmlFor="pic">add a pic url</label>
-                        <input type="url" required="true"
+                        <input type="url" required
                             onChange={this.handleFieldChange}
                             id="pic"/>
                     </div>
                     <div className="form-group">
                         <label htmlFor="journalName">trip type</label>
-                        <input type="text" required="true"
+                        <input type="text" required
                             onChange={this.handleFieldChange}
                             id="journalName"
                             placeholder="journal"/>
                     </div>
                     <div className="form-group">
                         <label htmlFor="ddates">departure </label>
-                        <input type="date" required="true"
+                        <input type="date" required
                             onChange={this.handleFieldChange}
                             id="ddates"
                             placeholder="Select departure date"/>
                     </div>
                     <div className="form-group">
                         <label htmlFor="rdates">return </label>
-                        <input type="date" required="true"
+                        <input type="date" required
                             onChange={this.handleFieldChange}
                             id="rdates"
                             placeholder="Select return date"/>
                     </div>
                     <div className="form-group">
                         <label htmlFor="location">location</label>
-                        <input type="text" required="true"
+                        <input type="text" required
                             onChange={this.handleFieldChange}
                             id="location"
                             placeholder="Add location"/>
@@ -96,7 +96,7 @@ handleButtonClick = () => {
 
                     <div className="form-group">
                         <label htmlFor="rating">Rating </label>
-                                <form>
+                                <div>
                                     <label>
                                         <input type="radio" name="stars" value="1"
                                         onChange={this.handleFieldChange}/>
@@ -132,14 +132,11 @@ handleButtonClick = () => {
                                         <span className="icon">★</span>
                                         <span className="icon">★</span>
                                     </label>
-                                </form>
-
-
-
+                                </div>
                     </div>
                     <div className="form-group">
                         <label htmlFor="description">description </label>
-                        <input type="text" required="true"
+                        <input type="text" required
                             onChange={this.handleFieldChange}
                             id="description"/>
                     </div>

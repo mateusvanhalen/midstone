@@ -3,6 +3,7 @@ import React, { Component } from "react"
 
 
 
+
 export default class JournalEditForm extends Component {
 
     state = {
@@ -18,7 +19,7 @@ handleFieldChange = evt => {
 
 componentDidMount() {
     // console.log(this.state)
-    const event = this.props.journals.find(a => a.id === parseInt(this.props.match.params.eventId, 0))
+    const event = this.props.journals.find(a => a.id === parseInt(this.props.match.params.journalId, 0))
     this.setState(event);
 }
 constructNewJournal = (evt) => {
@@ -56,8 +57,8 @@ render() {
                         placeholder={this.state.journalName} />
                 </div>
                 <div className="form-group">
-                    <label htmlFor="url">updated departure </label>
-                    <input type="ddate" required="true"
+                    <label htmlFor="ddates">updated departure </label>
+                    <input type="date" required="true"
                         onChange={this.handleFieldChange}
                         id="ddate"
                         placeholder="select new departure date"/>
@@ -78,7 +79,7 @@ render() {
                     <div
                         className="form-group">
                         <label htmlFor="rating">Rating </label>
-                                <form>
+                                <div>
                                     <label>
                                         <input type="radio" name="stars" value="1" />
                                         <span className="icon">★</span>
@@ -109,7 +110,7 @@ render() {
                                         <span className="icon">★</span>
                                         <span className="icon">★</span>
                                     </label>
-                                </form>
+                                </div>
 
                             {this.handleFieldChange}
 
@@ -120,7 +121,7 @@ render() {
                             onChange={this.handleFieldChange}
                             id="description"/>
                     </div>
-                <button type="submit" onClick={this.constructNewEvent}
+                <button type="submit" onClick={this.constructNewJournal}
                 className="btn btn-primary">Submit</button>
             </div>
             </form>
