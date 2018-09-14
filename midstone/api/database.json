@@ -45,15 +45,16 @@
       "id": 4
     },
     {
-      "journalName": "madimadi",
+      "journalName": "mateus",
       "ddates": "2020-09-09",
       "rdates": "2020-09-03",
       "location": "aruba",
       "rating": "",
-      "description": "madimadi",
+      "description": "mateus",
       "userId": 1,
       "uploadedFileCloudinaryUrl": "https://res.cloudinary.com/mateusvanhalen/image/upload/v1536947898/qn3yyse0igxeafjlgmuo.jpg",
-      "id": 12
+      "id": 12,
+      "journalId": 12
     },
     {
       "journalName": "mateus",
