@@ -1,14 +1,25 @@
 import React, { Component } from "react"
+// import Dropzone from 'react-dropzone'
+// import request from 'superagent'
 
 
 
-
+const CLOUDINARY_UPLOAD_URL = 'https://api.cloudinary.com/v1_1/mateusvanhalen/upload';
+const CLOUDINARY_UPLOAD_PRESET = 'Uxpvft9i';
 
 export default class JournalEditForm extends Component {
 
     state = {
-
+        uploadedFileCloudinaryUrl: "",
     }
+
+    onImageDrop(files) {
+        this.setState({
+          uploadedFile: files[0]
+        });
+
+        this.handleImageUpload(files[0]);
+      }
 
 // update state upon edits to fields
 handleFieldChange = evt => {
@@ -48,6 +59,17 @@ constructNewJournal = (evt) => {
 render() {
     return (
         <React.Fragment>
+
+        {/* {
+            <Dropzone
+              multiple={false}
+              accept="image/*"
+              onDrop={this.onImageDrop.bind(this)}>
+              <p>Drop an image or click to select a file to upload.</p>
+            </Dropzone>
+          } */}
+
+
             <form className="journalForm">
                 <div className="form-group">
                     <label htmlFor="journalName">trip type</label>

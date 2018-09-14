@@ -75,6 +75,7 @@ class JournalList extends Component{
                 {`departed:`}  {this.formatDate(journals.ddates)}
                                 <br/>
                 {`returned:`}  {this.formatDate(journals.rdates)}
+                                <img style={{ height: 300, width: "auto" }} src={journals.uploadedFileCloudinaryUrl}></img>
                                 {/* {journals.ddates}
                                 <br/>
                                 {journals.rdates} */}

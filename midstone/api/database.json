@@ -67,15 +67,25 @@
       "id": 8
     },
     {
-      "pic": "matt",
-      "journalName": "matt",
-      "ddates": "2222-01-01",
-      "rdates": "4929-08-08",
-      "location": "africa",
+      "journalName": "madi",
+      "ddates": "2020-07-08",
+      "rdates": "2021-02-02",
+      "location": "madi",
       "rating": "",
-      "description": "matthew",
+      "description": "madi",
       "userId": 1,
-      "id": 9
+      "id": 11
+    },
+    {
+      "journalName": "madimadi",
+      "ddates": "2020-09-09",
+      "rdates": "2020-09-03",
+      "location": "aruba",
+      "rating": "",
+      "description": "madimadi",
+      "userId": 1,
+      "uploadedFileCloudinaryUrl": "https://res.cloudinary.com/mateusvanhalen/image/upload/v1536947898/qn3yyse0igxeafjlgmuo.jpg",
+      "id": 12
     }
   ],
   "checklists": [

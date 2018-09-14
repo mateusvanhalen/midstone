@@ -6,7 +6,7 @@ export default class HomePage extends Component {
 
     render() {
         let styles = {
-            // backgroundImage: <img className="utripn" src="./nav/utripn.png" alt="logo"/>utripn</img>,
+            // backgroundImage: src={utripn},
             WebkitBackgroundSize: "cover",
             MozBackgroundSize: "cover",
             OBackgroundSize: "cover",
