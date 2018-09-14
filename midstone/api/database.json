@@ -11,6 +11,12 @@
       "email": "dejan@me.com",
       "password": "hi",
       "id": 2
+    },
+    {
+      "username": "jessie",
+      "email": "jessie@me.com",
+      "password": "hi",
+      "id": 3
     }
   ],
   "journals": [
@@ -45,12 +51,12 @@
       "id": 4
     },
     {
-      "journalName": "mateus",
+      "journalName": "mateus mateus",
       "ddates": "2020-09-09",
       "rdates": "2020-09-03",
       "location": "aruba",
       "rating": "",
-      "description": "mateus",
+      "description": "yayayaya",
       "userId": 1,
       "uploadedFileCloudinaryUrl": "https://res.cloudinary.com/mateusvanhalen/image/upload/v1536947898/qn3yyse0igxeafjlgmuo.jpg",
       "id": 12,
@@ -66,6 +72,17 @@
       "userId": 1,
       "uploadedFileCloudinaryUrl": "https://res.cloudinary.com/mateusvanhalen/image/upload/v1536953037/ujs952ljpkzmqaoksyuz.jpg",
       "id": 13
+    },
+    {
+      "journalName": "beachy",
+      "ddates": "2018-08-31",
+      "rdates": "2018-09-06",
+      "location": "Fireball Maggies",
+      "rating": "",
+      "description": "day one we did this . day two we saw amy. day 3 dolphins!! ",
+      "userId": 3,
+      "uploadedFileCloudinaryUrl": "https://res.cloudinary.com/mateusvanhalen/image/upload/v1536962920/n64dy0uhtamfhnbm1eci.jpg",
+      "id": 14
     }
   ],
   "checklists": [
@@ -89,6 +106,13 @@
       "item": "jejej",
       "why": "cjcj",
       "id": 3
+    },
+    {
+      "type": "cruise",
+      "location": "stay away from bermude triangle",
+      "item": "sun block and sunscreen",
+      "why": "i got burnt the f up",
+      "id": 4
     }
   ],
   "maybes": [
@@ -100,6 +124,15 @@
       "description": "",
       "userId": 1,
       "id": 1
+    },
+    {
+      "maybeName": "cruise",
+      "dates": "2019-09-13",
+      "location": "bahama",
+      "why": "we really need to get away",
+      "description": "",
+      "userId": 3,
+      "id": 2
     }
   ],
   "cookieJar": []
