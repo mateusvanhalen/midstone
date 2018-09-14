@@ -1,13 +1,25 @@
 import React, { Component } from "react"
+// import Dropzone from 'react-dropzone'
+// import request from 'superagent'
 
 
 
+const CLOUDINARY_UPLOAD_URL = 'https://api.cloudinary.com/v1_1/mateusvanhalen/upload';
+const CLOUDINARY_UPLOAD_PRESET = 'Uxpvft9i';
 
 export default class JournalEditForm extends Component {
 
     state = {
-
+        uploadedFileCloudinaryUrl: "",
     }
+
+    onImageDrop(files) {
+        this.setState({
+          uploadedFile: files[0]
+        });
+
+        this.handleImageUpload(files[0]);
+      }
 
 // update state upon edits to fields
 handleFieldChange = evt => {
@@ -18,7 +30,7 @@ handleFieldChange = evt => {
 
 componentDidMount() {
     // console.log(this.state)
-    const event = this.props.journals.find(a => a.id === parseInt(this.props.match.params.eventId, 0))
+    const event = this.props.journals.find(a => a.id === parseInt(this.props.match.params.journalId, 0))
     this.setState(event);
 }
 constructNewJournal = (evt) => {
@@ -47,6 +59,17 @@ constructNewJournal = (evt) => {
 render() {
     return (
         <React.Fragment>
+
+        {/* {
+            <Dropzone
+              multiple={false}
+              accept="image/*"
+              onDrop={this.onImageDrop.bind(this)}>
+              <p>Drop an image or click to select a file to upload.</p>
+            </Dropzone>
+          } */}
+
+
             <form className="journalForm">
                 <div className="form-group">
                     <label htmlFor="journalName">trip type</label>
@@ -56,8 +79,8 @@ render() {
                         placeholder={this.state.journalName} />
                 </div>
                 <div className="form-group">
-                    <label htmlFor="url">updated departure </label>
-                    <input type="ddate" required="true"
+                    <label htmlFor="ddates">updated departure </label>
+                    <input type="date" required="true"
                         onChange={this.handleFieldChange}
                         id="ddate"
                         placeholder="select new departure date"/>
@@ -78,7 +101,7 @@ render() {
                     <div
                         className="form-group">
                         <label htmlFor="rating">Rating </label>
-                                <form>
+                                <div>
                                     <label>
                                         <input type="radio" name="stars" value="1" />
                                         <span className="icon">★</span>
@@ -109,7 +132,7 @@ render() {
                                         <span className="icon">★</span>
                                         <span className="icon">★</span>
                                     </label>
-                                </form>
+                                </div>
 
                             {this.handleFieldChange}
 
@@ -120,7 +143,7 @@ render() {
                             onChange={this.handleFieldChange}
                             id="description"/>
                     </div>
-                <button type="submit" onClick={this.constructNewEvent}
+                <button type="submit" onClick={this.constructNewJournal}
                 className="btn btn-primary">Submit</button>
             </div>
             </form>

@@ -86,10 +86,10 @@ export default class ApplicationViews extends Component {
     }))
 
   addCheck = checklist => DataManager.add("checklists", checklist)
-    .then(() => DataManager.getAll("checklists"))
-    .then(checklists => this.setState({
-      checklists: checklists
-    }))
+  .then(() => DataManager.getUserData("checklists"))
+  .then(checklists => this.setState({
+    checklists: checklists
+  }))
 
   componentDidMount() {
     // This if statment is for logged in users only. ALSO REMEMBER to pass in as many items as you listed to pass in for each DataManger :)
@@ -117,7 +117,7 @@ export default class ApplicationViews extends Component {
                   newState.journals = allJournals
                 })
                 .then(() => {
-                  DataManager.getAll("checklists")
+                  DataManager.getAll("checklists", activeUser.id)
                     .then(allChecklists => {
                       newState.checklists = allChecklists
                 })
@@ -209,7 +209,7 @@ export default class ApplicationViews extends Component {
           if (this.isAuthenticated()) {
             return <CheckList {...props}
               deleteCheck={this.deleteCheck}
-              checks={this.state.checks} />
+              checklists={this.state.checklists} />
           } else {
             return <Redirect to="/" />
           }

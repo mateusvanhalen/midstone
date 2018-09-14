@@ -15,16 +15,6 @@
   ],
   "journals": [
     {
-      "journalName": "matt",
-      "ddates": "2018-09-13",
-      "rdates": "2018-09-21",
-      "location": "asdf",
-      "rating": "",
-      "description": "fff",
-      "userId": 1,
-      "id": 1
-    },
-    {
       "journalName": "dejan only",
       "ddates": "",
       "rdates": "",
@@ -55,26 +45,26 @@
       "id": 4
     },
     {
-      "pic": "www.google.com",
-      "journalName": "wave",
-      "ddates": "2018-09-25",
-      "rdates": "2018-09-30",
+      "journalName": "madimadi",
+      "ddates": "2020-09-09",
+      "rdates": "2020-09-03",
       "location": "aruba",
       "rating": "",
-      "description": "get away",
+      "description": "madimadi",
       "userId": 1,
-      "id": 5
+      "uploadedFileCloudinaryUrl": "https://res.cloudinary.com/mateusvanhalen/image/upload/v1536947898/qn3yyse0igxeafjlgmuo.jpg",
+      "id": 12
     },
     {
-      "pic": "asdf",
-      "journalName": "asdf",
-      "ddates": "2018-09-20",
-      "rdates": "2018-09-21",
-      "location": "asdf",
+      "journalName": "mateus",
+      "ddates": "2020-09-10",
+      "rdates": "2020-10-31",
+      "location": "nashvegas",
       "rating": "",
-      "description": "asdf",
+      "description": "cha ching",
       "userId": 1,
-      "id": 6
+      "uploadedFileCloudinaryUrl": "https://res.cloudinary.com/mateusvanhalen/image/upload/v1536953037/ujs952ljpkzmqaoksyuz.jpg",
+      "id": 13
     }
   ],
   "checklists": [
@@ -84,6 +74,20 @@
       "item": "",
       "why": "asdf",
       "id": 1
+    },
+    {
+      "type": "asfd",
+      "location": "fda",
+      "item": "asdf",
+      "why": "fda",
+      "id": 2
+    },
+    {
+      "type": "jfjfj",
+      "location": "ieiei",
+      "item": "jejej",
+      "why": "cjcj",
+      "id": 3
     }
   ],
   "maybes": [

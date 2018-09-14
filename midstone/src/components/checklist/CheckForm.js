@@ -17,18 +17,18 @@ export default class CheckForm extends Component {
     }
     constructNewCheck = evt => {
         evt.preventDefault()
-        if (this.state.type === "" || this.state.location === "" || this.state.item === "" || this.state.why === "" ) {
-            window.alert("Oops you missed something" )
+        if (this.state.type === ""|| this.state.location === ""|| this.state.item === ""|| this.state.why === "") {
+        window.alert("Oops.. you missed something" )
         }
 
         else {
-            const check = {
+            const checklists = {
                 type:this.state.type,
                 location: this.state.location,
                 item: this.state.item,
-                why:this.state.why,
+                why: this.state.why,
             }
-            this.props.addCheck(check).then(() => this.props.history.push("/checklists"))
+            this.props.addCheck(checklists).then(() => this.props.history.push("/checklists"))
         }
     }
 //this takes you back after you click to journalSubmit
@@ -44,7 +44,7 @@ render() {
                     <label htmlFor="type">add a type of trip</label>
                     <input type="text" required="true"
                         onChange={this.handleFieldChange}
-                        id="enter type of trip"/>
+                        id="type"/>
                 </div>
                 <div className="form-group">
                     <label htmlFor="location">where at</label>

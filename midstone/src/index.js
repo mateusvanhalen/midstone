@@ -8,7 +8,7 @@ import registerServiceWorker from './registerServiceWorker';
 ReactDOM.render(
 
     <Router>
-    <Midstone />
+        <Midstone />
     </Router>
 
     ,document.getElementById('root'));
