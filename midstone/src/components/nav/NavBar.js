@@ -17,7 +17,7 @@ class NavBar extends Component {
 
                 <nav className="sidebar">
                     <div className="sidebar-header">
-                        <h3> Utripn</h3>
+                        <h4> Utripn</h4>
                     </div>
                     <ul className="list-unstyled components">
                         <p>Here are your bags</p>

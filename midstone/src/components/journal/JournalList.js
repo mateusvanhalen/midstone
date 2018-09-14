@@ -7,47 +7,41 @@ class JournalList extends Component{
 
 
 
-// const newDate = new Date("2018-9-30");
-
-// console.log(newDate);
-// console.log(newDate.getFullYear(), newDate.getDate(), newDate.getMonth());
 
 
 
 
-    formatDate = journalDate => {
-        let rdates = new Date(journalDate)
-        var monthNames = [
-          "January", "February", "March",
-          "April", "May", "June", "July",
-          "August", "September", "October",
-          "November", "December"
-        ];
 
-        var day = rdates.getDate();
-        var monthIndex = rdates.getFullMonth();
-        var year = rdates.getYear();
 
-        return day + ' ' + monthNames[monthIndex] + ' ' + year;
-        // return monthIndex+ '/' +day+ '/'+year;
-      }
 
       formatDate = journalDate => {
         let ddates = new Date(journalDate)
-        var monthNames = [
+        let dayNumbers = [
+            "1" , "2", "3", "4", "5", "6", "7", "8,", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31"
+        ]
+        let monthNames = [
           "January", "February", "March",
           "April", "May", "June", "July",
           "August", "September", "October",
           "November", "December"
         ];
 
-        var day = ddates.getDate();
-        var monthIndex = ddates.getMonth();
-        var year = ddates.getFullYear();
+        let day = ddates.getDate();
+        let monthIndex = ddates.getMonth();
+        let year = ddates.getFullYear();
 
-        return monthNames[monthIndex] + day  + ' ' + year;
+
+        const newDate = new Date("2018-9-30");
+
+        console.log(newDate);
+        console.log(newDate.getFullYear(), newDate.getDate(), newDate.getMonth());
+
+
+        return monthNames[monthIndex] + dayNumbers[day]  + ' ' + year;
         // return monthIndex+ '/' +day+ '/'+year;
       }
+
+
 
     handleButtonClick = () => {
         document.location.href = 'http://localhost:3000/journals'

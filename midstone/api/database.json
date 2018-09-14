@@ -56,27 +56,6 @@
       "id": 5
     },
     {
-      "pic": "n/a",
-      "journalName": "safari",
-      "ddates": "2018-09-30",
-      "rdates": "2018-10-01",
-      "location": "africa",
-      "rating": "",
-      "description": "brenda",
-      "userId": 1,
-      "id": 8
-    },
-    {
-      "journalName": "madi",
-      "ddates": "2020-07-08",
-      "rdates": "2021-02-02",
-      "location": "madi",
-      "rating": "",
-      "description": "madi",
-      "userId": 1,
-      "id": 11
-    },
-    {
       "journalName": "madimadi",
       "ddates": "2020-09-09",
       "rdates": "2020-09-03",
@@ -86,6 +65,17 @@
       "userId": 1,
       "uploadedFileCloudinaryUrl": "https://res.cloudinary.com/mateusvanhalen/image/upload/v1536947898/qn3yyse0igxeafjlgmuo.jpg",
       "id": 12
+    },
+    {
+      "journalName": "mateus",
+      "ddates": "2020-09-10",
+      "rdates": "2020-10-31",
+      "location": "nashvegas",
+      "rating": "",
+      "description": "cha ching",
+      "userId": 1,
+      "uploadedFileCloudinaryUrl": "https://res.cloudinary.com/mateusvanhalen/image/upload/v1536953037/ujs952ljpkzmqaoksyuz.jpg",
+      "id": 13
     }
   ],
   "checklists": [
