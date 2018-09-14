@@ -5,15 +5,6 @@ import './Journal.css'
 class JournalList extends Component{
 //see here to format dates to something that doesnt look like cat poop
 
-
-
-
-
-
-
-
-
-
       formatDate = journalDate => {
         let ddates = new Date(journalDate)
         let dayNumbers = [
@@ -30,15 +21,9 @@ class JournalList extends Component{
         let monthIndex = ddates.getMonth();
         let year = ddates.getFullYear();
 
-
-        const newDate = new Date("2018-9-30");
-
-        console.log(newDate);
-        console.log(newDate.getFullYear(), newDate.getDate(), newDate.getMonth());
-
-
-        return monthNames[monthIndex] + dayNumbers[day]  + ' ' + year;
+        return monthNames[monthIndex]+' ' + dayNumbers[day]  + ', ' + year;
         // return monthIndex+ '/' +day+ '/'+year;
+        //FYI with this commeneted out line, i was getting -1 day and -1 month. Using the array next to variable, i was able to get correct format :)
       }
 
 

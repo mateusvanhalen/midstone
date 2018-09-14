@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import './HomePage.css'
-// import utripn from './nav/utripn'
+import utripn from './utripn.png'
 
 export default class HomePage extends Component {
 
