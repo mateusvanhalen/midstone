@@ -21,36 +21,6 @@
   ],
   "journals": [
     {
-      "journalName": "dejan only",
-      "ddates": "",
-      "rdates": "",
-      "location": "away",
-      "rating": "",
-      "description": "bye",
-      "userId": 2,
-      "id": 2
-    },
-    {
-      "journalName": "dejan 2",
-      "ddates": "",
-      "rdates": "0083-08-29",
-      "location": "away",
-      "rating": "",
-      "description": "dejan",
-      "userId": 2,
-      "id": 3
-    },
-    {
-      "journalName": "fefeef",
-      "ddates": "",
-      "rdates": "",
-      "location": "asdf",
-      "rating": "",
-      "description": "dddd",
-      "userId": 2,
-      "id": 4
-    },
-    {
       "journalName": "mateus mateus",
       "ddates": "2020-09-09",
       "rdates": "2020-09-03",
@@ -83,6 +53,17 @@
       "userId": 3,
       "uploadedFileCloudinaryUrl": "https://res.cloudinary.com/mateusvanhalen/image/upload/v1536962920/n64dy0uhtamfhnbm1eci.jpg",
       "id": 14
+    },
+    {
+      "journalName": "summer fun",
+      "ddates": "2018-06-15",
+      "rdates": "2018-06-20",
+      "location": "las vegas",
+      "rating": "",
+      "description": "lost all my money",
+      "userId": 1,
+      "uploadedFileCloudinaryUrl": "",
+      "id": 15
     }
   ],
   "checklists": [

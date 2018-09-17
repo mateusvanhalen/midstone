@@ -1,12 +1,13 @@
 import React, { Component } from 'react'
 import './HomePage.css'
-import utripn from './utripn.png'
+// import utripn from './nav/utripn.png'
 
 export default class HomePage extends Component {
 
     render() {
         let styles = {
             // backgroundImage: src={utripn},
+
             WebkitBackgroundSize: "cover",
             MozBackgroundSize: "cover",
             OBackgroundSize: "cover",
@@ -24,6 +25,7 @@ export default class HomePage extends Component {
                             }>Login</button>
                     </div>
                     <div className="registerButton">
+                    {/* <img src={utripn} alt="" className="utripn" /> */}
                         <button type="button"
                             className="btn btn-success"
                             onClick={() => {
