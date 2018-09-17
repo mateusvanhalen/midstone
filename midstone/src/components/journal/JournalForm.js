@@ -5,7 +5,6 @@ import request from 'superagent';
 
 const CLOUDINARY_UPLOAD_URL = 'https://api.cloudinary.com/v1_1/mateusvanhalen/upload';
 const CLOUDINARY_UPLOAD_PRESET = 'Uxpvft9i';
-
 export default class JournalForm extends Component {
 
     // Set initial state
@@ -52,11 +51,16 @@ export default class JournalForm extends Component {
         stateToChange[evt.target.id] = evt.target.value
         this.setState(stateToChange)
     }
+
+    componentDidMount() {
+        // console.log(this.state)
+        const event = this.props.journals.find(a => a.id === parseInt(this.props.match.params.journalId, 0))
+        this.setState(event);
     /*
         Local method for validation, creating event object, and
         invoking the function reference passed from parent component
      */
-
+    }
     //setting default input conditions - throwing alert.   MIND THE BANG!
     constructNewJournal = evt => {
         evt.preventDefault()
@@ -81,7 +85,6 @@ export default class JournalForm extends Component {
             this.props.addJournal(journal).then(() => this.props.history.push("/journals"))
         }
     }
-
     //this takes you back after you click to journalSubmit
     handleButtonClick = () => {
         document.location.href = 'http://localhost:3000/journals'
@@ -139,10 +142,36 @@ export default class JournalForm extends Component {
                             placeholder="Add location" />
                     </div>
 
-                    <div className="form-group">
+                    <div className="dd-wrapper">
                         <label htmlFor="rating">Rating </label>
+                        <button className="btn btn-info dropdown-toggle" data-toggle="dropdown">Article</button>
+                        <ul className="dd-list">
+                            <li></li>
+                        </ul>
 
+
+
+
+
+
+
+                        {/* <DropdownButton
+                            bsStyle={title.toLowerCase()}
+                            title={title}
+                            key={i}
+                            id={`dropdown-basic-${i}`}
+                    >
+                        <MenuItem eventKey="1">Action</MenuItem>
+                        <MenuItem eventKey="2">Another action</MenuItem>
+                        <MenuItem eventKey="3" active>
+                            Active Item
+      </MenuItem>
+                        <MenuItem divider />
+                        <MenuItem eventKey="4">Separated link</MenuItem>
+                    </DropdownButton> */}
                     </div>
+
+
                     <div className="form-group">
                         <label htmlFor="description">description </label>
                         <input type="text" required

@@ -55,15 +55,16 @@
       "id": 14
     },
     {
-      "journalName": "summer fun",
-      "ddates": "2018-06-15",
-      "rdates": "2018-06-20",
-      "location": "las vegas",
+      "journalName": "winter fun",
+      "ddates": "2018-01-02",
+      "rdates": "2018-02-04",
+      "location": "mattville",
       "rating": "",
-      "description": "lost all my money",
+      "description": "fun times but cold",
       "userId": 1,
-      "uploadedFileCloudinaryUrl": "",
-      "id": 15
+      "uploadedFileCloudinaryUrl": "https://res.cloudinary.com/mateusvanhalen/image/upload/v1537210460/o4jxvbeeelsdxramaz1i.jpg",
+      "id": 15,
+      "journalId": 15
     }
   ],
   "checklists": [
