@@ -32,10 +32,11 @@ export default Object.create(null, {
                 .then(result => result.json())
         }
     },
+//working on grabbing by id only and sorting ascending
 
     getUserData: {
-        value: (resource, userId) => {
-            return fetch(`${remoteURL}/${resource}?userId=${userId}`)
+        value: (resource, userId) => {console.log(userId)
+            return fetch(`${remoteURL}/${resource}?userId=${userId}&_sort=ddates&_order=asc`)
                 .then(result => result.json())
         }
     },

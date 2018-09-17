@@ -1,7 +1,6 @@
 import React, { Component } from "react"
-// import Dropzone from 'react-dropzone'
-// import request from 'superagent'
-
+import Dropzone from 'react-dropzone'
+import request from 'superagent'
 
 
 const CLOUDINARY_UPLOAD_URL = 'https://api.cloudinary.com/v1_1/mateusvanhalen/upload';
@@ -21,6 +20,23 @@ export default class JournalEditForm extends Component {
         this.handleImageUpload(files[0]);
       }
 
+      handleImageUpload(file) {
+        let upload = request.post(CLOUDINARY_UPLOAD_URL)
+            .field('upload_preset', CLOUDINARY_UPLOAD_PRESET)
+            .field('file', file);
+
+        upload.end((err, response) => {
+            if (err) {
+                console.error(err);
+            }
+
+            if (response.body.secure_url !== '') {
+                this.setState({
+                    uploadedFileCloudinaryUrl: response.body.secure_url
+                });
+            }
+        });
+    }
 // update state upon edits to fields
 handleFieldChange = evt => {
     const stateToChange = {}
@@ -41,9 +57,11 @@ constructNewJournal = (evt) => {
         journalId: this.props.journals.find(e => e.name === this.state.event).id,
         ddates: this.state.ddates,
         rdates:this.state.rdates,
+        location: this.state.location,
         id: this.state.id,
         description: this.state.description,
         rating: this.state.rating,
+        uploadedFileCloudinaryUrl: this.state.uploadedFileCloudinaryUrl,
 
     }
 
@@ -51,6 +69,11 @@ constructNewJournal = (evt) => {
     .then(()=>{
         this.props.history.push(`/journals/${this.props.match.params.journalId}`)
     })
+
+}
+
+handleButtonClick = () => {
+    document.location.href = 'http://localhost:3000/journals'
 }
 
 // in this form be sure to add existing STATE INFO in PLACEHOLDER. >
@@ -60,20 +83,21 @@ render() {
     return (
         <React.Fragment>
 
-        {/* {
+
             <Dropzone
               multiple={false}
               accept="image/*"
               onDrop={this.onImageDrop.bind(this)}>
               <p>Drop an image or click to select a file to upload.</p>
+
             </Dropzone>
-          } */}
+
 
 
             <form className="journalForm">
                 <div className="form-group">
                     <label htmlFor="journalName">trip type</label>
-                    <input type="text" required="true"
+                    <input type="text"
                         onChange={this.handleFieldChange}
                         id="journalName"
                         placeholder={this.state.journalName} />
@@ -82,14 +106,14 @@ render() {
                     <label htmlFor="ddates">updated departure </label>
                     <input type="date" required="true"
                         onChange={this.handleFieldChange}
-                        id="ddate"
+                        id="ddates"
                         placeholder="select new departure date"/>
                 </div>
                 <div className="form-group">
                     <label htmlFor="rdates">updated return</label>
                     <input type="date" required="true"
                         onChange={this.handleFieldChange}
-                        id="rdate"
+                        id="rdates"
                         placeholder="select new return date"/>
                 </div>
                 <div className="form-group">
@@ -98,45 +122,7 @@ render() {
                          onChange={this.handleFieldChange}
                          id="location"
                          placeholder={this.state.location}/>
-                    <div
-                        className="form-group">
-                        <label htmlFor="rating">Rating </label>
-                                <div>
-                                    <label>
-                                        <input type="radio" name="stars" value="1" />
-                                        <span className="icon">★</span>
-                                    </label>
-                                    <label>
-                                        <input type="radio" name="stars" value="2" />
-                                        <span className="icon">★</span>
-                                        <span className="icon">★</span>
-                                    </label>
-                                    <label>
-                                        <input type="radio" name="stars" value="3" />
-                                        <span className="icon">★</span>
-                                        <span className="icon">★</span>
-                                        <span className="icon">★</span>
-                                    </label>
-                                    <label>
-                                        <input type="radio" name="stars" value="4" />
-                                        <span className="icon">★</span>
-                                        <span className="icon">★</span>
-                                        <span className="icon">★</span>
-                                        <span className="icon">★</span>
-                                    </label>
-                                    <label>
-                                        <input type="radio" name="stars" value="5" />
-                                        <span className="icon">★</span>
-                                        <span className="icon">★</span>
-                                        <span className="icon">★</span>
-                                        <span className="icon">★</span>
-                                        <span className="icon">★</span>
-                                    </label>
-                                </div>
 
-                            {this.handleFieldChange}
-
-                </div>
                 <div className="form-group">
                         <label htmlFor="description">new description </label>
                         <input type="text" required="true"
