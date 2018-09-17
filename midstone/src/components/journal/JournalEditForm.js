@@ -97,7 +97,7 @@ render() {
             <form className="journalForm">
                 <div className="form-group">
                     <label htmlFor="journalName">trip type</label>
-                    <input type="text" required="true"
+                    <input type="text"
                         onChange={this.handleFieldChange}
                         id="journalName"
                         placeholder={this.state.journalName} />

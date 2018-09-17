@@ -52,15 +52,7 @@ export default class JournalForm extends Component {
         this.setState(stateToChange)
     }
 
-    componentDidMount() {
-        // console.log(this.state)
-        const event = this.props.journals.find(a => a.id === parseInt(this.props.match.params.journalId, 0))
-        this.setState(event);
-    /*
-        Local method for validation, creating event object, and
-        invoking the function reference passed from parent component
-     */
-    }
+
     //setting default input conditions - throwing alert.   MIND THE BANG!
     constructNewJournal = evt => {
         evt.preventDefault()

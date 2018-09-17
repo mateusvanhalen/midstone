@@ -55,16 +55,92 @@
       "id": 14
     },
     {
-      "journalName": "winter fun",
-      "ddates": "2018-01-02",
-      "rdates": "2018-02-04",
-      "location": "mattville",
+      "journalName": "school",
+      "ddates": "2018-04-04",
+      "rdates": "2018-04-05",
+      "location": "woodycrest",
       "rating": "",
-      "description": "fun times but cold",
+      "description": "fun",
       "userId": 1,
-      "uploadedFileCloudinaryUrl": "https://res.cloudinary.com/mateusvanhalen/image/upload/v1537210460/o4jxvbeeelsdxramaz1i.jpg",
-      "id": 15,
-      "journalId": 15
+      "uploadedFileCloudinaryUrl": "https://res.cloudinary.com/mateusvanhalen/image/upload/v1537211436/asvqrxuwcbctxuqr26os.jpg",
+      "id": 16
+    },
+    {
+      "journalName": "arrow function",
+      "ddates": "2020-09-20",
+      "rdates": "2020-09-21",
+      "location": "pluto",
+      "rating": "",
+      "description": "fun",
+      "userId": 1,
+      "uploadedFileCloudinaryUrl": "https://res.cloudinary.com/mateusvanhalen/image/upload/v1537212347/ydqtqlavziuhavtjoptl.png",
+      "id": 17
+    },
+    {
+      "journalName": "bahama",
+      "ddates": "2018-09-14",
+      "rdates": "2018-09-22",
+      "location": "bahama",
+      "rating": "",
+      "description": "bahama",
+      "userId": 1,
+      "uploadedFileCloudinaryUrl": "https://res.cloudinary.com/mateusvanhalen/image/upload/v1537212943/obyfukqc6trmuiqyanec.png",
+      "id": 18
+    },
+    {
+      "journalName": "asdf",
+      "ddates": "2018-09-20",
+      "rdates": "2018-09-25",
+      "location": "beach",
+      "rating": "",
+      "description": "beachy",
+      "userId": 1,
+      "uploadedFileCloudinaryUrl": "",
+      "id": 19
+    },
+    {
+      "journalName": "autumn",
+      "ddates": "2018-09-26",
+      "rdates": "2018-09-28",
+      "location": "outside",
+      "rating": "",
+      "description": "chilly",
+      "userId": 1,
+      "uploadedFileCloudinaryUrl": "",
+      "id": 21
+    },
+    {
+      "journalName": "does it work?",
+      "ddates": "2018-09-27",
+      "rdates": "2018-09-28",
+      "location": "yes?",
+      "rating": "",
+      "description": "hopefully",
+      "userId": 1,
+      "uploadedFileCloudinaryUrl": "",
+      "id": 22
+    },
+    {
+      "journalName": "did it work",
+      "ddates": "2018-09-27",
+      "rdates": "2018-09-28",
+      "location": "yes",
+      "rating": "",
+      "description": "please",
+      "userId": 1,
+      "uploadedFileCloudinaryUrl": "",
+      "id": 23
+    },
+    {
+      "journalName": "add one more",
+      "ddates": "2018-09-04",
+      "rdates": "2018-09-05",
+      "location": "add one more",
+      "rating": "",
+      "description": "one more",
+      "userId": 1,
+      "uploadedFileCloudinaryUrl": "",
+      "id": 24
     }
   ],
   "checklists": [

@@ -34,7 +34,7 @@ class MaybeList extends Component {
                                     </h5>
                                 <button
                                     onClick={() => this.props.deleteMaybe(maybes.id)}
-                                    className="nav-link-quit">Delete maybe entry</button>
+                                    className="nav-link-quit">I've changed my mind </button>
                             <h4 className="card-tile">{maybes.maybeName}
                                 </h4>
                         </div>

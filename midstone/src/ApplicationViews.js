@@ -28,8 +28,10 @@ export default class ApplicationViews extends Component {
     journals: [],
     maybes: [],
     checklists: [],
+    activeUser: JSON.parse(localStorage.getItem("credentials")),
+    isLoaded: false,
     user: [],
-    isLoaded: false
+
   }
 
   addUser = users => DataManager.add("users", users)
@@ -50,35 +52,35 @@ export default class ApplicationViews extends Component {
     }))
 
   addJournal = journal => DataManager.add("journals", journal)
-    .then(() => DataManager.getUserData("journals"))
+    .then(() => DataManager.getUserData("journals", this.state.activeUser.id))
     .then(journals => this.setState({
       journals: journals
     }))
-
+// this.state.activeUser.id Will re-render the content after update so you do not have to refresh page. getUserData had no instruction
   deleteJournal = id => DataManager.delete("journals", id)
-    .then(() => DataManager.getUserData("journals"))
+    .then(() => DataManager.getUserData("journals", this.state.activeUser.id))
     .then(journals => this.setState({
       journals: journals
     }))
 
   editJournal = (id, journals) => DataManager.edit("journals", id, journals)
-    .then(() => DataManager.getUserData("journals"))
+    .then(() => DataManager.getUserData("journals", this.state.activeUser.id))
     .then(journals => this.setState({
       journals: journals
     }))
 
   addMaybe = maybe => DataManager.add("maybes", maybe)
-    .then(() => DataManager.getUserData("maybes"))
+    .then(() => DataManager.getUserData("maybes", this.state.activeUser.id))
     .then(maybes => this.setState({
       maybes: maybes
     }))
 
   deleteMaybe = id => DataManager.delete("maybes", id)
-    .then(() => DataManager.getUserData("maybes"))
+    .then(() => DataManager.getUserData("maybes", this.state.activeUser.id))
     .then(maybes => this.setState({
       maybes: maybes
     }))
-
+//rid ?
   editMaybe = (id, maybes) => DataManager.edit("maybes", id, maybes)
     .then(() => DataManager.getUserData("maybes"))
     .then(maybes => this.setState({
