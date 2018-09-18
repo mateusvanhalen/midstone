@@ -55,15 +55,16 @@
       "id": 14
     },
     {
-      "journalName": "school",
-      "ddates": "2018-04-04",
-      "rdates": "2018-04-05",
+      "journalName": "skewl",
+      "ddates": "2018-09-02",
+      "rdates": "2018-09-03",
       "location": "woodycrest",
       "rating": "",
-      "description": "fun",
+      "description": "party like a rockstar",
       "userId": 1,
       "uploadedFileCloudinaryUrl": "https://res.cloudinary.com/mateusvanhalen/image/upload/v1537211436/asvqrxuwcbctxuqr26os.jpg",
-      "id": 16
+      "id": 16,
+      "journalId": 16
     },
     {
       "journalName": "arrow function",
@@ -88,39 +89,6 @@
       "id": 18
     },
     {
-      "journalName": "asdf",
-      "ddates": "2018-09-20",
-      "rdates": "2018-09-25",
-      "location": "beach",
-      "rating": "",
-      "description": "beachy",
-      "userId": 1,
-      "uploadedFileCloudinaryUrl": "",
-      "id": 19
-    },
-    {
-      "journalName": "autumn",
-      "ddates": "2018-09-26",
-      "rdates": "2018-09-28",
-      "location": "outside",
-      "rating": "",
-      "description": "chilly",
-      "userId": 1,
-      "uploadedFileCloudinaryUrl": "",
-      "id": 21
-    },
-    {
-      "journalName": "does it work?",
-      "ddates": "2018-09-27",
-      "rdates": "2018-09-28",
-      "location": "yes?",
-      "rating": "",
-      "description": "hopefully",
-      "userId": 1,
-      "uploadedFileCloudinaryUrl": "",
-      "id": 22
-    },
-    {
       "journalName": "did it work",
       "ddates": "2018-09-27",
       "rdates": "2018-09-28",
@@ -130,17 +98,6 @@
       "userId": 1,
       "uploadedFileCloudinaryUrl": "",
       "id": 23
-    },
-    {
-      "journalName": "add one more",
-      "ddates": "2018-09-04",
-      "rdates": "2018-09-05",
-      "location": "add one more",
-      "rating": "",
-      "description": "one more",
-      "userId": 1,
-      "uploadedFileCloudinaryUrl": "",
-      "id": 24
     }
   ],
   "checklists": [

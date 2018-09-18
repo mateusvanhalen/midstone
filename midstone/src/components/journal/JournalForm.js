@@ -8,6 +8,7 @@ const CLOUDINARY_UPLOAD_PRESET = 'Uxpvft9i';
 export default class JournalForm extends Component {
 
     // Set initial state
+
     state = {
         journalName: "",
         ddates: "",
@@ -17,7 +18,10 @@ export default class JournalForm extends Component {
         description: "",
         userId: "",
         uploadedFileCloudinaryUrl: "",
+
     }
+
+
 
     onImageDrop(files) {
         this.setState({
@@ -126,6 +130,7 @@ export default class JournalForm extends Component {
                             id="rdates"
                             placeholder="Select return date" />
                     </div>
+
                     <div className="form-group">
                         <label htmlFor="location">location</label>
                         <input type="text" required
