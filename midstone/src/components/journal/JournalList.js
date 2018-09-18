@@ -36,6 +36,7 @@ class JournalList extends Component{
                         }>
                     Log a new trip
                 </button>
+                <br/>
             </div>
             <section className="journals">
             {
@@ -50,8 +51,8 @@ class JournalList extends Component{
                                 {/* {journals.ddates}
                                 <br/>
                                 {journals.rdates} */}
-
-                                    <Link className="nav-link" to={`/journals/${journals.id}`}>Details</Link>
+                                    <br/>
+                                    <Link className="btn btn-info" to={`/journals/${journals.id}`}>Details</Link>
                                     </h5>
                                     <img src={journals.uploadedFileCloudinaryUrl} style={{height: "300px", width: "auto" }}/>
                             <h4 className="card-tile">{journals.journalName}

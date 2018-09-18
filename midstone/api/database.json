@@ -21,29 +21,6 @@
   ],
   "journals": [
     {
-      "journalName": "mateus mateus",
-      "ddates": "2020-09-09",
-      "rdates": "2020-09-03",
-      "location": "aruba",
-      "rating": "",
-      "description": "yayayaya",
-      "userId": 1,
-      "uploadedFileCloudinaryUrl": "https://res.cloudinary.com/mateusvanhalen/image/upload/v1536947898/qn3yyse0igxeafjlgmuo.jpg",
-      "id": 12,
-      "journalId": 12
-    },
-    {
-      "journalName": "mateus",
-      "ddates": "2020-09-10",
-      "rdates": "2020-10-31",
-      "location": "nashvegas",
-      "rating": "",
-      "description": "cha ching",
-      "userId": 1,
-      "uploadedFileCloudinaryUrl": "https://res.cloudinary.com/mateusvanhalen/image/upload/v1536953037/ujs952ljpkzmqaoksyuz.jpg",
-      "id": 13
-    },
-    {
       "journalName": "beachy",
       "ddates": "2018-08-31",
       "rdates": "2018-09-06",
@@ -55,99 +32,72 @@
       "id": 14
     },
     {
-      "journalName": "skewl",
-      "ddates": "2018-09-02",
-      "rdates": "2018-09-03",
-      "location": "woodycrest",
+      "journalName": "Take a trip to the backyard pool!",
+      "ddates": "2018-05-05",
+      "rdates": "2018-11-01",
+      "location": "FBM",
       "rating": "",
-      "description": "party like a rockstar",
+      "description": "BYOB, bring yo firends, bring yo wife",
       "userId": 1,
-      "uploadedFileCloudinaryUrl": "https://res.cloudinary.com/mateusvanhalen/image/upload/v1537211436/asvqrxuwcbctxuqr26os.jpg",
-      "id": 16,
-      "journalId": 16
+      "uploadedFileCloudinaryUrl": "https://res.cloudinary.com/mateusvanhalen/image/upload/v1537284954/vwwmiloqssd1fteou8w4.jpg",
+      "id": 15
     },
     {
-      "journalName": "arrow function",
-      "ddates": "2020-09-20",
-      "rdates": "2020-09-21",
-      "location": "pluto",
+      "journalName": "staycation",
+      "ddates": "2018-08-15",
+      "rdates": "2018-08-23",
+      "location": "Nashvegas",
       "rating": "",
-      "description": "fun",
+      "description": "stayed in and didnt leave town. Very refreshing!",
       "userId": 1,
-      "uploadedFileCloudinaryUrl": "https://res.cloudinary.com/mateusvanhalen/image/upload/v1537212347/ydqtqlavziuhavtjoptl.png",
-      "id": 17
-    },
-    {
-      "journalName": "bahama",
-      "ddates": "2018-09-14",
-      "rdates": "2018-09-22",
-      "location": "bahama",
-      "rating": "",
-      "description": "bahama",
-      "userId": 1,
-      "uploadedFileCloudinaryUrl": "https://res.cloudinary.com/mateusvanhalen/image/upload/v1537212943/obyfukqc6trmuiqyanec.png",
-      "id": 18
-    },
-    {
-      "journalName": "did it work",
-      "ddates": "2018-09-27",
-      "rdates": "2018-09-28",
-      "location": "yes",
-      "rating": "",
-      "description": "please",
-      "userId": 1,
-      "uploadedFileCloudinaryUrl": "",
-      "id": 23
+      "uploadedFileCloudinaryUrl": "https://res.cloudinary.com/mateusvanhalen/image/upload/v1537285321/zfh6fj5zlvqn4bkyeln3.jpg",
+      "id": 16
     }
   ],
   "checklists": [
-    {
-      "type": "",
-      "location": "",
-      "item": "",
-      "why": "asdf",
-      "id": 1
-    },
-    {
-      "type": "asfd",
-      "location": "fda",
-      "item": "asdf",
-      "why": "fda",
-      "id": 2
-    },
-    {
-      "type": "jfjfj",
-      "location": "ieiei",
-      "item": "jejej",
-      "why": "cjcj",
-      "id": 3
-    },
     {
       "type": "cruise",
       "location": "stay away from bermude triangle",
       "item": "sun block and sunscreen",
       "why": "i got burnt the f up",
       "id": 4
+    },
+    {
+      "type": "rock climbing trip",
+      "location": "the center of the world",
+      "item": "bring a comb, toothbrush and floss. The floss can help you if your rope breaks",
+      "why": "floss comes in handy for securing your bags and shoes",
+      "id": 5
     }
   ],
   "maybes": [
     {
-      "maybeName": "get away",
-      "dates": "2018-09-09",
-      "location": "aruba",
-      "why": "its getting cold here",
-      "description": "",
+      "maybeName": "beach trip",
+      "dates": "2018-10-31",
+      "location": "Maui",
+      "why": "Get the hell out of dodge",
+      "description": "I want to lay on the beach, drink lots of Mai Tai's and listen to the waves accompany a ukulele",
       "userId": 1,
-      "id": 1
+      "id": 3
     },
     {
-      "maybeName": "cruise",
-      "dates": "2019-09-13",
-      "location": "bahama",
-      "why": "we really need to get away",
-      "description": "",
+      "maybeName": "Cruise",
+      "dates": "2019-02-03",
+      "location": "Mexico",
+      "why": "Always wanted to take a cruise down Mexico way",
+      "description": "relax, drink Carona, party like a rockstar",
       "userId": 3,
-      "id": 2
+      "id": 5
+    },
+    {
+      "maybeName": "getaway",
+      "dates": "2019-05-08",
+      "location": "Mexico",
+      "why": "i will need a getaway",
+      "description": "relax and drink mai tai's under the palm trees",
+      "userId": 3,
+      "video": "https://www.youtube.com/watch?v=C4nyAfB3ILo",
+      "id": 6
     }
   ],
   "cookieJar": []

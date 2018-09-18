@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import { Link } from "react-router-dom"
 import '../journal/Journal.css'
 
 export class CheckList extends Component{
@@ -36,11 +35,11 @@ export class CheckList extends Component{
 
 
 
-                                    <Link className="nav-link" to={`/checklists/${checklists.id}`}>Details</Link>
+
                                     </h5>
                                 <button
                                     onClick={() => this.props.deleteCheck(checklists.id)}
-                                    className="nav-link-quit">Delete journal entry</button>
+                                    className="nav-link-quit">Delete this checklist</button>
                             <h4 className="card-tile">{checklists.checklName}
                                 </h4>
                         </div>

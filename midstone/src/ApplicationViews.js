@@ -93,6 +93,12 @@ export default class ApplicationViews extends Component {
     checklists: checklists
   }))
 
+  deleteCheck = id => DataManager.delete("checklists", id)
+    .then(() => DataManager.getUserData("checklists", this.state.activeUser.id))
+    .then(checklists => this.setState({
+      checklists: checklists
+    }))
+
   componentDidMount() {
     // This if statment is for logged in users only. ALSO REMEMBER to pass in as many items as you listed to pass in for each DataManger :)
 
@@ -193,7 +199,7 @@ export default class ApplicationViews extends Component {
             return <Redirect to="/" />
           }
         }} />
-        < Route exact path="/maybes/:journalId(\d+)" render={(props) => {
+        < Route exact path="/maybes/:maybeId(\d+)" render={(props) => {
           if (this.isAuthenticated()) {
             return <MaybeDetail {...props} deleteMaybe={this.deleteMaybe} maybes={this.state.maybes} />
           } else {
