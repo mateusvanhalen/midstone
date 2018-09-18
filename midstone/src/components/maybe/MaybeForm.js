@@ -98,7 +98,7 @@ handleButtonClick = () => {
 
                     <div className="form-group">
                         <label htmlFor="video">why</label>
-                        <input type="video"
+                        <input type="url"
                             onChange={this.handleFieldChange}
                             id="video"
                             placeholder="Url link of your jam"/>

@@ -23,9 +23,7 @@ class MaybeList extends Component {
                 this.props.maybes.map(maybes =>
                     <div key={maybes.id} className="card">
                         <div className="card-body">
-                            <h5 className="card-title"></h5>
-                            <h4 className="card-tile">{maybes.maybeName}
-                                </h4>
+                            <h5 className="card-title">
                             {"Where:"}<br/><br/>
                                 {maybes.location}
                                 {/* {maybes.description} */}
@@ -34,8 +32,10 @@ class MaybeList extends Component {
                                 <br/><br/>
                                 {maybes.why}<br/><br/>
 
-                                    <Link className="btn btn-info" to={`/maybes/${maybes.id}`}>Delete this trip idear</Link>
+                                    <Link className="btn btn-info" to={`/maybes/${maybes.id}`} value={maybes.video}>Delete This trip idear</Link>
 
+
+                                    </h5>
 
                         </div>
                     </div>

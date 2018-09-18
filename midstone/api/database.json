@@ -81,23 +81,14 @@
       "id": 3
     },
     {
-      "maybeName": "Cruise",
-      "dates": "2019-02-03",
+      "maybeName": "Beachy ",
+      "dates": "2019-03-15",
       "location": "Mexico",
-      "why": "Always wanted to take a cruise down Mexico way",
-      "description": "relax, drink Carona, party like a rockstar",
-      "userId": 3,
-      "id": 5
-    },
-    {
-      "maybeName": "getaway",
-      "dates": "2019-05-08",
-      "location": "Mexico",
-      "why": "i will need a getaway",
-      "description": "relax and drink mai tai's under the palm trees",
+      "why": "I really would like to get away then",
+      "description": "chill and drink Mai tais",
       "userId": 3,
       "video": "https://www.youtube.com/watch?v=C4nyAfB3ILo",
-      "id": 6
+      "id": 4
     }
   ],
   "cookieJar": []
