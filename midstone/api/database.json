@@ -81,14 +81,24 @@
       "id": 3
     },
     {
-      "maybeName": "Beachy ",
-      "dates": "2019-03-15",
+      "maybeName": "beach trip",
+      "dates": "2018-12-14",
       "location": "Mexico",
-      "why": "I really would like to get away then",
-      "description": "chill and drink Mai tais",
+      "why": "I want to lay on the beach",
+      "description": "and drink Mai Tais",
       "userId": 3,
-      "video": "https://www.youtube.com/watch?v=C4nyAfB3ILo",
+      "video": "",
       "id": 4
+    },
+    {
+      "maybeName": "The islands",
+      "dates": "2019-01-25",
+      "location": "somewhere warm",
+      "why": "relaxtion",
+      "description": "drinking mai tais and margaritas",
+      "userId": 1,
+      "video": "https://www.youtube.com/watch?v=yxHbKlkvHqc",
+      "id": 5
     }
   ],
   "cookieJars": []

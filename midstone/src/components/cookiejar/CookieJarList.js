@@ -10,7 +10,7 @@ render() {
             <button type="button"
                     className="btn btn-success"
                     onClick={() => {
-                        this.props.history.push("/cookies/new")}
+                        this.props.history.push("/cookieJars/new")}
                     }>
                 Consult the cookie jar
             </button>

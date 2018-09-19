@@ -17,8 +17,7 @@ import CheckForm from './components/checklist/CheckForm'
 import CheckList from './components/checklist/CheckList'
 import CookieJarForm from './components/cookiejar/CookieJarFrom'
 import CookieJarList from './components/cookiejar/CookieJarList'
-// import CheckDetail from './components/checkdetail/CheckDetail'
-// import CheckEditForm from './components/checkeditform/CheckEditForm'
+
 
 
 export default class ApplicationViews extends Component {

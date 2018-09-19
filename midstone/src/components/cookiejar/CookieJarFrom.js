@@ -17,7 +17,7 @@ handleFieldChange = evt => {
     stateToChange[evt.target.id] = evt.target.value
     this.setState(stateToChange)
 }
-constructNewCookie = evt => {
+constructNewCookieJar = evt => {
     evt.preventDefault()
     if(this.state.cookieName === "") {
         window.alert("You missed the name!")
@@ -43,42 +43,42 @@ constructNewCookie = evt => {
                 <React.Fragment>
                     <form className="cookieForm">
                     <div className="form-group">
-                        <label htmlFor="cookieName">trip type</label>
+                        <label htmlFor="cookieName">Name of trip</label>
                         <input type="text" required
                             onChange={this.handleFieldChange}
                             id="cookieName"
-                            placeholder="cookie" />
+                            placeholder="name" />
                     </div>
                     <div className="form-group">
-                        <label htmlFor="location">trip type</label>
+                        <label htmlFor="location">Where to?</label>
                         <input type="text" required
                             onChange={this.handleFieldChange}
                             id="location"
                             placeholder="location" />
                     </div>
                     <div className="form-group">
-                        <label htmlFor="total">trip type</label>
+                        <label htmlFor="total">total est. cost($)</label>
                         <input type="text" required
                             onChange={this.handleFieldChange}
                             id="total"
                             placeholder="total" />
                     </div>
                     <div className="form-group">
-                        <label htmlFor="ddates">trip type</label>
+                        <label htmlFor="ddates">est. departure date </label>
                         <input type="date" required
                             onChange={this.handleFieldChange}
                             id="ddates"
-                            placeholder="ddates" />
+                            placeholder="dates" />
                     </div>
                     <div className="form-group">
-                        <label htmlFor="weeksTil">trip type</label>
+                        <label htmlFor="weeksTil">how many weeks out?</label>
                         <input type="text" required
                             onChange={this.handleFieldChange}
                             id="weeksTil"
                             placeholder="How many weeks out?" />
                     </div>
 
-                    <button type="submit" onClick={this.constructNewJournal}
+                    <button type="submit" onClick={this.constructNewCookieJar}
                         className="btn btn-primary">Submit</button>
                           </form>
             </React.Fragment>

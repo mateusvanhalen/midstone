@@ -101,7 +101,7 @@ handleButtonClick = () => {
                         <input type="url"
                             onChange={this.handleFieldChange}
                             id="video"
-                            placeholder="Url link of your jam"/>
+                            placeholder="Url to get me in vacation mode"/>
                     </div>
                 </form>
             </React.Fragment>

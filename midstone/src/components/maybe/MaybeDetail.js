@@ -17,18 +17,12 @@ export default class MaybeDetail extends Component {
                 className="maybes">
 
                     <div className="card-body">
-
+                    <a target="#/1.xhtml" href={maybes.video} className="btn btn-info">click to {maybes.description}</a><br/>
                     {"Are you really sure you want to can your "}
                 {maybes.maybeName}
-                {" to "}{maybes.location}{"?! Remember you wanted to "}{maybes.why} {" Check this out before you delete "}
-
-
-
-
-
-
-
-                    </div>
+                {" to "}{maybes.location}{"?! Remember you wanted to "}{maybes.why}{" and "}{maybes.description} <br/><br/>
+                {" Have a listen before you delete? "}
+                </div>
 
                             <h2><a
                                 onClick={() => this.props.deleteMaybe(maybes.id)
