@@ -32,7 +32,9 @@ class MaybeList extends Component {
                                 <br/><br/>
                                 {maybes.why}<br/><br/>
 
-                                    <Link className="btn btn-info" to={`/maybes/${maybes.id}`} value={maybes.video}>Delete This trip idear</Link>
+                                    <Link className="btn btn-info" to={`/maybes/${maybes.id}`}
+
+                                    value={maybes.video}>Delete this trip idear</Link>
 
 
                                     </h5>

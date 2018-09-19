@@ -31,7 +31,7 @@ class NavBar extends Component {
                     </li>
                     <li className="nav-item">
                         <Link className="nav-link"
-                            to="/cookieJar">fill the cookie jar</Link>
+                            to="/cookieJars">fill the cookie jar</Link>
                     </li>
 
 

@@ -15,6 +15,8 @@ import MaybeEditForm from './components/maybe/MaybeEditForm'
 import MaybeList from './components/maybe/MaybeList'
 import CheckForm from './components/checklist/CheckForm'
 import CheckList from './components/checklist/CheckList'
+import CookieJarForm from './components/cookiejar/CookieJarFrom'
+import CookieJarList from './components/cookiejar/CookieJarList'
 // import CheckDetail from './components/checkdetail/CheckDetail'
 // import CheckEditForm from './components/checkeditform/CheckEditForm'
 
@@ -28,6 +30,7 @@ export default class ApplicationViews extends Component {
     journals: [],
     maybes: [],
     checklists: [],
+    cookieJars: [],
     activeUser: JSON.parse(localStorage.getItem("credentials")),
     isLoaded: false,
     user: [],
@@ -56,7 +59,7 @@ export default class ApplicationViews extends Component {
     .then(journals => this.setState({
       journals: journals
     }))
-// this.state.activeUser.id Will re-render the content after update so you do not have to refresh page. getUserData had no instruction
+  // this.state.activeUser.id Will re-render the content after update so you do not have to refresh page. getUserData had no instruction
   deleteJournal = id => DataManager.delete("journals", id)
     .then(() => DataManager.getUserData("journals", this.state.activeUser.id))
     .then(journals => this.setState({
@@ -80,7 +83,7 @@ export default class ApplicationViews extends Component {
     .then(maybes => this.setState({
       maybes: maybes
     }))
-//rid ?
+  //rid ?
   editMaybe = (id, maybes) => DataManager.edit("maybes", id, maybes)
     .then(() => DataManager.getUserData("maybes"))
     .then(maybes => this.setState({
@@ -88,15 +91,25 @@ export default class ApplicationViews extends Component {
     }))
 
   addCheck = checklist => DataManager.add("checklists", checklist)
-  .then(() => DataManager.getUserData("checklists"))
-  .then(checklists => this.setState({
-    checklists: checklists
-  }))
+    .then(() => DataManager.getUserData("checklists"))
+    .then(checklists => this.setState({
+      checklists: checklists
+    }))
 
   deleteCheck = id => DataManager.delete("checklists", id)
     .then(() => DataManager.getUserData("checklists", this.state.activeUser.id))
     .then(checklists => this.setState({
       checklists: checklists
+    }))
+  addCookieJar = cookieJar => DataManager.add("cookieJars", cookieJar)
+    .then(() => DataManager.getUserData("cookieJars", this.state.activeUser.id))
+    .then(cookieJars => this.setState({
+      cookieJars: cookieJars
+    }))
+  deleteCookieJar = id => DataManager.delete("cookieJars", id)
+    .then(() => DataManager.getUserData("cookieJars", this.state.activeUser.id))
+    .then(cookieJars => this.setState({
+      cookieJars: cookieJars
     }))
 
   componentDidMount() {
@@ -128,14 +141,21 @@ export default class ApplicationViews extends Component {
                   DataManager.getAll("checklists", activeUser.id)
                     .then(allChecklists => {
                       newState.checklists = allChecklists
-                })
-                .then(() => {
-                  this.setState(newState)
+                    })
+                    .then(() => {
+                      DataManager.getUserData("cookieJars", activeUser.id)
+                        .then(allCookieJars => {
+                          newState.cookieJars = allCookieJars
+                        })
+
+                        .then(() => {
+                          this.setState(newState)
+                        })
+                    })
                 })
             })
         })
-    })
-  }
+    }
   }
 
   render() {
@@ -230,6 +250,32 @@ export default class ApplicationViews extends Component {
             return <Redirect to="/" />
           }
         }} />
+        < Route exact path="/cookieJars/new" render={(props) => {
+          if (this.isAuthenticated()) {
+            return <CookieJarForm {...props}
+              addCookieJars={this.addCookieJars} />
+          } else {
+            return <Redirect to="/" />
+          }
+        }} />
+        < Route exact path="/cookieJars" render={(props) => {
+          if (this.isAuthenticated()) {
+            return <CookieJarList {...props}
+              deleteCookieJars={this.deleteCookieJars}
+              cookieJars={this.state.cookieJars} />
+          } else {
+            return <Redirect to="/" />
+          }
+        }
+        } />
+
+
+
+
+
+
+
+
         {/* < Route exact path="/checklists/:checkId(\d+)" render={(props) => {
           if (this.isAuthenticated()) {
             return <CheckDetail {...props} deleteCheck={this.deleteCheck} checks={this.state.checks} />
