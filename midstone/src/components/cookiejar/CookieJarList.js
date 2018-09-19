@@ -16,7 +16,7 @@ render() {
             </button>
             <br/>
         </div>
-        <section className="cookies">
+        <section className="cookieJars">
         {
             // sort by server call, it is easier
             this.props.cookieJars.map(cookieJars =>
