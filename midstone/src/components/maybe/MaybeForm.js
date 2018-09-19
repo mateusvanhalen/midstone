@@ -11,6 +11,7 @@ export default class MaybeForm extends Component {
         why: "",
         description: "",
         userId: "",
+        video: "",
     }
 
     // Update state whenever an input field is edited
@@ -40,6 +41,7 @@ export default class MaybeForm extends Component {
                 why: this.state.why,
                 description: this.state.description,
                 userId: JSON.parse(localStorage.getItem("credentials")).id,
+                video: this.state.video,
             }
 
             // Create the maybe event and redirect user
@@ -57,41 +59,50 @@ handleButtonClick = () => {
                 <form className="maybeForm">
                     <div className="form-group">
                         <label htmlFor="maybeName">trip type</label>
-                        <input type="text" required="true"
+                        <input type="text"
                             onChange={this.handleFieldChange}
                             id="maybeName"
-                            placeholder="what type of trip?"/>
+                            placeholder="What type of trip?"/>
                     </div>
                     <div className="form-group">
                         <label htmlFor="dates">when to go? </label>
-                        <input type="date" required="true"
+                        <input type="date"
                             onChange={this.handleFieldChange}
                             id="dates"
-                            placeholder="when to getaway?"/>
+                            placeholder="When(ish) to getaway?"/>
                     </div>
                     <div className="form-group">
                         <label htmlFor="location">location</label>
-                        <input type="text" required="true"
+                        <input type="text"
                             onChange={this.handleFieldChange}
                             id="location"
                             placeholder="Where o where to?"/>
                     </div>
                     <div className="form-group">
                         <label htmlFor="why">why</label>
-                        <input type="text" required="true"
+                        <input type="text"
                             onChange={this.handleFieldChange}
                             id="why"
-                            placeholder="whats your why?"/>
+                            placeholder="What's your why?"/>
                     </div>
                     <div className="form-group">
                         <label htmlFor="description">description </label>
-                        <input type="text" required="true"
+                        <input type="text"
                             onChange={this.handleFieldChange}
-                            id="to do what?"/>
+                            id="description"
+                            placeholder="To do what?"/>
                     </div>
                         <button type="submit" onClick={this.constructNewMaybe}
                         className="btn btn-primary">Submit</button>
+                       <br/>
 
+                    <div className="form-group">
+                        <label htmlFor="video">why</label>
+                        <input type="url"
+                            onChange={this.handleFieldChange}
+                            id="video"
+                            placeholder="Url to get me in vacation mode"/>
+                    </div>
                 </form>
             </React.Fragment>
         )

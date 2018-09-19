@@ -2,12 +2,16 @@ import React, { Component } from "react"
 import "../login/Login.css"
 import Dropzone from 'react-dropzone';
 import request from 'superagent';
+import 'bootstrap/dist/css/bootstrap.min.css';
+// import { Button } from 'reactstrap';
+// import { Modal } from 'reactstrap';
 
 const CLOUDINARY_UPLOAD_URL = 'https://api.cloudinary.com/v1_1/mateusvanhalen/upload';
 const CLOUDINARY_UPLOAD_PRESET = 'Uxpvft9i';
 export default class JournalForm extends Component {
 
     // Set initial state
+
     state = {
         journalName: "",
         ddates: "",
@@ -17,7 +21,10 @@ export default class JournalForm extends Component {
         description: "",
         userId: "",
         uploadedFileCloudinaryUrl: "",
+
     }
+
+
 
     onImageDrop(files) {
         this.setState({
@@ -95,7 +102,7 @@ export default class JournalForm extends Component {
                     }
                     <div>
                         <div className="FileUpload">
-                            ...
+                        <br/>
                     </div>
                         <div>
                             {this.state.uploadedFileCloudinaryUrl === '' ? null :
@@ -126,6 +133,21 @@ export default class JournalForm extends Component {
                             id="rdates"
                             placeholder="Select return date" />
                     </div>
+                    {/* <div className="static-modal">
+                        <Modal.Dialog>
+                            <Modal.Header>
+                                <Modal.Title>Modal title</Modal.Title>
+                            </Modal.Header>
+
+                            <Modal.Body>One fine body...</Modal.Body>
+
+                            <Modal.Footer>
+                                <Button>Close</Button>
+                                <Button bsStyle="primary">Save changes</Button>
+                            </Modal.Footer>
+                        </Modal.Dialog>
+                    </div>; */}
+
                     <div className="form-group">
                         <label htmlFor="location">location</label>
                         <input type="text" required
@@ -133,36 +155,6 @@ export default class JournalForm extends Component {
                             id="location"
                             placeholder="Add location" />
                     </div>
-
-                    <div className="dd-wrapper">
-                        <label htmlFor="rating">Rating </label>
-                        <button className="btn btn-info dropdown-toggle" data-toggle="dropdown">Article</button>
-                        <ul className="dd-list">
-                            <li></li>
-                        </ul>
-
-
-
-
-
-
-
-                        {/* <DropdownButton
-                            bsStyle={title.toLowerCase()}
-                            title={title}
-                            key={i}
-                            id={`dropdown-basic-${i}`}
-                    >
-                        <MenuItem eventKey="1">Action</MenuItem>
-                        <MenuItem eventKey="2">Another action</MenuItem>
-                        <MenuItem eventKey="3" active>
-                            Active Item
-      </MenuItem>
-                        <MenuItem divider />
-                        <MenuItem eventKey="4">Separated link</MenuItem>
-                    </DropdownButton> */}
-                    </div>
-
 
                     <div className="form-group">
                         <label htmlFor="description">description </label>

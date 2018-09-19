@@ -104,28 +104,28 @@ render() {
                 </div>
                 <div className="form-group">
                     <label htmlFor="ddates">updated departure </label>
-                    <input type="date" required="true"
+                    <input type="date"
                         onChange={this.handleFieldChange}
                         id="ddates"
                         placeholder="select new departure date"/>
                 </div>
                 <div className="form-group">
                     <label htmlFor="rdates">updated return</label>
-                    <input type="date" required="true"
+                    <input type="date"
                         onChange={this.handleFieldChange}
                         id="rdates"
                         placeholder="select new return date"/>
                 </div>
                 <div className="form-group">
                     <label htmlFor="location">updated location </label>
-                    <input type="text" required="true"
+                    <input type="text"
                          onChange={this.handleFieldChange}
                          id="location"
                          placeholder={this.state.location}/>
 
                 <div className="form-group">
                         <label htmlFor="description">new description </label>
-                        <input type="text" required="true"
+                        <input type="text"
                             onChange={this.handleFieldChange}
                             id="description"/>
                     </div>

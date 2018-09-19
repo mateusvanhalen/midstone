@@ -10,7 +10,8 @@ class MaybeList extends Component {
                 <button type="button"
                         className="btn btn-success"
                         onClick={() => {
-                            this.props.history.push("/maybes/new")}
+                            this.props.history.push("/maybes/new")
+                            }
                         }>
                     Where to?
                 </button>
@@ -24,19 +25,22 @@ class MaybeList extends Component {
                     <div key={maybes.id} className="card">
                         <div className="card-body">
                             <h5 className="card-title">
-                                {/* {this.formatDate(maybes.rdate)}
-                                {this.formatDate(maybes.ddate)} */}
+                            {"Where:"}<br/><br/>
                                 {maybes.location}
-                                <br/>
-                                {maybes.why}
+                                {/* {maybes.description} */}
+                                <br/><br/>
+                                {"Why:"}
+                                <br/><br/>
+                                {maybes.why}<br/><br/>
 
-                                    <Link className="nav-link" to={`/maybes/${maybes.id}`}>Details</Link>
+
+                                    <Link className="btn btn-info" to={`/maybes/${maybes.id}`}
+
+                                    >Delete this trip idear</Link>
+
+
                                     </h5>
-                                <button
-                                    onClick={() => this.props.deleteMaybe(maybes.id)}
-                                    className="nav-link-quit">I've changed my mind </button>
-                            <h4 className="card-tile">{maybes.maybeName}
-                                </h4>
+
                         </div>
                     </div>
                 )
