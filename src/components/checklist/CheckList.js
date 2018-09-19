@@ -25,7 +25,7 @@ export class CheckList extends Component{
                         <div className="card-body">
                             <h5 className="card-title">
 
-                                {checklists.type}
+                                <h4>{checklists.type}</h4>
                                 <br/>
                                 {checklists.location}
                                 <br/>

@@ -17,7 +17,12 @@ export default class MaybeDetail extends Component {
                 className="maybes">
 
                     <div className="card-body">
-                    <a target="#/1.xhtml" href={maybes.video} className="btn btn-info">click to {maybes.description}</a><br/>
+                    <a target="#/2.xhtml" href={maybes.video} className="btn btn-info"
+                    src={maybes.video} onclick="audio.play()"
+                    >click to {maybes.description}</a><br/>
+                    {/* <iframe width="420" height="315" src={maybes.video}></iframe> */}
+
+
                     {"Are you really sure you want to can your "}
                 {maybes.maybeName}
                 {" to "}{maybes.location}{"?! Remember you wanted to "}{maybes.why}{" and "}{maybes.description} <br/><br/>

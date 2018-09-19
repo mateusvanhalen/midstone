@@ -19,13 +19,14 @@ export default class JournalDetail extends Component {
                 <div key={journals.id} className="detail-card">
                     <div className="card-body">
                         <h4 className="card-title">
-                            {/* <img src={journal_pic} alt="" className="icon--journals" /> */}
+
                         </h4>
                         <h6 className="card-title">{journals.journalName}</h6>
-                        <h6>{journals.location},
-                        {journals.rating},
-                        {journals.description}
-                        </h6>
+
+                        <h6>{journals.location} </h6>
+
+                        <h6>  {journals.description} </h6>
+
                         <h5>
                             <a
                                 onClick={() => this.props.deleteJournal(journals.id)
