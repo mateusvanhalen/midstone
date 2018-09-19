@@ -1,0 +1,105 @@
+{
+  "users": [
+    {
+      "username": "mateus",
+      "email": "mateusvanhalen@gmail.com",
+      "password": "hi",
+      "id": 1
+    },
+    {
+      "username": "dejan",
+      "email": "dejan@me.com",
+      "password": "hi",
+      "id": 2
+    },
+    {
+      "username": "jessie",
+      "email": "jessie@me.com",
+      "password": "hi",
+      "id": 3
+    }
+  ],
+  "journals": [
+    {
+      "journalName": "beachy",
+      "ddates": "2018-08-31",
+      "rdates": "2018-09-06",
+      "location": "Fireball Maggies",
+      "rating": "",
+      "description": "day one we did this . day two we saw amy. day 3 dolphins!! ",
+      "userId": 3,
+      "uploadedFileCloudinaryUrl": "https://res.cloudinary.com/mateusvanhalen/image/upload/v1536962920/n64dy0uhtamfhnbm1eci.jpg",
+      "id": 14
+    },
+    {
+      "journalName": "Take a trip to the backyard pool!",
+      "ddates": "2018-05-05",
+      "rdates": "2018-11-01",
+      "location": "FBM",
+      "rating": "",
+      "description": "BYOB, bring yo firends, bring yo wife",
+      "userId": 1,
+      "uploadedFileCloudinaryUrl": "https://res.cloudinary.com/mateusvanhalen/image/upload/v1537284954/vwwmiloqssd1fteou8w4.jpg",
+      "id": 15
+    },
+    {
+      "journalName": "staycation",
+      "ddates": "2018-08-15",
+      "rdates": "2018-08-23",
+      "location": "Nashvegas",
+      "rating": "",
+      "description": "stayed in and didnt leave town. Very refreshing!",
+      "userId": 1,
+      "uploadedFileCloudinaryUrl": "https://res.cloudinary.com/mateusvanhalen/image/upload/v1537285321/zfh6fj5zlvqn4bkyeln3.jpg",
+      "id": 16
+    }
+  ],
+  "checklists": [
+    {
+      "type": "cruise",
+      "location": "stay away from bermude triangle",
+      "item": "sun block and sunscreen",
+      "why": "i got burnt the f up",
+      "id": 4
+    },
+    {
+      "type": "rock climbing trip",
+      "location": "the center of the world",
+      "item": "bring a comb, toothbrush and floss. The floss can help you if your rope breaks",
+      "why": "floss comes in handy for securing your bags and shoes",
+      "id": 5
+    }
+  ],
+  "maybes": [
+    {
+      "maybeName": "beach trip",
+      "dates": "2018-10-31",
+      "location": "Maui",
+      "why": "Get the hell out of dodge",
+      "description": "I want to lay on the beach, drink lots of Mai Tai's and listen to the waves accompany a ukulele",
+      "userId": 1,
+      "id": 3
+    },
+    {
+      "maybeName": "beach trip",
+      "dates": "2018-12-14",
+      "location": "Mexico",
+      "why": "I want to lay on the beach",
+      "description": "and drink Mai Tais",
+      "userId": 3,
+      "video": "",
+      "id": 4
+    },
+    {
+      "maybeName": "The islands",
+      "dates": "2019-01-25",
+      "location": "somewhere warm",
+      "why": "relaxtion",
+      "description": "drinking mai tais and margaritas",
+      "userId": 1,
+      "video": "https://www.youtube.com/watch?v=yxHbKlkvHqc",
+      "id": 5
+    }
+  ],
+  "cookieJars": []
+}
