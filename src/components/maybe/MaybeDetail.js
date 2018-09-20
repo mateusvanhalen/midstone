@@ -17,9 +17,17 @@ export default class MaybeDetail extends Component {
                 className="maybes">
 
                     <div className="card-body">
-                    <a target="#/2.xhtml" href={maybes.video} className="btn btn-info"
-                    src={maybes.video} onclick="audio.play()"
-                    >click to {maybes.description}</a><br/>
+                    {/* <a target="#/2.xhtml" href={maybes.video} className="btn btn-info"
+                    src={maybes.video} onclick="audio.play()" */}
+
+                        {/* Loads and plays using EMBEDED url link */}
+                        <iframe width="420" height="315"
+                            src={maybes.video}>
+                        </iframe>
+
+                    {/* >click to {maybes.description}</a>
+                     */}
+                    <br/>
                     {/* <iframe width="420" height="315" src={maybes.video}></iframe> */}
 
 

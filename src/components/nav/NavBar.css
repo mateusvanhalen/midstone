@@ -14,7 +14,12 @@ p {
 }
 .wrapper {
     display: flex;
-    align-items: stretch;
+    align-items: center;
+    color: brown;
+
+}
+.utripn {
+    /* background-image:  url("utripn.png"); */
 }
 
 #sidebar {

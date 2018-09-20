@@ -99,7 +99,7 @@ export default class ApplicationViews extends Component {
     .then(checklists => this.setState({
       checklists: checklists
     }))
-  addCookieJar = cookieJar => DataManager.add("cookieJars", cookieJar)
+  addCookieJars = cookieJar => DataManager.add("cookieJars", cookieJar)
     .then(() => DataManager.getUserData("cookieJars", this.state.activeUser.id))
     .then(cookieJars => this.setState({
       cookieJars: cookieJars

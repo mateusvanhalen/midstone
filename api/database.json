@@ -118,7 +118,7 @@
       "why": "relaxtion",
       "description": "drinking mai tais and margaritas",
       "userId": 1,
-      "video": "https://www.youtube.com/watch?v=yxHbKlkvHqc",
+      "video": "https://www.youtube.com/embed/yxHbKlkvHqc?autoplay=1",
       "id": 5
     },
     {
@@ -130,7 +130,27 @@
       "userId": 1,
       "video": "https://open.spotify.com/playlist/665py9Id1eoOVtNTrwurHZ",
       "id": 6
+    },
+    {
+      "maybeName": "cruise",
+      "dates": "2019-03-25",
+      "location": "caribbean",
+      "why": "to get away",
+      "description": "party",
+      "userId": 1,
+      "video": "",
+      "id": 7
     }
   ],
-  "cookieJars": []
+  "cookieJars": [
+    {
+      "cookieName": "beach",
+      "location": "africa",
+      "total": "1000",
+      "weeksTil": "15",
+      "ddates": "2018-09-19",
+      "userId": 1,
+      "id": 1
+    }
+  ]
 }

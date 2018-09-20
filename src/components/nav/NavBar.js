@@ -10,6 +10,7 @@ class NavBar extends Component {
         return (
 
             <div className="wrapper">
+            <div className="utripn"></div>
 
                 <nav className="sidebar">
                     <div className="sidebar-header">

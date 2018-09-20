@@ -23,7 +23,7 @@ export class CheckList extends Component{
                 this.props.checklists.map(checklists =>
                     <div key={checklists.id} className="card">
                         <div className="card-body">
-                            <h5 className="card-title">
+                            <h5 className="card-title"></h5>
 
                                 <h4>{checklists.type}</h4>
                                 <br/>
@@ -36,7 +36,7 @@ export class CheckList extends Component{
 
 
 
-                                    </h5>
+                                <br/>
                                 <button
                                     onClick={() => this.props.deleteCheck(checklists.id)}
                                     className="nav-link-quit">Delete this checklist</button>
