@@ -3,6 +3,7 @@ import "../login/Login.css"
 import Dropzone from 'react-dropzone';
 import request from 'superagent';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './Journal.css'
 // import { Button } from 'reactstrap';
 // import { Modal } from 'reactstrap';
 

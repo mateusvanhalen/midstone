@@ -42,27 +42,27 @@ render() {
             <form className="CheckForm">
             <div className="form-group">
                     <label htmlFor="type">add a type of trip</label>
-                    <input type="text" required="true"
+                    <input type="text" required
                         onChange={this.handleFieldChange}
                         id="type"/>
                 </div>
                 <div className="form-group">
                     <label htmlFor="location">where at</label>
-                    <input type="text" required="true"
+                    <input type="text" required
                         onChange={this.handleFieldChange}
                         id="location"
                         placeholder="enter location"/>
                 </div>
                 <div className="form-group">
                     <label htmlFor="item">what items do you recommend?</label>
-                    <input type="text" required="true"
+                    <input type="text" required
                         onChange={this.handleFieldChange}
                         id="item"
                         placeholder="enter item"/>
                 </div>
                 <div className="form-group">
                     <label htmlFor="why">why and how</label>
-                    <input type="text" required="true"
+                    <input type="text" required
                         onChange={this.handleFieldChange}
                         id="why"
                         placeholder="enter why and how"/>
