@@ -6,3 +6,8 @@
     font-size: 50px;
     color: blue;
   }
+.card-body {
+    background-image: url("background_notebook.jpg");
+    background-position: center;
+}
+

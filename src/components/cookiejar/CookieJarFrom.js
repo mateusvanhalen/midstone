@@ -2,6 +2,7 @@ import React, { Component } from "react"
 import "../login/Login.css"
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+
 export default class CookieJarForm extends Component {
 
 state = {
