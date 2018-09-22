@@ -14,11 +14,12 @@ class NavBar extends Component {
 
 
                     <div className="navbar-nav mr-auto">
+
                         <h4> Utripn</h4>
                     </div>
-                    <h3>
+                    <h5>
                     <ul className="nav nav-pills">
-                        <p>Here are your bags</p>
+                        <p2>Here are your bags</p2>
                         <li className="active">
                         <Link className="nav-link"
                                 to="/journals">journal</Link>
@@ -37,7 +38,7 @@ class NavBar extends Component {
                     </li>
 
 
-                            </ul></h3>
+                            </ul></h5>
 
                 <div id="content">
 

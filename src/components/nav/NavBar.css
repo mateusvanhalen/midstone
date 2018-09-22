@@ -13,11 +13,16 @@ p {
 }
 
 .navbar {
-    margin: 0 0 3em;
+    display: right;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
     position: relative;
-    display: flex;
     color: brown;
     background-image: url("utripn.png");
-    float: top;
     align-items: stretch;
+    height: 380px;
+    /* margin-left: auto;
+    margin-right: auto; */
+    -webkit-transform: scale(0.9, 0.9);
 }

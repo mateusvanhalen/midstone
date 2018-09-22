@@ -29,7 +29,8 @@ class JournalList extends Component{
     render() {
         return (<React.Fragment>
             <div className="journalButton">
-                <button type="button"
+                <button secondary fluid
+                type="button"
                         className="btn btn-success"
                         onClick={() => {
                             this.props.history.push("/journals/new")}
