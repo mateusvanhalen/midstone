@@ -1,5 +1,6 @@
 import React, { Component } from "react"
-import "../login/Login.css"
+// import "../login/Login.css"
+// import "Journal.css"
 
 export default class MaybeForm extends Component {
 

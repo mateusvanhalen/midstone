@@ -6,6 +6,7 @@ import './Journal.css'
 
 
 
+
 export default class JournalDetail extends Component {
     render() {
         /*
@@ -19,26 +20,26 @@ export default class JournalDetail extends Component {
             <section className="journal">
                 <div key={journals.id} className="detail-card">
                     <div className="card-body">
-                        <h4 className="card-title">
+                        <h2 className="card-title">
 
-                        </h4>
-                        <h6 className="card-title">{journals.journalName}</h6>
+                        </h2>
+                        <h3 className="card-title">{journals.journalName}</h3>
 
-                        <h6>{journals.location} </h6>
+                        <h4>{journals.location} </h4>
 
-                        <h6>  {journals.description} </h6>
+                        <h5>  {journals.description} </h5>
 
-                        <h5>
+                        <p>
                             <a
                                 onClick={() => this.props.deleteJournal(journals.id)
                                     .then(() => this.props.history.push("/journals"))}
-                                className="btn btn-success">Delete</a>
+                                className="btn btn-info">Delete</a>
 
                             <a
 
-                                className="btn btn-success"
+                                className="btn btn-info"
                                 onClick={() => this.props.history.push(`/journals/edit/${journals.id}`)}
-                                className="btn btn-success">Edit</a></h5>
+                                className="btn btn-warning">Edit</a></p>
 
 
                         <Link className="nav-link"

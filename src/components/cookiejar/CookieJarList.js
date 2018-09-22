@@ -26,7 +26,7 @@ render() {
     return (<React.Fragment>
         <div className="cookieButton">
             <button type="button"
-                    className="btn btn-success"
+                    className="btn btn-info"
                     onClick={() => {
                         this.props.history.push("/cookieJars/new")}
                     }>

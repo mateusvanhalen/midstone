@@ -22,7 +22,5 @@ p {
     background-image: url("utripn.png");
     align-items: stretch;
     height: 380px;
-    /* margin-left: auto;
-    margin-right: auto; */
-    -webkit-transform: scale(0.9, 0.9);
+    -webkit-transform: scale(1, 0.8);
 }

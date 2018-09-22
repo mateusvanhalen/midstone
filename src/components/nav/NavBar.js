@@ -19,10 +19,10 @@ class NavBar extends Component {
                     </div>
                     <h5>
                     <ul className="nav nav-pills">
-                        <p2>Here are your bags</p2>
+
                         <li className="active">
                         <Link className="nav-link"
-                                to="/journals">journal</Link>
+                                to="/journals">journal / home</Link>
                     </li>
                     <li className="nav-item">
                         <Link className="nav-link"

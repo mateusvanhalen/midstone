@@ -4,6 +4,7 @@ import request from 'superagent'
 import './Journal.css'
 
 
+
 const CLOUDINARY_UPLOAD_URL = 'https://api.cloudinary.com/v1_1/mateusvanhalen/upload';
 const CLOUDINARY_UPLOAD_PRESET = 'Uxpvft9i';
 

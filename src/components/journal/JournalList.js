@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { Link } from "react-router-dom"
 import './Journal.css'
 
+
 class JournalList extends Component{
 //see here to format dates to something that doesnt look like cat poop
 
@@ -31,7 +32,7 @@ class JournalList extends Component{
             <div className="journalButton">
                 <button secondary fluid
                 type="button"
-                        className="btn btn-success"
+                        className="btn btn-info"
                         onClick={() => {
                             this.props.history.push("/journals/new")}
                         }>

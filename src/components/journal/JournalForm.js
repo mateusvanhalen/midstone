@@ -4,6 +4,7 @@ import Dropzone from 'react-dropzone';
 import request from 'superagent';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Journal.css'
+
 // import { Button } from 'reactstrap';
 // import { Modal } from 'reactstrap';
 
@@ -164,7 +165,7 @@ export default class JournalForm extends Component {
                             id="description" />
                     </div>
                     <button type="submit" onClick={this.constructNewJournal}
-                        className="btn btn-primary">Submit</button>
+                        className="btn btn-info">Submit</button>
                 </form>
             </React.Fragment>
         )

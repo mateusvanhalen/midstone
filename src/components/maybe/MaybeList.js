@@ -8,7 +8,7 @@ class MaybeList extends Component {
         return (<React.Fragment>
             <div className="maybeButton">
                 <button type="button"
-                        className="btn btn-success"
+                        className="btn btn-info"
                         onClick={() => {
                             this.props.history.push("/maybes/new")
                             }
