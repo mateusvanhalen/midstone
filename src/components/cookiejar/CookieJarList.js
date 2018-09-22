@@ -44,11 +44,11 @@ render() {
             {`weeks to go:`}  {cookieJars.weeksTil}
             <br/>
             {`until `} {this.formatDate(cookieJars.ddates)}
-                            <br/>
+            <br/>
             {`save this per week:`}  {cookieJars.total} <br/>
             {`or save this per day:`}
                                 <br/>
-                                <Link className="btn btn-info" to={`/cookieJars/${cookieJars.id}`}>Details</Link>
+                                {/* <Link className="btn btn-info" to={`/cookieJars/${cookieJars.id}`}>Details</Link> */}
                                 </h5>
 
                     </div>

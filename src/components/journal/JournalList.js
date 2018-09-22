@@ -38,25 +38,26 @@ class JournalList extends Component{
                 </button>
                 <br/>
             </div>
+
             <section className="journals">
-            {
-                // sort by server call, it is easier
+            {// sort by server call, it is easier
                 this.props.journals.map(journals =>
                     <div key={journals.id} className="card">
                         <div className="card-body">
-                            <h5 className="card-title">
+                            <h3 className="card-title">{journals.journalName}</h3>
+                            <h4>
                 {`departed:`}  {this.formatDate(journals.ddates)}
-                                <br/>
+                                <br/><br/>
                 {`returned:`}  {this.formatDate(journals.rdates)}
                                 {/* {journals.ddates}
                                 <br/>
                                 {journals.rdates} */}
-                                    <br/>
-                                    <Link className="btn btn-info" to={`/journals/${journals.id}`}>Details</Link>
-                                    </h5>
+                                    <br/><br/>
+                                    <Link className="btn btn-info" to={`/journals/${journals.id}`}>Details</Link><br/><br/>
+                                    </h4>
                                     <img src={journals.uploadedFileCloudinaryUrl} style={{height: "300px", width: "auto" }}/>
-                            <h4 className="card-tile">{journals.journalName}
-                                </h4>
+                                    <br/><br/>
+
                         </div>
                     </div>
                 )
