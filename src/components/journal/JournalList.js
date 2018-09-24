@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { Link } from "react-router-dom"
 import './Journal.css'
 
+
 class JournalList extends Component{
 //see here to format dates to something that doesnt look like cat poop
 
@@ -29,8 +30,9 @@ class JournalList extends Component{
     render() {
         return (<React.Fragment>
             <div className="journalButton">
-                <button type="button"
-                        className="btn btn-success"
+                <button secondary fluid
+                type="button"
+                        className="btn btn-info"
                         onClick={() => {
                             this.props.history.push("/journals/new")}
                         }>
@@ -38,25 +40,26 @@ class JournalList extends Component{
                 </button>
                 <br/>
             </div>
+
             <section className="journals">
-            {
-                // sort by server call, it is easier
+            {// sort by server call, it is easier
                 this.props.journals.map(journals =>
                     <div key={journals.id} className="card">
                         <div className="card-body">
-                            <h5 className="card-title">
+                            <h3 className="card-title">{journals.journalName}</h3>
+                            <h4>
                 {`departed:`}  {this.formatDate(journals.ddates)}
-                                <br/>
+                                <br/><br/>
                 {`returned:`}  {this.formatDate(journals.rdates)}
                                 {/* {journals.ddates}
                                 <br/>
                                 {journals.rdates} */}
-                                    <br/>
-                                    <Link className="btn btn-info" to={`/journals/${journals.id}`}>Details</Link>
-                                    </h5>
+                                    <br/><br/>
+                                    <Link className="btn btn-info" to={`/journals/${journals.id}`}>Details</Link><br/><br/>
+                                    </h4>
                                     <img src={journals.uploadedFileCloudinaryUrl} style={{height: "300px", width: "auto" }}/>
-                            <h4 className="card-tile">{journals.journalName}
-                                </h4>
+                                    <br/><br/>
+
                         </div>
                     </div>
                 )

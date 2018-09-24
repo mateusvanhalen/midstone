@@ -10,11 +10,11 @@ export class CheckList extends Component{
         return (<React.Fragment>
             <div className="checkButton">
                 <button type="button"
-                        className="btn btn-success"
+                        className="btn btn-info"
                         onClick={() => {
                             this.props.history.push("/checklists/new")}
                         }>
-                    Your suggestions for others checklists
+                    Make a checklist!
                 </button>
             </div>
             <section className="checklists">
@@ -23,20 +23,27 @@ export class CheckList extends Component{
                 this.props.checklists.map(checklists =>
                     <div key={checklists.id} className="card">
                         <div className="card-body">
-                            <h5 className="card-title">
+                            <h5 className="card-title"></h5>
 
-                                <h4>{checklists.type}</h4>
-                                <br/>
+                                {`Trip Type:`}<h4>{checklists.type}</h4>
+                                <br/><br/>
+                                {`Where tho?`}
+                                <br/><br/>
                                 {checklists.location}
-                                <br/>
+                                <br/><br/>
+                                {`Ok, but what to bring?`}
+                                <br/><br/>
                                 {checklists.item}
-                                <br/>
+                                <br/><br/>
+                                {`Umm..why?`}
+                                <br/><br/>
                                 {checklists.why}
+                                <br/>
 
 
 
 
-                                    </h5>
+                                <br/>
                                 <button
                                     onClick={() => this.props.deleteCheck(checklists.id)}
                                     className="nav-link-quit">Delete this checklist</button>

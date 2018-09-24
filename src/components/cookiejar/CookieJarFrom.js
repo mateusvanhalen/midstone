@@ -33,7 +33,7 @@ constructNewCookieJar = evt => {
             ddates: this.state.ddates,
             userId: JSON.parse(localStorage.getItem("credentials")).id,
         }
-        this.props.addCookieJar(cookieJars).then(() => this.props.history.push("/cookieJars"))
+        this.props.addCookieJars(cookieJars).then(() => this.props.history.push("/cookieJars"))
         }
     }
         handleButtonClick = () => {

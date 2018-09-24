@@ -1,5 +1,6 @@
 import React, { Component } from "react"
 import './Register.css'
+// import "https://fonts.googleapis.com/css?family=Cedarville+Cursive";
 
 export default class Register extends Component {
 

@@ -9,17 +9,20 @@ class NavBar extends Component {
     render() {
         return (
 
-            <div className="wrapper">
+            <div className="navbar navbar-light fixed-top light-blue flex-lg-nowrap p-4 shadow">
 
-                <nav className="sidebar">
-                    <div className="sidebar-header">
+
+
+                    <div className="navbar-nav mr-auto">
+
                         <h4> Utripn</h4>
                     </div>
-                    <ul className="list-unstyled components">
-                        <p>Here are your bags</p>
+                    <h5>
+                    <ul className="nav nav-pills">
+
                         <li className="active">
                         <Link className="nav-link"
-                                to="/journals">journal</Link>
+                                to="/journals">journal / home</Link>
                     </li>
                     <li className="nav-item">
                         <Link className="nav-link"
@@ -35,12 +38,12 @@ class NavBar extends Component {
                     </li>
 
 
-                            </ul>
+                            </ul></h5>
 
                 <div id="content">
 
 
-                    <nav className="navbar navbar-expand-lg navbar-light bg-light">
+
 
 
                         <div className="container-fluid">
@@ -51,9 +54,9 @@ class NavBar extends Component {
                         className="logoutButton">sign out</button>
 
                         </div>
-                    </nav>
+
                 </div>
-            </nav>
+
         </div>
 
 

@@ -34,14 +34,14 @@
     {
       "journalName": "Take a trip to the backyard pool!",
       "ddates": "2018-05-05",
-      "rdates": "2018-11-01",
+      "rdates": "2018-10-19",
       "location": "FBM",
       "rating": "",
       "description": "Had a blast all summer. Friends and fam came by and made a huge mess but it was worth the cleanup!",
       "userId": 1,
       "uploadedFileCloudinaryUrl": "https://res.cloudinary.com/mateusvanhalen/image/upload/v1537284954/vwwmiloqssd1fteou8w4.jpg",
       "id": 15,
-      "journalId": 15
+      "journalId": 17
     },
     {
       "journalName": "staycation",
@@ -55,7 +55,7 @@
       "id": 16
     },
     {
-      "journalName": "fly around the city ",
+      "journalName": "cuise in my car",
       "ddates": "2017-11-02",
       "rdates": "2017-11-03",
       "location": "Darkwing Duck City",
@@ -63,7 +63,8 @@
       "description": "mysterious crime fighting that i cant really talk about. Next time bring a ping pong paddle and 5 solo cups",
       "userId": 1,
       "uploadedFileCloudinaryUrl": "https://res.cloudinary.com/mateusvanhalen/image/upload/v1537387696/hrclzhaa4uqtgsciok2k.jpg",
-      "id": 17
+      "id": 17,
+      "journalId": 17
     },
     {
       "journalName": "midstone",
@@ -75,29 +76,33 @@
       "userId": 1,
       "uploadedFileCloudinaryUrl": "https://res.cloudinary.com/mateusvanhalen/image/upload/v1537441531/arvdlglbv2eguopq4rq0.jpg",
       "id": 18
+    },
+    {
+      "journalName": "pool party",
+      "ddates": "2018-09-05",
+      "rdates": "2018-09-27",
+      "location": "my pool",
+      "rating": "",
+      "description": "fun fun fun",
+      "userId": 1,
+      "uploadedFileCloudinaryUrl": "https://res.cloudinary.com/mateusvanhalen/image/upload/v1537453950/ov1usicdlady3vjcqq8e.jpg",
+      "id": 19
     }
   ],
   "checklists": [
     {
-      "type": "cruise",
-      "location": "stay away from bermude triangle",
-      "item": "sun block and sunscreen",
-      "why": "i got burnt the f up",
-      "id": 4
+      "type": "beach trip",
+      "location": "the islands",
+      "item": "sunscreen - lots of sunscreen, a wagon, two radios, frisbee, 15 umbrellas, an ATV, shark repellent, extra sunglass for the wifey",
+      "why": "just trust me here",
+      "id": 1
     },
     {
-      "type": "rock climbing trip",
-      "location": "the center of the world",
-      "item": "bring a comb, toothbrush and floss. The floss can help you if your rope breaks",
-      "why": "floss comes in handy for securing your bags and shoes",
-      "id": 5
-    },
-    {
-      "type": "camping excursion in the fall",
-      "location": "the rockies",
-      "item": "bring a tent, a can of gasoline and some pez",
-      "why": "tuck things in your bag tight. The wind will blow them away if you dont!",
-      "id": 6
+      "type": "camping in the arctic",
+      "location": "Norway",
+      "item": "Extra pair of gloves",
+      "why": "yeah its that cold",
+      "id": 2
     }
   ],
   "maybes": [
@@ -118,7 +123,7 @@
       "why": "relaxtion",
       "description": "drinking mai tais and margaritas",
       "userId": 1,
-      "video": "https://www.youtube.com/watch?v=yxHbKlkvHqc",
+      "video": "https://www.youtube.com/embed/yxHbKlkvHqc?autoplay=1",
       "id": 5
     },
     {
@@ -130,7 +135,27 @@
       "userId": 1,
       "video": "https://open.spotify.com/playlist/665py9Id1eoOVtNTrwurHZ",
       "id": 6
+    },
+    {
+      "maybeName": "Log cabin",
+      "dates": "2019-01-17",
+      "location": "the mountains",
+      "why": "to get away",
+      "description": "relax and drink vodka",
+      "userId": 1,
+      "video": "",
+      "id": 8
     }
   ],
-  "cookieJars": []
+  "cookieJars": [
+    {
+      "cookieName": "beach",
+      "location": "africa",
+      "total": "1000",
+      "weeksTil": "15",
+      "ddates": "2018-09-19",
+      "userId": 1,
+      "id": 1
+    }
+  ]
 }

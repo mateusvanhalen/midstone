@@ -17,9 +17,17 @@ export default class MaybeDetail extends Component {
                 className="maybes">
 
                     <div className="card-body">
-                    <a target="#/2.xhtml" href={maybes.video} className="btn btn-info"
-                    src={maybes.video} onclick="audio.play()"
-                    >click to {maybes.description}</a><br/>
+                    {/* <a target="#/2.xhtml" href={maybes.video} className="btn btn-info"
+                    src={maybes.video} onclick="audio.play()" */}
+
+                        {/* Loads and plays using EMBEDED url link */}
+                        <iframe width="420" height="315"
+                            src={maybes.video}>
+                        </iframe>
+                    <br/>
+                    {/* >click to {maybes.description}</a>
+                     */}
+                    <br/>
                     {/* <iframe width="420" height="315" src={maybes.video}></iframe> */}
 
 
@@ -32,11 +40,11 @@ export default class MaybeDetail extends Component {
                             <h2><a
                                 onClick={() => this.props.deleteMaybe(maybes.id)
                                     .then(() => this.props.history.push("/maybes"))}
-                                className="btn btn-warning">Confirm Delete trip</a></h2>
+                                className="btn btn-info">Confirm Delete trip</a></h2>
 
 
 
-                        <h2><Link className="btn-info"
+                        <h2><Link className="btn btn-info"
                             to="/maybes">Keep and return to List</Link></h2>
 
 

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Cedarville+Cursive|Indie+Flower');
+
 .rating {
     display: inline-block;
     position: relative;
@@ -8,6 +10,15 @@
   }
 .card-body {
     background-image: url("background_notebook.jpg");
-    background-position: center;
+    background-position: stretch;
+    -webkit-transform: scale(.9, .9);
+    font-family: 'Indie Flower', cursive;
 }
 
+.card-body{
+    border-radius: 3%;
+}
+.journalForm{
+    background-color: rgb(210, 230, 243);
+
+}

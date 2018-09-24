@@ -1,5 +1,6 @@
 import React, { Component } from "react"
-import "../login/Login.css"
+// import "../login/Login.css"
+import './Maybe.css'
 
 export default class MaybeForm extends Component {
 
@@ -93,11 +94,11 @@ handleButtonClick = () => {
                             placeholder="To do what?"/>
                     </div>
                         <button type="submit" onClick={this.constructNewMaybe}
-                        className="btn btn-primary">Submit</button>
+                        className="btn btn-info">Submit</button>
                        <br/>
 
                     <div className="form-group">
-                        <label htmlFor="video">why</label>
+                        <label htmlFor="video">share a youtube video here for trip prep</label>
                         <input type="url"
                             onChange={this.handleFieldChange}
                             id="video"
