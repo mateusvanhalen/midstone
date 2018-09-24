@@ -14,7 +14,7 @@ export class CheckList extends Component{
                         onClick={() => {
                             this.props.history.push("/checklists/new")}
                         }>
-                    Your suggestions for others checklists
+                    Make a checklist!
                 </button>
             </div>
             <section className="checklists">
@@ -25,13 +25,20 @@ export class CheckList extends Component{
                         <div className="card-body">
                             <h5 className="card-title"></h5>
 
-                                <h4>{checklists.type}</h4>
-                                <br/>
+                                {`Trip Type:`}<h4>{checklists.type}</h4>
+                                <br/><br/>
+                                {`Where tho?`}
+                                <br/><br/>
                                 {checklists.location}
-                                <br/>
+                                <br/><br/>
+                                {`Ok, but what to bring?`}
+                                <br/><br/>
                                 {checklists.item}
-                                <br/>
+                                <br/><br/>
+                                {`Umm..why?`}
+                                <br/><br/>
                                 {checklists.why}
+                                <br/>
 
 
 

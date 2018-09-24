@@ -91,25 +91,18 @@
   ],
   "checklists": [
     {
-      "type": "cruise",
-      "location": "stay away from bermude triangle",
-      "item": "sun block and sunscreen",
-      "why": "i got burnt the f up",
-      "id": 4
+      "type": "beach trip",
+      "location": "the islands",
+      "item": "sunscreen - lots of sunscreen, a wagon, two radios, frisbee, 15 umbrellas, an ATV, shark repellent, extra sunglass for the wifey",
+      "why": "just trust me here",
+      "id": 1
     },
     {
-      "type": "rock climbing trip",
-      "location": "the center of the world",
-      "item": "bring a comb, toothbrush and floss. The floss can help you if your rope breaks",
-      "why": "floss comes in handy for securing your bags and shoes",
-      "id": 5
-    },
-    {
-      "type": "camping excursion in the fall",
-      "location": "the rockies",
-      "item": "bring a tent, a can of gasoline and some pez",
-      "why": "tuck things in your bag tight. The wind will blow them away if you dont!",
-      "id": 6
+      "type": "camping in the arctic",
+      "location": "Norway",
+      "item": "Extra pair of gloves",
+      "why": "yeah its that cold",
+      "id": 2
     }
   ],
   "maybes": [
@@ -142,16 +135,6 @@
       "userId": 1,
       "video": "https://open.spotify.com/playlist/665py9Id1eoOVtNTrwurHZ",
       "id": 6
-    },
-    {
-      "maybeName": "cruise",
-      "dates": "2019-03-25",
-      "location": "caribbean",
-      "why": "to get away",
-      "description": "party",
-      "userId": 1,
-      "video": "",
-      "id": 7
     },
     {
       "maybeName": "Log cabin",

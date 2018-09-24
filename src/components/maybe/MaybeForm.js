@@ -1,6 +1,6 @@
 import React, { Component } from "react"
 // import "../login/Login.css"
-// import "Journal.css"
+import './Maybe.css'
 
 export default class MaybeForm extends Component {
 
@@ -94,7 +94,7 @@ handleButtonClick = () => {
                             placeholder="To do what?"/>
                     </div>
                         <button type="submit" onClick={this.constructNewMaybe}
-                        className="btn btn-primary">Submit</button>
+                        className="btn btn-info">Submit</button>
                        <br/>
 
                     <div className="form-group">
