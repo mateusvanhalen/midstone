@@ -30,7 +30,7 @@ class JournalList extends Component{
     render() {
         return (<React.Fragment>
             <div className="journalButton">
-                <button secondary fluid
+                <button
                 type="button"
                         className="btn btn-info"
                         onClick={() => {

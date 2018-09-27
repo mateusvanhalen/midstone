@@ -14,6 +14,18 @@
     -webkit-transform: scale(.9, .9);
     font-family: 'Indie Flower', cursive;
 }
+.cookie-body {
+    background-image: url("cookie.jpg");
+    -webkit-transform: scale(.9, .9);
+    font-family: 'Indie Flower', cursive;
+    background-position: right;
+    height: 15em;
+    background-repeat: no-repeat;
+}
+
+.card{
+
+}
 
 .card-body{
     border-radius: 3%;
