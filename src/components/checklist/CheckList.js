@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import '../journal/Journal.css'
+import './CheckList.css'
 
 export class CheckList extends Component{
 
@@ -14,7 +15,7 @@ export class CheckList extends Component{
                         onClick={() => {
                             this.props.history.push("/checklists/new")}
                         }>
-                    Make a checklist!
+                    Make a new checklist!
                 </button>
             </div>
             <section className="checklists">
@@ -22,7 +23,7 @@ export class CheckList extends Component{
                 // sort by server call, it is easier
                 this.props.checklists.map(checklists =>
                     <div key={checklists.id} className="card">
-                        <div className="card-body">
+                        <div className="checklistbody">
                             <h5 className="card-title"></h5>
 
                                 {`Trip Type:`}<h4>{checklists.type}</h4>
@@ -38,7 +39,7 @@ export class CheckList extends Component{
                                 {`Umm..why?`}
                                 <br/><br/>
                                 {checklists.why}
-                                <br/>
+
 
 
 

@@ -23,7 +23,9 @@
     background-repeat: no-repeat;
 }
 
-.card{
+.photo{
+
+    align-content: center;
 
 }
 
@@ -31,6 +33,13 @@
     border-radius: 3%;
 }
 .journalForm{
-    background-color: rgb(210, 230, 243);
+    background-image: url("sunshine.jpg");
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: center
 
 }
+.checkButton{
+    text-align: center;
+}
+

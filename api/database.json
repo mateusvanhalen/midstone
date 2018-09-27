@@ -193,6 +193,15 @@
       "ddates": "2018-09-19",
       "userId": 1,
       "id": 1
+    },
+    {
+      "cookieName": "hotel hoppin",
+      "location": "lots of hotels",
+      "total": "2000",
+      "weeksTil": "7",
+      "ddates": "2018-12-01",
+      "userId": 1,
+      "id": 2
     }
   ]
 }

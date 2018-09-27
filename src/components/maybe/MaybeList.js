@@ -1,29 +1,29 @@
 import React, { Component } from 'react'
 import { Link } from "react-router-dom"
-// import './Journal.css'
 
 class MaybeList extends Component {
 
     render() {
         return (<React.Fragment>
             <div className="maybeButton">
-                <button type="button"
+                <button type="image" src="sunshine.jpg"
                         className="btn btn-info"
                         onClick={() => {
                             this.props.history.push("/maybes/new")
                             }
                         }>
-                    Where to?
+                    Add a "Maybe"
                 </button>
             </div>
             <section className="maybes">
+            <br/>
             {
                 //sort by date?
                 // it is easier to sort by server call
 
                 this.props.maybes.map(maybes =>
                     <div key={maybes.id} className="card">
-                        <div className="card-body">
+                        <div className="maybe-body">
                             <h5 className="card-title">
                             {"Where:"}<br/><br/>
                                 {maybes.location}

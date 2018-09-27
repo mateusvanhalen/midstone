@@ -249,16 +249,14 @@ export default class ApplicationViews extends Component {
             return <Redirect to="/" />
           }
         }} />
-        < Route exact path="/cookieJars" render={(props) => {
+         < Route exact path="/cookieJars" render={(props) => {
           if (this.isAuthenticated()) {
-            return <CookieJarList {...props}
-              deleteCookieJars={this.deleteCookieJars}
-              cookieJars={this.state.cookieJars} />
+            return <CookieJarList {...props} deleteCookieJar={this.deleteCookieJar} cookieJars={this.state.cookieJars} />
           } else {
             return <Redirect to="/" />
           }
-        }
-        } />
+        }} />
+
 
 
 

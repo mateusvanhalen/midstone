@@ -15,3 +15,20 @@
     height: 25px;
 
 }
+
+.maybe-body {
+    font-family: 'Indie Flower', cursive;
+    text-align: center;
+    background-image: url("sunshine.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 10rem;
+    border: 20em;
+    margin: .2em;
+
+}
+.maybeButton {
+    text-align: center;
+
+
+}

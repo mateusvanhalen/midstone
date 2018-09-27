@@ -31,7 +31,7 @@ render() {
                     onClick={() => {
                         this.props.history.push("/cookieJars/new")}
                     }>
-                Help me out cookie jar
+                But how many cookies?
             </button>
             <br/>
         </div>
@@ -50,6 +50,15 @@ render() {
 
             <br/>
             {`is the rough date for departure still around `} {this.formatDate(cookieJars.ddates)}{` and you still thinkin about `}{cookieJars.total}{` bucks?`}
+            <br/>
+            <br/>
+            {`-or-`}
+            <br/>
+            <br/>
+            <a
+                                onClick={() => this.props.deleteCookieJar(cookieJars.id)
+                                    .then(() => this.props.history.push("/cookieJars"))}
+                                className="btn btn-info">Crumble This Cookie</a>
 
 
                                 </h5>
