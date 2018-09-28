@@ -13,12 +13,37 @@
     background-position: stretch;
     -webkit-transform: scale(.9, .9);
     font-family: 'Indie Flower', cursive;
+
+}
+.cookie-body {
+    background-image: url("cookie.jpg");
+    -webkit-transform: scale(.9, .9);
+    font-family: 'Indie Flower', cursive;
+    background-position: right;
+    height: 15em;
+    background-repeat: no-repeat;
+}
+.journalButton {
+    text-align: center;
+}
+
+.photo{
+
+    align-content: center;
+
 }
 
 .card-body{
     border-radius: 3%;
 }
 .journalForm{
-    background-color: rgb(210, 230, 243);
+    background-image: url("sunshine.jpg");
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: center
 
 }
+.checkButton{
+    text-align: center;
+}
+

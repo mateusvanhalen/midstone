@@ -1,5 +1,6 @@
 import React, { Component } from "react"
 import "../login/Login.css"
+import './CookieJar.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 

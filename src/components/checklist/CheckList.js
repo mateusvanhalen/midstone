@@ -1,7 +1,9 @@
 import React, { Component } from 'react'
 import '../journal/Journal.css'
+import './CheckList.css'
+import './check.jpg'
 
-export class CheckList extends Component{
+export class CheckList extends Component {
 
 
 
@@ -10,53 +12,69 @@ export class CheckList extends Component{
         return (<React.Fragment>
             <div className="checkButton">
                 <button type="button"
-                        className="btn btn-info"
-                        onClick={() => {
-                            this.props.history.push("/checklists/new")}
-                        }>
-                    Make a checklist!
+                    className="btn btn-info"
+                    onClick={() => {
+                        this.props.history.push("/checklists/new")
+                    }
+                    }>
+                    Make a new checklist!
                 </button>
             </div>
             <section className="checklists">
-            {
-                // sort by server call, it is easier
-                this.props.checklists.map(checklists =>
-                    <div key={checklists.id} className="card">
-                        <div className="card-body">
-                            <h5 className="card-title"></h5>
+                <div className="scrollNote">
+                    Scroll down to see all checklists
+</div>
+                {
 
-                                {`Trip Type:`}<h4>{checklists.type}</h4>
-                                <br/><br/>
-                                {`Where tho?`}
-                                <br/><br/>
-                                {checklists.location}
-                                <br/><br/>
+                    this.props.checklists.map(checklists =>
+                        <div key={checklists.id} className="card">
+                        {/* <img className='check.jpg'src={'/check.jpg'}/> */}
+                            <div className="checklistbody">
+                                <h5 className="card-title"></h5>
+                                <div className="checkStuff">
+                                    {`Trip Type:`}<h4>{checklists.type}</h4>
+                                </div>
+                                <br /><br />
+                                {`Where was this checklist for?`}
+                                <br /><br />
+                                <div className="checkStuff">
+                                    {checklists.location}
+                                </div>
+                                <br /><br />
                                 {`Ok, but what to bring?`}
-                                <br/><br/>
-                                {checklists.item}
-                                <br/><br/>
+                                <br /><br />
+                                <div className="checkStuff">
+                                    {checklists.item}
+                                </div>
+                                <br /><br />
                                 {`Umm..why?`}
-                                <br/><br/>
-                                {checklists.why}
-                                <br/>
+                                <br /><br />
+                                <div className="checkStuff">
+                                    {checklists.why}
+                                </div>
 
 
 
 
-                                <br/>
+                                <br />
+                                <br />
                                 <button
                                     onClick={() => this.props.deleteCheck(checklists.id)}
                                     className="nav-link-quit">Delete this checklist</button>
-                            <h4 className="card-tile">{checklists.checklName}
+                                    <br/>
+                                    <br/>
+                                    <br/>
+                                <h4 className="card-tile">{checklists.checklName}
                                 </h4>
+                            </div>
                         </div>
-                    </div>
-                )
-            }
+                    )
+                }
             </section>
 
-            </React.Fragment>
-    )
-}}
+        </React.Fragment>
+        )
+    }
+}
 
 export default CheckList;

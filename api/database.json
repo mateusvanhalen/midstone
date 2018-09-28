@@ -17,6 +17,12 @@
       "email": "jessie@me.com",
       "password": "hi",
       "id": 3
+    },
+    {
+      "username": "barbara",
+      "email": "barbara@me.com",
+      "password": "hi",
+      "id": 4
     }
   ],
   "journals": [
@@ -87,6 +93,30 @@
       "userId": 1,
       "uploadedFileCloudinaryUrl": "https://res.cloudinary.com/mateusvanhalen/image/upload/v1537453950/ov1usicdlady3vjcqq8e.jpg",
       "id": 19
+    },
+    {
+      "journalName": "my vacation to nashville",
+      "ddates": "2018-09-20",
+      "rdates": "2018-09-30",
+      "location": "Nashville at Fireball Maggies",
+      "rating": "",
+      "description": "went to visit my son and daughter in law. We ate and drank our faces off!! sooooo much fun and i cant wait to do it again",
+      "userId": 4,
+      "uploadedFileCloudinaryUrl": "https://res.cloudinary.com/mateusvanhalen/image/upload/v1537801736/xspnddgd7i0kqhfjdie4.jpg",
+      "id": 20,
+      "journalId": 20
+    },
+    {
+      "journalName": "Pregnancy test",
+      "ddates": "2018-09-28",
+      "rdates": "2018-09-28",
+      "location": "Jessie's belly",
+      "rating": "",
+      "description": "It is kind of early but we took two tests and they both came back positive. I think this means you all will be grandparents again!",
+      "userId": 4,
+      "uploadedFileCloudinaryUrl": "https://res.cloudinary.com/mateusvanhalen/image/upload/v1537980291/bmefwptzygoofdqkmqyb.jpg",
+      "id": 21,
+      "journalId": 21
     }
   ],
   "checklists": [
@@ -103,6 +133,13 @@
       "item": "Extra pair of gloves",
       "why": "yeah its that cold",
       "id": 2
+    },
+    {
+      "type": "canoe trip",
+      "location": "that big lake behind that mountain",
+      "item": "def a canoe and that paddle thing",
+      "why": "my fins got tired",
+      "id": 3
     }
   ],
   "maybes": [
@@ -156,6 +193,15 @@
       "ddates": "2018-09-19",
       "userId": 1,
       "id": 1
+    },
+    {
+      "cookieName": "hotel hoppin",
+      "location": "lots of hotels",
+      "total": "2000",
+      "weeksTil": "7",
+      "ddates": "2018-12-01",
+      "userId": 1,
+      "id": 2
     }
   ]
 }

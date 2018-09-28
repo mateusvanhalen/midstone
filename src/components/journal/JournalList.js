@@ -30,13 +30,13 @@ class JournalList extends Component{
     render() {
         return (<React.Fragment>
             <div className="journalButton">
-                <button secondary fluid
+                <button
                 type="button"
                         className="btn btn-info"
                         onClick={() => {
                             this.props.history.push("/journals/new")}
                         }>
-                    Log a new trip
+                    Log a new trip!
                 </button>
                 <br/>
             </div>

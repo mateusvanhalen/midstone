@@ -103,6 +103,8 @@ handleButtonClick = () => {
                             onChange={this.handleFieldChange}
                             id="video"
                             placeholder="Url to get me in vacation mode"/>
+                    <image className="video">
+                    </image>
                     </div>
                 </form>
             </React.Fragment>

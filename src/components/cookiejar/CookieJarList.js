@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
-import { Link } from "react-router-dom"
+// import { Link } from "react-router-dom"
+
 
 
 export default class CookieJarList extends Component{
@@ -13,10 +14,10 @@ export default class CookieJarList extends Component{
           "August", "September", "October",
           "November", "December"
         ];
-
         var dayIndex = ddates.getDate();
         var monthIndex = ddates.getMonth();
         var year = ddates.getFullYear();
+
 
         return monthNames[monthIndex] + ' ' + dayNames[dayIndex] + ', ' + ' ' + year;
 
@@ -30,25 +31,36 @@ render() {
                     onClick={() => {
                         this.props.history.push("/cookieJars/new")}
                     }>
-                Consult the cookie jar
+                How to do it?
             </button>
             <br/>
         </div>
         <section className="cookieJars">
         {
+
             // sort by server call, it is easier
             this.props.cookieJars.map(cookieJars =>
                 <div key={cookieJars.id} className="card">
-                    <div className="card-body">
-                        <h5 className="card-title">
-            {`weeks to go:`}  {cookieJars.weeksTil}
+                    <div className="cookie-body">
+                        <h2 className="card-title">
+            {`Trip reminder for `}{cookieJars.cookieName}{` trip to `}{cookieJars.location}
+            <br/>{`   check this out...`}
+            <br/></h2><h5>
+            {`Just put about $`}{Math.round(cookieJars.total / cookieJars.weeksTil) }{` per week for `} {cookieJars.weeksTil}{` weeks in your cookie jar, and you will have the cash!`}
+
             <br/>
-            {`until `} {this.formatDate(cookieJars.ddates)}
+            {`is the rough date for departure still around `} {this.formatDate(cookieJars.ddates)}{` and you still thinkin about `}{cookieJars.total}{` bucks?`}
             <br/>
-            {`save this per week:`}  {cookieJars.total} <br/>
-            {`or save this per day:`}
-                                <br/>
-                                {/* <Link className="btn btn-info" to={`/cookieJars/${cookieJars.id}`}>Details</Link> */}
+            <br/>
+            {`-or-`}
+            <br/>
+            <br/>
+            <a
+                                onClick={() => this.props.deleteCookieJar(cookieJars.id)
+                                    .then(() => this.props.history.push("/cookieJars"))}
+                                className="btn btn-info">Crumble This Cookie</a>
+
+
                                 </h5>
 
                     </div>
