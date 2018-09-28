@@ -30,22 +30,22 @@ export default class MaybeDetail extends Component {
                     <br/>
                     {/* <iframe width="420" height="315" src={maybes.video}></iframe> */}
 
-
+                     <h2>
                     {"Are you really sure you want to can your "}
                 {maybes.maybeName}
                 {" to "}{maybes.location}{"?! Remember you wanted to "}{maybes.why}{" and "}{maybes.description} <br/><br/>
-                {" Have a listen before you delete? "}
+                {" Have a listen before you delete? "}</h2>
                 </div>
 
-                            <h2><a
+                            <h3><a
                                 onClick={() => this.props.deleteMaybe(maybes.id)
                                     .then(() => this.props.history.push("/maybes"))}
-                                className="btn btn-info">Confirm Delete trip</a></h2>
+                                className="btn btn-info">Confirm Delete trip</a></h3>
 
 
 
-                        <h2><Link className="btn btn-info"
-                            to="/maybes">Keep and return to List</Link></h2>
+                        <h4><Link className="btn btn-info"
+                            to="/maybes">Keep and return to List</Link></h4>
 
 
                     </div>

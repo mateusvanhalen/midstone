@@ -31,7 +31,7 @@ render() {
                     onClick={() => {
                         this.props.history.push("/cookieJars/new")}
                     }>
-                But how many cookies?
+                How to do it?
             </button>
             <br/>
         </div>

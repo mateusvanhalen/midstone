@@ -13,6 +13,7 @@
     background-position: stretch;
     -webkit-transform: scale(.9, .9);
     font-family: 'Indie Flower', cursive;
+
 }
 .cookie-body {
     background-image: url("cookie.jpg");
@@ -21,6 +22,9 @@
     background-position: right;
     height: 15em;
     background-repeat: no-repeat;
+}
+.journalButton {
+    text-align: center;
 }
 
 .photo{

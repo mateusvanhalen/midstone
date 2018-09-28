@@ -36,7 +36,7 @@ class JournalList extends Component{
                         onClick={() => {
                             this.props.history.push("/journals/new")}
                         }>
-                    Log a new trip
+                    Log a new trip!
                 </button>
                 <br/>
             </div>

@@ -14,7 +14,7 @@ class MaybeList extends Component {
                         }>
                     Add a "Maybe"
                 </button>
-            </div>
+
             <section className="maybes">
             <br/>
             {
@@ -24,7 +24,7 @@ class MaybeList extends Component {
                 this.props.maybes.map(maybes =>
                     <div key={maybes.id} className="card">
                         <div className="maybe-body">
-                            <h5 className="card-title">
+                            <h4 className="card-title" display="inline">
                             {"Where:"}<br/><br/>
                                 {maybes.location}
                                 {/* {maybes.description} */}
@@ -39,14 +39,14 @@ class MaybeList extends Component {
                                     >Delete this trip idear</Link>
 
 
-                                    </h5>
+                                    </h4>
 
                         </div>
                     </div>
                 )
             }
             </section>
-
+            </div>
             </React.Fragment>
     )
 }}
