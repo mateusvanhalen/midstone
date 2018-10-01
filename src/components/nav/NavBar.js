@@ -10,57 +10,39 @@ class NavBar extends Component {
         return (
 
             <div className="navbar navbar-light fixed-top light-blue flex-lg-nowrap p-4 shadow">
-
-
-
-                    <div className="navbar-nav mr-auto">
-
-                        <h4> Utripn</h4>
-                    </div>
-                    <h5>
+                <div className="navbar-nav mr-auto">
+                    <h4> Utripn</h4>
+                </div>
+                <h5>
                     <ul className="nav nav-pills">
 
                         <li className="active">
-                        <Link className="nav-link"
+                            <Link className="nav-link"
                                 to="/journals">journal / home</Link>
-                    </li>
-                    <li className="nav-item">
-                        <Link className="nav-link"
-                            to="/maybes">maybe one day</Link>
-                    </li>
-                    <li className="nav-item">
-                        <Link className="nav-link"
-                            to="/checklists">checklist</Link>
-                    </li>
-                    <li className="nav-item">
-                        <Link className="nav-link"
-                            to="/cookieJars">fill the cookie jar</Link>
-                    </li>
-
-
-                            </ul></h5>
-
+                        </li>
+                        <li className="nav-item">
+                            <Link className="nav-link"
+                                to="/maybes">maybe one day</Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link className="nav-link"
+                                to="/checklists">checklist</Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link className="nav-link"
+                                to="/cookieJars">fill the cookie jar</Link>
+                        </li>
+                    </ul></h5>
                 <div id="content">
-
-
-
-
-
-                        <div className="container-fluid">
+                    <div className="container-fluid">
                         <button onClick={() => {
-                        localStorage.clear("credentials")
-                        document.location.href = 'http://localhost:3000'
-                    }}
-                        className="logoutButton">sign out</button>
-
-                        </div>
-
+                            localStorage.clear("credentials")
+                            document.location.href = 'http://localhost:3000'
+                        }}
+                            className="logoutButton">sign out</button>
+                    </div>
                 </div>
-
-        </div>
-
-
-
+            </div>
         )
     }
 }

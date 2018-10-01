@@ -103,7 +103,7 @@ handleButtonClick = () => {
                             onChange={this.handleFieldChange}
                             id="video"
                             placeholder="Copy Url here!"/>
-                    <image className="video">
+                    <image className="youtube">
                     </image>
                     </div>
                 </form>
