@@ -24,7 +24,7 @@ export default class JournalDetail extends Component {
 
                         </h2>
                         <h3 className="card-title">{journals.journalName}</h3>
-
+                        <br/>
                         <h4>{journals.location} </h4>
 
                         <h5>  {journals.description} </h5>

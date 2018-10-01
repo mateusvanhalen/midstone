@@ -32,6 +32,7 @@
 }
 .photo{
     display: inline-block;
+    text-align: center;
 }
 
 .card-body{

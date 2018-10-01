@@ -62,7 +62,7 @@
     },
     {
       "journalName": "cuise in my car",
-      "ddates": "2017-11-02",
+      "ddates": "2017-09-10",
       "rdates": "2017-11-03",
       "location": "Darkwing Duck City",
       "rating": "",
@@ -160,6 +160,26 @@
       "userId": 1,
       "video": "https://www.youtube.com/watch?v=fx_YyqQRF-M",
       "id": 8
+    },
+    {
+      "maybeName": "boat ride",
+      "dates": "2018-10-25",
+      "location": "the big river",
+      "why": "to get out of nss for a week",
+      "description": "float down the water",
+      "userId": 1,
+      "video": "https://www.youtube.com/watch?v=OTg1n95--KE",
+      "id": 9
+    },
+    {
+      "maybeName": "Go see Cher",
+      "dates": "2019-01-31",
+      "location": "Bridgestone Arena",
+      "why": "TO SEE CHER",
+      "description": "turn back time",
+      "userId": 4,
+      "video": "https://www.youtube.com/watch?v=jq_BAHIAuNw",
+      "id": 10
     }
   ],
   "cookieJars": [

@@ -47,6 +47,7 @@ class JournalList extends Component{
                     <div key={journals.id} className="card">
                         <div className="card-body">
                             <h3 className="card-title">{journals.journalName}</h3>
+                            <br/> <br/>
                             <h4>
                 {`departed:`}  {this.formatDate(journals.ddates)}
                                 <br/><br/>
