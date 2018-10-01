@@ -31,7 +31,7 @@ render() {
                     onClick={() => {
                         this.props.history.push("/cookieJars/new")}
                     }>
-                How to do it?
+                Cookulate
             </button>
             <br/>
         </div>

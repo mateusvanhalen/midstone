@@ -16,9 +16,8 @@
 
 }
 .maybes {
-    text-align: center;
-    align-content: center;
-    display: center;
+
+    display: inline-flex;
 }
 
 .maybe-body {
@@ -29,18 +28,12 @@
     background-position: center;
     background-repeat: no-repeat;
     width: 20em;
-    border: 20em;
-    margin: .2em;
+
     border-radius: 50%;
 
 }
 .maybeButton {
-    text-align: center;
-    display: center;
-    align-content: center;
-
 }
-.card {
-    background-color: lightcyan;
+.card-title {
     display: inline;
 }

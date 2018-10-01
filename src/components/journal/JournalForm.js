@@ -100,7 +100,7 @@ export default class JournalForm extends Component {
                         <Dropzone
                             multiple={false} accept="image/*"
                             onDrop={this.onImageDrop.bind(this)}>
-                            <p>Drop an image or click to select a file to upload.</p>
+                            <p>Click or drop image from your trip!</p>
                         </Dropzone>
                     }
                     <div>

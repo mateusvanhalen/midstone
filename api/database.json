@@ -105,18 +105,6 @@
       "uploadedFileCloudinaryUrl": "https://res.cloudinary.com/mateusvanhalen/image/upload/v1537801736/xspnddgd7i0kqhfjdie4.jpg",
       "id": 20,
       "journalId": 20
-    },
-    {
-      "journalName": "Pregnancy test",
-      "ddates": "2018-09-28",
-      "rdates": "2018-09-28",
-      "location": "Jessie's belly",
-      "rating": "",
-      "description": "It is kind of early but we took two tests and they both came back positive. I think this means you all will be grandparents again!",
-      "userId": 4,
-      "uploadedFileCloudinaryUrl": "https://res.cloudinary.com/mateusvanhalen/image/upload/v1537980291/bmefwptzygoofdqkmqyb.jpg",
-      "id": 21,
-      "journalId": 21
     }
   ],
   "checklists": [
@@ -160,18 +148,8 @@
       "why": "relaxtion",
       "description": "drinking mai tais and margaritas",
       "userId": 1,
-      "video": "https://www.youtube.com/embed/yxHbKlkvHqc?autoplay=1",
+      "video": "https://www.youtube.com/watch?v=yxHbKlkvHqc",
       "id": 5
-    },
-    {
-      "maybeName": "conga line",
-      "dates": "2020-02-03",
-      "location": "the islands",
-      "why": "to escape the hustle",
-      "description": "party like a rockstar",
-      "userId": 1,
-      "video": "https://open.spotify.com/playlist/665py9Id1eoOVtNTrwurHZ",
-      "id": 6
     },
     {
       "maybeName": "Log cabin",
@@ -180,7 +158,7 @@
       "why": "to get away",
       "description": "relax and drink vodka",
       "userId": 1,
-      "video": "",
+      "video": "https://www.youtube.com/watch?v=fx_YyqQRF-M",
       "id": 8
     }
   ],
