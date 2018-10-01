@@ -148,7 +148,7 @@
       "why": "relaxtion",
       "description": "drinking mai tais and margaritas",
       "userId": 1,
-      "video": "https://www.youtube.com/embed/yxHbKlkvHqc?autoplay=1",
+      "video": "https://www.youtube.com/watch?v=yxHbKlkvHqc",
       "id": 5
     },
     {
@@ -158,7 +158,7 @@
       "why": "to get away",
       "description": "relax and drink vodka",
       "userId": 1,
-      "video": "",
+      "video": "https://www.youtube.com/watch?v=fx_YyqQRF-M",
       "id": 8
     }
   ],

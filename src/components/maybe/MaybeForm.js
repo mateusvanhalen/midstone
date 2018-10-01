@@ -98,11 +98,11 @@ handleButtonClick = () => {
                        <br/>
 
                     <div className="form-group">
-                        <label htmlFor="video">share a youtube video here for trip prep</label>
+                        <label htmlFor="video">Have a YouTube video url?</label>
                         <input type="url"
                             onChange={this.handleFieldChange}
                             id="video"
-                            placeholder="Url to get me in vacation mode"/>
+                            placeholder="Copy Url here!"/>
                     <image className="video">
                     </image>
                     </div>

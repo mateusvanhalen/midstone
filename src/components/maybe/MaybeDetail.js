@@ -8,7 +8,9 @@ import { Link } from "react-router-dom"
 export default class MaybeDetail extends Component {
     render() {
         const maybes = this.props.maybes.find(a => a.id === parseInt(this.props.match.params.maybeId, 0)) || {}
-
+        console.log(maybes)
+        let fields = maybes.video.split(`=`)
+        let youtube = fields[1]
 //need to get the object down to this section
         return (
 
@@ -17,12 +19,21 @@ export default class MaybeDetail extends Component {
                 className="maybes">
 
                     <div className="card-body">
+
+
+
                     {/* <a target="#/2.xhtml" href={maybes.video} className="btn btn-info"
                     src={maybes.video} onclick="audio.play()" */}
 
                         {/* Loads and plays using EMBEDED url link */}
-                        <iframe width="420" height="315"
-                            src={maybes.video}>
+                        <iframe width="420" height="315" src={`https://www.youtube.com/embed/${youtube}?autoplay=1`}>
+
+
+                        {/* let fields = {maybes.video}.split(=)
+                        let youtube = fields[1]
+
+                        "https://www.yourtube.com/embed{[1]}?autoplay=1" */}
+
                         </iframe>
                     <br/>
                     {/* >click to {maybes.description}</a>
