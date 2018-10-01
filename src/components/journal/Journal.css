@@ -27,10 +27,11 @@
     text-align: center;
 }
 
+.dropzone{
+    position: relative;
+}
 .photo{
-
-    align-content: center;
-
+    display: inline-block;
 }
 
 .card-body{

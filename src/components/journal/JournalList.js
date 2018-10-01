@@ -57,7 +57,7 @@ class JournalList extends Component{
                                     <br/><br/>
                                     <Link className="btn btn-info" to={`/journals/${journals.id}`}>Details</Link><br/><br/>
                                     </h4>
-                                    <img src={journals.uploadedFileCloudinaryUrl} style={{height: "300px", width: "auto" }}/>
+                                    <img src={journals.uploadedFileCloudinaryUrl} style={{height: "400px", width: "auto" }}/>
                                     <br/><br/>
 
                         </div>

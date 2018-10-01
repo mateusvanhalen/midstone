@@ -28,8 +28,10 @@ export default class JournalDetail extends Component {
                         <h4>{journals.location} </h4>
 
                         <h5>  {journals.description} </h5>
-
+                        < br/>
+                        <img src={journals.uploadedFileCloudinaryUrl} style={{height: "500px", width: "auto" }}/>
                         <p>
+                            <br></br>
                             <a
                                 onClick={() => this.props.deleteJournal(journals.id)
                                     .then(() => this.props.history.push("/journals"))}
@@ -39,11 +41,12 @@ export default class JournalDetail extends Component {
 
                                 className="btn btn-info"
                                 onClick={() => this.props.history.push(`/journals/edit/${journals.id}`)}
+
                                 className="btn btn-warning">Edit</a></p>
 
-
+                         <h4>
                         <Link className="nav-link"
-                            to="/journals">Back To Journals</Link>
+                            to="/journals">Back To Journals</Link></h4>
 
 
                     </div>
