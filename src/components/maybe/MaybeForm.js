@@ -93,10 +93,6 @@ handleButtonClick = () => {
                             id="description"
                             placeholder="To do what?"/>
                     </div>
-                        <button type="submit" onClick={this.constructNewMaybe}
-                        className="btn btn-info">Submit</button>
-                       <br/>
-
                     <div className="form-group">
                         <label htmlFor="video">Have a YouTube video url?</label>
                         <input type="url"
@@ -105,6 +101,10 @@ handleButtonClick = () => {
                             placeholder="Copy Url here!"/>
                     <image className="youtube">
                     </image>
+                    <br/>
+                    <button type="submit" onClick={this.constructNewMaybe}
+                        className="btn btn-info">Submit</button>
+                       <br/>
                     </div>
                 </form>
             </React.Fragment>
