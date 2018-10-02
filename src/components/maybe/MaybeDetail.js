@@ -27,9 +27,9 @@ export default class MaybeDetail extends Component {
 
                         <br />
                         <h2>
-                            {"Are you really sure you want to can your "}
+                            {"Are you really sure you want to rid this trip: "}
                             {maybes.maybeName}
-                            {" to "}{maybes.location}{"?! Remember you wanted to "}{maybes.why}{" and "}{maybes.description} <br /><br />
+                            {" to "}{maybes.location}{"?! Remember your why: "}{maybes.why}{" and "}{maybes.description} <br /><br />
                             {" Have a listen before you delete? "}</h2>
                     </div>
 
