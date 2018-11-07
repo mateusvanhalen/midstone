@@ -23,6 +23,12 @@
       "email": "barbara@me.com",
       "password": "hi",
       "id": 4
+    },
+    {
+      "username": "bobby",
+      "email": "bobby@me.com",
+      "password": "hi",
+      "id": 5
     }
   ],
   "journals": [
@@ -38,16 +44,16 @@
       "id": 14
     },
     {
-      "journalName": "Take a trip to the backyard pool!",
+      "journalName": "went to beach for the day",
       "ddates": "2018-05-05",
       "rdates": "2018-10-19",
-      "location": "FBM",
+      "location": "Sea Isle City!",
       "rating": "",
       "description": "Had a blast all summer. Friends and fam came by and made a huge mess but it was worth the cleanup!",
       "userId": 1,
       "uploadedFileCloudinaryUrl": "https://res.cloudinary.com/mateusvanhalen/image/upload/v1537284954/vwwmiloqssd1fteou8w4.jpg",
       "id": 15,
-      "journalId": 17
+      "journalId": 15
     },
     {
       "journalName": "staycation",
@@ -211,6 +217,15 @@
       "ddates": "2018-12-01",
       "userId": 1,
       "id": 2
+    },
+    {
+      "cookieName": "go to school",
+      "location": "nss",
+      "total": "1000",
+      "weeksTil": "4",
+      "ddates": "2018-10-25",
+      "userId": 4,
+      "id": 3
     }
   ]
 }

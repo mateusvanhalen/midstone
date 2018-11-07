@@ -14,6 +14,7 @@ class MaybeList extends Component {
                         }>
                     Add a "Maybe"
                 </button>
+                <br/><br/><br/>
 
             <section className="maybes">
             <br/>
