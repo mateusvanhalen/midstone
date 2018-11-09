@@ -44,18 +44,6 @@
       "id": 14
     },
     {
-      "journalName": "went to beach for the day",
-      "ddates": "2018-05-05",
-      "rdates": "2018-10-19",
-      "location": "Sea Isle City!",
-      "rating": "",
-      "description": "Had a blast all summer. Friends and fam came by and made a huge mess but it was worth the cleanup!",
-      "userId": 1,
-      "uploadedFileCloudinaryUrl": "https://res.cloudinary.com/mateusvanhalen/image/upload/v1537284954/vwwmiloqssd1fteou8w4.jpg",
-      "id": 15,
-      "journalId": 15
-    },
-    {
       "journalName": "staycation",
       "ddates": "2018-08-15",
       "rdates": "2018-08-23",
