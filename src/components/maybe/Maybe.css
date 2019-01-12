@@ -16,33 +16,38 @@
 
 }
 .maybes {
-    display: inline-block;
-    justify-content: center;
-    align-content: center;
-
+    border: 2em;
+    border-color: blue;
+    border-width: 2em;
 }
 
 .maybe-body {
     font-family: 'Indie Flower', cursive;
     text-align: left;
     align-content: center;
-    background-color: bisque;
     width: 20em;
-    padding: 2em;
-    margin: 2em;
+    padding: 4em;
+    margin: 4em;
 }
 
 .maybeButton {
-
+    padding-left: 15em;
+    padding-right: 15em;
 }
 .card-title {
+
+}
+.card-titlebox {
     font-family: 'Indie Flower', cursive;
     align-content: center;
+    padding: 2em;
+
 }
 
 .card {
     align-content: center;
     float: center;
+
 }
 
 
