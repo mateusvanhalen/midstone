@@ -16,24 +16,33 @@
 
 }
 .maybes {
+    display: inline-block;
+    justify-content: center;
+    align-content: center;
 
-    display: inline-flex;
 }
 
 .maybe-body {
     font-family: 'Indie Flower', cursive;
-    text-align: center;
+    text-align: left;
     align-content: center;
-    background-image: url("sunshine.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
+    background-color: bisque;
     width: 20em;
-
-    border-radius: 50%;
-
+    padding: 2em;
+    margin: 2em;
 }
+
 .maybeButton {
+
 }
 .card-title {
-    display: inline;
+    font-family: 'Indie Flower', cursive;
+    align-content: center;
 }
+
+.card {
+    align-content: center;
+    float: center;
+}
+
+

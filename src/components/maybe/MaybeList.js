@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Link } from "react-router-dom"
+import './Maybe.css'
 
 class MaybeList extends Component {
 
@@ -8,14 +9,12 @@ class MaybeList extends Component {
             <div className="maybeButton">
                 <button type="image" src="sunshine.jpg"
                         className="btn btn-info"
-                        onClick={() => {
+                            onClick={() => {
                             this.props.history.push("/maybes/new")
-                            }
-                        }>
+                            }}>
                     Add a "Maybe"
                 </button>
                 <br/><br/><br/>
-
             <section className="maybes">
             <br/>
             {
@@ -25,27 +24,20 @@ class MaybeList extends Component {
                 this.props.maybes.map(maybes =>
                     <div key={maybes.id} className="card">
                         <div className="maybe-body">
-                            <h4 className="card-title" display="inline">
+                            <h4 className="card-title" >
                             {"Where:"}<br/><br/>
                                 {maybes.location}
                                 {/* {maybes.description} */}
                                 <br/><br/>
-                                {"Why:"}
-                                <br/><br/>
+                                </h4><h6>
+                            {"Why:  "}
                                 {maybes.why}<br/><br/>
-
-
                                     <Link className="btn btn-info" to={`/maybes/${maybes.id}`}
-
-                                    >Delete this trip idear</Link>
-
-
-                                    </h4>
-
+                            >Delete this trip idear</Link>
+                            </h6>
                         </div>
                     </div>
-                )
-            }
+                )}
             </section>
             </div>
             </React.Fragment>
