@@ -1,0 +1,55 @@
+.maybeForm {
+    background-image: url("clippy.jpg");
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 400px;
+}
+.form-group {
+   font-size: 1.5em;
+}
+.video {
+    background-image: url("youtube.png");
+    display: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25px;
+
+}
+.maybes {
+    border: 2em;
+    border-color: blue;
+    border-width: 2em;
+}
+
+.maybe-body {
+    font-family: 'Indie Flower', cursive;
+    text-align: left;
+    align-content: center;
+    width: 20em;
+    padding: 4em;
+    margin: 4em;
+}
+
+.maybeButton {
+    padding-left: 15em;
+    padding-right: 15em;
+}
+.card-title {
+    font-family: 'Indie Flower', cursive;
+    align-content: center;
+
+}
+.card-titlebox {
+    font-family: 'Indie Flower', cursive;
+    align-content: center;
+    padding: 2em;
+
+}
+
+.card {
+    align-content: center;
+    float: center;
+
+}
+
+
