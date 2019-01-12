@@ -110,6 +110,17 @@
       "userId": 1,
       "uploadedFileCloudinaryUrl": "https://res.cloudinary.com/mateusvanhalen/image/upload/v1538486412/ym0bejudpqmdnh7fgjn6.jpg",
       "id": 21
+    },
+    {
+      "journalName": "pregnant",
+      "ddates": "2018-12-20",
+      "rdates": "2018-12-21",
+      "location": "Courtview Dr",
+      "rating": "",
+      "description": "Jessie is pregnant!!",
+      "userId": 4,
+      "uploadedFileCloudinaryUrl": "https://res.cloudinary.com/mateusvanhalen/image/upload/v1545594610/ia4zw6q4ygbfwmzabqia.jpg",
+      "id": 22
     }
   ],
   "checklists": [
@@ -188,15 +199,6 @@
     }
   ],
   "cookieJars": [
-    {
-      "cookieName": "beach",
-      "location": "africa",
-      "total": "1000",
-      "weeksTil": "15",
-      "ddates": "2018-09-19",
-      "userId": 1,
-      "id": 1
-    },
     {
       "cookieName": "hotel hoppin",
       "location": "lots of hotels",
