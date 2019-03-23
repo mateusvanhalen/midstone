@@ -1,6 +1,8 @@
 import React, { Component } from "react"
 import Dropzone from 'react-dropzone'
 import request from 'superagent'
+import './Journal.css'
+
 
 
 const CLOUDINARY_UPLOAD_URL = 'https://api.cloudinary.com/v1_1/mateusvanhalen/upload';
@@ -84,11 +86,11 @@ render() {
         <React.Fragment>
 
 
-            <Dropzone
+            <Dropzone className="photo"
               multiple={false}
               accept="image/*"
               onDrop={this.onImageDrop.bind(this)}>
-              <p>Drop an image or click to select a file to upload.</p>
+              <p>Click HERE to change your profile pic for this event</p>
 
             </Dropzone>
 

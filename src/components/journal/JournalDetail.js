@@ -1,5 +1,7 @@
 import React, { Component } from "react"
 import { Link } from "react-router-dom"
+import './Journal.css'
+
 
 
 
@@ -18,29 +20,33 @@ export default class JournalDetail extends Component {
             <section className="journal">
                 <div key={journals.id} className="detail-card">
                     <div className="card-body">
-                        <h4 className="card-title">
-                            {/* <img src={journal_pic} alt="" className="icon--journals" /> */}
-                        </h4>
-                        <h6 className="card-title">{journals.journalName}</h6>
-                        <h6>{journals.location},
-                        {journals.rating},
-                        {journals.description}
-                        </h6>
-                        <h5>
+                        <h2 className="card-title">
+
+                        </h2>
+                        <h3 className="card-title">{journals.journalName}</h3>
+                        <br/>
+                        <h4>{journals.location} </h4>
+
+                        <h5>  {journals.description} </h5>
+                        < br/>
+                        <img src={journals.uploadedFileCloudinaryUrl} style={{height: "500px", width: "auto" }}/>
+                        <p>
+                            <br></br>
                             <a
                                 onClick={() => this.props.deleteJournal(journals.id)
                                     .then(() => this.props.history.push("/journals"))}
-                                className="btn btn-success">Delete</a>
+                                className="btn btn-info">Delete</a>
 
                             <a
 
-                                className="btn btn-success"
+                                className="btn btn-info"
                                 onClick={() => this.props.history.push(`/journals/edit/${journals.id}`)}
-                                className="btn btn-success">Edit</a></h5>
 
+                                className="btn btn-warning">Edit</a></p>
 
+                         <h4>
                         <Link className="nav-link"
-                            to="/journals">Back To Journals</Link>
+                            to="/journals">Back To Journals</Link></h4>
 
 
                     </div>

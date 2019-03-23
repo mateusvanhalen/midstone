@@ -1,6 +1,8 @@
 import React, { Component } from "react"
 import "../login/Login.css"
+import './CookieJar.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 export default class CookieJarForm extends Component {
 
@@ -24,7 +26,7 @@ constructNewCookieJar = evt => {
     }
 
     else {
-        const cookieJar = {
+        const cookieJars = {
             cookieName: this.state.cookieName,
             location: this.state.location,
             total: this.state.total,
@@ -32,7 +34,7 @@ constructNewCookieJar = evt => {
             ddates: this.state.ddates,
             userId: JSON.parse(localStorage.getItem("credentials")).id,
         }
-        this.props.addCookieJar(cookieJar).then(() => this.props.history.push("/cookieJars"))
+        this.props.addCookieJars(cookieJars).then(() => this.props.history.push("/cookieJars"))
         }
     }
         handleButtonClick = () => {

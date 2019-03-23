@@ -3,6 +3,8 @@ import "../login/Login.css"
 import Dropzone from 'react-dropzone';
 import request from 'superagent';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './Journal.css'
+
 // import { Button } from 'reactstrap';
 // import { Modal } from 'reactstrap';
 
@@ -93,11 +95,12 @@ export default class JournalForm extends Component {
         return (
             <React.Fragment>
                 <form className="journalForm">
+                <div className="photo">
                     {
                         <Dropzone
                             multiple={false} accept="image/*"
                             onDrop={this.onImageDrop.bind(this)}>
-                            <p>Drop an image or click to select a file to upload.</p>
+                            <p>Click or drop image from your trip!</p>
                         </Dropzone>
                     }
                     <div>
@@ -110,24 +113,25 @@ export default class JournalForm extends Component {
                                     <p>{this.state.uploadedFile.name}</p>
                                     <img src={this.state.uploadedFileCloudinaryUrl} />
                                 </div>}
+                                </div>
                         </div>
                     </div>
                     <div className="form-group">
-                        <label htmlFor="journalName">trip type</label>
+                        <label htmlFor="journalName">trip type: </label>
                         <input type="text" required
                             onChange={this.handleFieldChange}
                             id="journalName"
                             placeholder="journal" />
                     </div>
                     <div className="form-group">
-                        <label htmlFor="ddates">departure </label>
+                        <label htmlFor="ddates">departure: </label>
                         <input type="date" required
                             onChange={this.handleFieldChange}
                             id="ddates"
                             placeholder="Select departure date" />
                     </div>
                     <div className="form-group">
-                        <label htmlFor="rdates">return </label>
+                        <label htmlFor="rdates">return: </label>
                         <input type="date" required
                             onChange={this.handleFieldChange}
                             id="rdates"
@@ -149,7 +153,7 @@ export default class JournalForm extends Component {
                     </div>; */}
 
                     <div className="form-group">
-                        <label htmlFor="location">location</label>
+                        <label htmlFor="location">location:  </label>
                         <input type="text" required
                             onChange={this.handleFieldChange}
                             id="location"
@@ -157,13 +161,13 @@ export default class JournalForm extends Component {
                     </div>
 
                     <div className="form-group">
-                        <label htmlFor="description">description </label>
+                        <label htmlFor="description">description: </label>
                         <input type="text" required
                             onChange={this.handleFieldChange}
                             id="description" />
                     </div>
                     <button type="submit" onClick={this.constructNewJournal}
-                        className="btn btn-primary">Submit</button>
+                        className="btn btn-info">Submit</button>
                 </form>
             </React.Fragment>
         )

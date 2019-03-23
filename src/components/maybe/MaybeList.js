@@ -1,52 +1,50 @@
 import React, { Component } from 'react'
 import { Link } from "react-router-dom"
-// import './Journal.css'
+import './Maybe.css'
 
 class MaybeList extends Component {
 
     render() {
         return (<React.Fragment>
             <div className="maybeButton">
-                <button type="button"
-                        className="btn btn-success"
-                        onClick={() => {
+            <p>
+            Where is your "Maybe one day" trip? Think about it for a moment and add below!
+            </p>
+            <br/>
+                <button
+                        className="btn btn-info"
+                            onClick={() => {
                             this.props.history.push("/maybes/new")
-                            }
-                        }>
-                    Where to?
+                            }}>
+                    Add a "Maybe"
                 </button>
-            </div>
+                <br/><br/><br/>
+                <p>See your other "Mayebes" below</p>
+                <br/><br/><br/>
             <section className="maybes">
+            <br/>
             {
                 //sort by date?
                 // it is easier to sort by server call
-
                 this.props.maybes.map(maybes =>
                     <div key={maybes.id} className="card">
-                        <div className="card-body">
-                            <h5 className="card-title">
-                            {"Where:"}<br/><br/>
+                        <div className="may">
+                            <h4 className="card-titlebox" >
+                            {"Where to:"}<br/><br/>
                                 {maybes.location}
                                 {/* {maybes.description} */}
                                 <br/><br/>
-                                {"Why:"}
-                                <br/><br/>
+                            {"What for:  "}
+
                                 {maybes.why}<br/><br/>
-
-
                                     <Link className="btn btn-info" to={`/maybes/${maybes.id}`}
-
-                                    >Delete this trip idear</Link>
-
-
-                                    </h5>
-
+                            >Delete this trip idear</Link>
+                            </h4>
                         </div>
                     </div>
-                )
-            }
+                )}
             </section>
-
+            </div>
             </React.Fragment>
     )
 }}

@@ -1,0 +1,27 @@
+
+.checklistbody{
+background-image: url("check.jpg");
+background-position: right top;
+background-repeat: no-repeat;
+font-family: 'Indie Flower', cursive;
+border: 1em;
+margin: 3%;
+}
+.checkStuff {
+    font-size: 150%;
+
+
+}
+.checklists {
+
+}
+.checkButton {
+    background-image: url("white_paper.jpg");
+    background-repeat: no-repeat;
+    height: 25em;
+    background-position: center;
+    -webkit-transform: scale(.9, .9);
+}
+.scrollNote {
+    text-align: center;
+}

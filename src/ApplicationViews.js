@@ -11,7 +11,6 @@ import HomePage from './components/homepage/HomePage'
 import JournalDetail from './components/journal/JournalDetail'
 import MaybeForm from './components/maybe/MaybeForm'
 import MaybeDetail from './components/maybe/MaybeDetail'
-import MaybeEditForm from './components/maybe/MaybeEditForm'
 import MaybeList from './components/maybe/MaybeList'
 import CheckForm from './components/checklist/CheckForm'
 import CheckList from './components/checklist/CheckList'
@@ -100,7 +99,7 @@ export default class ApplicationViews extends Component {
     .then(checklists => this.setState({
       checklists: checklists
     }))
-  addCookieJar = cookieJar => DataManager.add("cookieJars", cookieJar)
+  addCookieJars = cookieJar => DataManager.add("cookieJars", cookieJar)
     .then(() => DataManager.getUserData("cookieJars", this.state.activeUser.id))
     .then(cookieJars => this.setState({
       cookieJars: cookieJars
@@ -208,8 +207,7 @@ export default class ApplicationViews extends Component {
           } else {
             return <Redirect to="/" />
           }
-        }
-        } />
+        }} />
         < Route exact path="/maybes/new" render={(props) => {
           if (this.isAuthenticated()) {
             return <MaybeForm {...props}
@@ -225,13 +223,7 @@ export default class ApplicationViews extends Component {
             return <Redirect to="/" />
           }
         }} />
-        < Route exact path="/maybes/edit/:maybeId(\d+)" render={(props) => {
-          if (this.isAuthenticated()) {
-            return <MaybeEditForm  {...props} editMaybe={this.editMaybe} maybes={this.state.maybes} />
-          } else {
-            return <Redirect to="/" />
-          }
-        }} />
+
         < Route exact path="/checklists" render={(props) => {
           if (this.isAuthenticated()) {
             return <CheckList {...props}
@@ -257,16 +249,14 @@ export default class ApplicationViews extends Component {
             return <Redirect to="/" />
           }
         }} />
-        < Route exact path="/cookieJars" render={(props) => {
+         < Route exact path="/cookieJars" render={(props) => {
           if (this.isAuthenticated()) {
-            return <CookieJarList {...props}
-              deleteCookieJars={this.deleteCookieJars}
-              cookieJars={this.state.cookieJars} />
+            return <CookieJarList {...props} deleteCookieJar={this.deleteCookieJar} cookieJars={this.state.cookieJars} />
           } else {
             return <Redirect to="/" />
           }
-        }
-        } />
+        }} />
+
 
 
 

@@ -1,0 +1,9 @@
+.cookieForm {
+    background-image: url("monster.png");
+    background-repeat: no-repeat;
+    background-position: right;
+
+}
+.cookieButton {
+    text-align: center;
+}

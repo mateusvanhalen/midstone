@@ -1,6 +1,7 @@
 import React, { Component } from "react"
 import DataManager from '../../modules/DataManager'
-import './Login.css'
+// import './Login.css'
+
 
 
 export default class Login extends Component {
@@ -64,7 +65,7 @@ export default class Login extends Component {
                             id="password"
                             placeholder="Password"
                             required="" />
-                        <button type="submit" className="btn btn-primary">
+                        <button type="submit" className="btn btn-info">
                             Sign in
                         </button>
                     </form>

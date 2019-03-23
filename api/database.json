@@ -17,6 +17,18 @@
       "email": "jessie@me.com",
       "password": "hi",
       "id": 3
+    },
+    {
+      "username": "barbara",
+      "email": "barbara@me.com",
+      "password": "hi",
+      "id": 4
+    },
+    {
+      "username": "bobby",
+      "email": "bobby@me.com",
+      "password": "hi",
+      "id": 5
     }
   ],
   "journals": [
@@ -32,17 +44,6 @@
       "id": 14
     },
     {
-      "journalName": "Take a trip to the backyard pool!",
-      "ddates": "2018-05-05",
-      "rdates": "2018-11-01",
-      "location": "FBM",
-      "rating": "",
-      "description": "BYOB, bring yo firends, bring yo wife",
-      "userId": 1,
-      "uploadedFileCloudinaryUrl": "https://res.cloudinary.com/mateusvanhalen/image/upload/v1537284954/vwwmiloqssd1fteou8w4.jpg",
-      "id": 15
-    },
-    {
       "journalName": "staycation",
       "ddates": "2018-08-15",
       "rdates": "2018-08-23",
@@ -52,34 +53,100 @@
       "userId": 1,
       "uploadedFileCloudinaryUrl": "https://res.cloudinary.com/mateusvanhalen/image/upload/v1537285321/zfh6fj5zlvqn4bkyeln3.jpg",
       "id": 16
+    },
+    {
+      "journalName": "cuise in my car",
+      "ddates": "2018-10-03",
+      "rdates": "2017-11-03",
+      "location": "Darkwing Duck City",
+      "rating": "",
+      "description": "mysterious crime fighting that i cant really talk about. Next time bring a ping pong paddle and 5 solo cups",
+      "userId": 1,
+      "uploadedFileCloudinaryUrl": "https://res.cloudinary.com/mateusvanhalen/image/upload/v1537387696/hrclzhaa4uqtgsciok2k.jpg",
+      "id": 17,
+      "journalId": 17
+    },
+    {
+      "journalName": "midstone",
+      "ddates": "2018-09-10",
+      "rdates": "2018-09-21",
+      "location": "NSS",
+      "rating": "",
+      "description": "wow what fun this was. I learned a ton around react and buliding a single page app",
+      "userId": 1,
+      "uploadedFileCloudinaryUrl": "https://res.cloudinary.com/mateusvanhalen/image/upload/v1537441531/arvdlglbv2eguopq4rq0.jpg",
+      "id": 18
+    },
+    {
+      "journalName": "pool party",
+      "ddates": "2018-09-05",
+      "rdates": "2018-09-27",
+      "location": "my pool",
+      "rating": "",
+      "description": "fun fun fun",
+      "userId": 1,
+      "uploadedFileCloudinaryUrl": "https://res.cloudinary.com/mateusvanhalen/image/upload/v1537453950/ov1usicdlady3vjcqq8e.jpg",
+      "id": 19
+    },
+    {
+      "journalName": "my vacation to nashville",
+      "ddates": "2018-09-20",
+      "rdates": "2018-09-30",
+      "location": "Nashville at Fireball Maggies",
+      "rating": "",
+      "description": "went to visit my son and daughter in law. We ate and drank our faces off!! sooooo much fun and i cant wait to do it again",
+      "userId": 4,
+      "uploadedFileCloudinaryUrl": "https://res.cloudinary.com/mateusvanhalen/image/upload/v1537801736/xspnddgd7i0kqhfjdie4.jpg",
+      "id": 20,
+      "journalId": 20
+    },
+    {
+      "journalName": "scurrred",
+      "ddates": "2018-10-02",
+      "rdates": "2018-10-02",
+      "location": "NSS",
+      "rating": "",
+      "description": "its go time!",
+      "userId": 1,
+      "uploadedFileCloudinaryUrl": "https://res.cloudinary.com/mateusvanhalen/image/upload/v1538486412/ym0bejudpqmdnh7fgjn6.jpg",
+      "id": 21
+    },
+    {
+      "journalName": "pregnant",
+      "ddates": "2018-12-20",
+      "rdates": "2018-12-21",
+      "location": "Courtview Dr",
+      "rating": "",
+      "description": "Jessie is pregnant!!",
+      "userId": 4,
+      "uploadedFileCloudinaryUrl": "https://res.cloudinary.com/mateusvanhalen/image/upload/v1545594610/ia4zw6q4ygbfwmzabqia.jpg",
+      "id": 22
     }
   ],
   "checklists": [
     {
-      "type": "cruise",
-      "location": "stay away from bermude triangle",
-      "item": "sun block and sunscreen",
-      "why": "i got burnt the f up",
-      "id": 4
+      "type": "beach trip",
+      "location": "the islands",
+      "item": "sunscreen - lots of sunscreen, a wagon, two radios, frisbee, 15 umbrellas, an ATV, shark repellent, extra sunglass for the wifey",
+      "why": "just trust me here",
+      "id": 1
     },
     {
-      "type": "rock climbing trip",
-      "location": "the center of the world",
-      "item": "bring a comb, toothbrush and floss. The floss can help you if your rope breaks",
-      "why": "floss comes in handy for securing your bags and shoes",
-      "id": 5
+      "type": "camping in the arctic",
+      "location": "Norway",
+      "item": "Extra pair of gloves",
+      "why": "yeah its that cold",
+      "id": 2
+    },
+    {
+      "type": "canoe trip",
+      "location": "that big lake behind that mountain",
+      "item": "def a canoe and that paddle thing",
+      "why": "my fins got tired",
+      "id": 3
     }
   ],
   "maybes": [
-    {
-      "maybeName": "beach trip",
-      "dates": "2018-10-31",
-      "location": "Maui",
-      "why": "Get the hell out of dodge",
-      "description": "I want to lay on the beach, drink lots of Mai Tai's and listen to the waves accompany a ukulele",
-      "userId": 1,
-      "id": 3
-    },
     {
       "maybeName": "beach trip",
       "dates": "2018-12-14",
@@ -99,7 +166,56 @@
       "userId": 1,
       "video": "https://www.youtube.com/watch?v=yxHbKlkvHqc",
       "id": 5
+    },
+    {
+      "maybeName": "Log cabin",
+      "dates": "2019-01-17",
+      "location": "the mountains",
+      "why": "to get away",
+      "description": "relax and drink vodka",
+      "userId": 1,
+      "video": "https://www.youtube.com/watch?v=fx_YyqQRF-M",
+      "id": 8
+    },
+    {
+      "maybeName": "boat ride",
+      "dates": "2018-10-25",
+      "location": "the big river",
+      "why": "to get out of nss for a week",
+      "description": "float down the water",
+      "userId": 1,
+      "video": "https://www.youtube.com/watch?v=OTg1n95--KE",
+      "id": 9
+    },
+    {
+      "maybeName": "Go see Cher",
+      "dates": "2019-01-31",
+      "location": "Bridgestone Arena",
+      "why": "TO SEE CHER",
+      "description": "turn back time",
+      "userId": 4,
+      "video": "https://www.youtube.com/watch?v=jq_BAHIAuNw",
+      "id": 10
     }
   ],
-  "cookieJars": []
+  "cookieJars": [
+    {
+      "cookieName": "hotel hoppin",
+      "location": "lots of hotels",
+      "total": "2000",
+      "weeksTil": "7",
+      "ddates": "2018-12-01",
+      "userId": 1,
+      "id": 2
+    },
+    {
+      "cookieName": "go to school",
+      "location": "nss",
+      "total": "1000",
+      "weeksTil": "4",
+      "ddates": "2018-10-25",
+      "userId": 4,
+      "id": 3
+    }
+  ]
 }
